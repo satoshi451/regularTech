@@ -9,9 +9,11 @@ public class Application extends JFrame {
 	private int height = 600;
 	private int x_cord;
 	private int y_cord;
+	
 	private BorderLayout curLayout;
 	private Workspace workSpace;
-	
+	private ApplicationMenu appMenu;
+	  
 	public Application(){
 		super("Office support [alpha]");
 		
@@ -19,11 +21,15 @@ public class Application extends JFrame {
 		curLayout = new BorderLayout();
 		setLayout(curLayout);
 		
-		
+		appMenu = new ApplicationMenu();
 		workSpace = new Workspace();
+		
 		add(workSpace, BorderLayout.CENTER);
+		add(appMenu, BorderLayout.NORTH);
+		
+		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		this.setVisible(true);
+		setVisible(true);
 	}
 	
 
