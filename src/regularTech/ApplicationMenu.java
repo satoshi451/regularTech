@@ -12,6 +12,7 @@ public class ApplicationMenu extends JMenuBar {
 		JMenu mi2 = new JMenu("menu item2");
 		
 		mi1.add(new JMenuItem("item1"));
+		
 		add(mi1);
 		add(mi2);
 		
