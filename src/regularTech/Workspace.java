@@ -1,12 +1,13 @@
 package regularTech;
 
+import java.awt.Color;
 import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
 public class Workspace extends JPanel {
 	public Workspace(){
-		
+		this.setBackground(Color.red);
 	}
 	
 	@Override 
