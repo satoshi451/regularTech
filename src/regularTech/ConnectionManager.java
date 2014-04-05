@@ -14,7 +14,7 @@ import java.sql.Statement;
 public class ConnectionManager {
 
 
-    public static boolean getConnection(String ServerName, String Login, String Password) {
+    public static boolean getConnection(String ServerName, String Login, String Password) throws SQLException{
         Connection connection;
         try {
             // Название драйвера
@@ -40,6 +40,8 @@ public class ConnectionManager {
 
             ResultSet rs = stmt.executeQuery(query);
             String dbtime;
+            System.out.println(rs.first());
+
             while (rs.next()) {
                 dbtime = rs.getString(1);
                 System.out.println(dbtime);
@@ -50,9 +52,6 @@ public class ConnectionManager {
         catch (ClassNotFoundException e) {
             e.printStackTrace();
             // Could not find the database driver
-        } catch (SQLException e) {
-            e.printStackTrace();
-            // Could not connect to the database
         }
 
         return false;

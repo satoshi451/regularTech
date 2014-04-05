@@ -3,6 +3,7 @@ package regularTech;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 import javax.swing.*;
 
@@ -25,6 +26,7 @@ public class Application extends JFrame {
     private JTextField loginInput;
     private JPasswordField passInput;
     private String currentUser;
+    private StatusBar statusBar;
 
     public Application(){
 		super("Office support [alpha]");
@@ -35,11 +37,13 @@ public class Application extends JFrame {
 		
 		appMenu = new ApplicationMenu();
 		jPanel = new JPanel();
+        statusBar = new StatusBar();
 
         initLoginPanel();
 		
 		add(jPanel, BorderLayout.CENTER);
 		add(appMenu, BorderLayout.NORTH);
+        add(statusBar, BorderLayout.SOUTH);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
@@ -101,8 +105,11 @@ public class Application extends JFrame {
         String serverName = serverInput.getText();
         String login = loginInput.getText();
         String password = new String(passInput.getPassword());
-
-        boolean connectionStatus = ConnectionManager.getConnection(serverName, login, password);
+        try {
+            boolean connectionStatus = ConnectionManager.getConnection(serverName, login, password);
+        }catch(SQLException sqlExeption){
+            this.statusBar.setStatus(status.ACCESS_DENIED);
+        }
 
         return false;
     }
