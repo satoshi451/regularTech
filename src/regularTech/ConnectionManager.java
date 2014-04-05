@@ -24,7 +24,7 @@ public class ConnectionManager {
 
             // Create a connection to the database
             String serverName = ServerName;
-            String mydatabase = "appUsers";
+            String mydatabase = "regularTech";
             String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
             String username = Login;
             String password = Password;
