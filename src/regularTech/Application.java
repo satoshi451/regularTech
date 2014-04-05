@@ -8,9 +8,9 @@ import javax.swing.*;
 
 public class Application extends JFrame {
 	private int width = 800;
-	private int height = 600;
-	private int x_cord;
-	private int y_cord;
+	private int height = 300;
+	private int x_cord = 200;
+	private int y_cord = 150;
 	
 	private BorderLayout curLayout;
 	private JPanel jPanel;
@@ -24,6 +24,7 @@ public class Application extends JFrame {
     private JTextField serverInput;
     private JTextField loginInput;
     private JPasswordField passInput;
+    private String currentUser;
 
     public Application(){
 		super("Office support [alpha]");
@@ -65,18 +66,45 @@ public class Application extends JFrame {
             }
         });
         ActionListener connListener = new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if(loginInput.getText().equals("") && (new String(passInput.getPassword())).equals("")){
-                    System.out.println("Login ok!");
+                int l1 = loginInput.getText().length();
+                int l2 = (new String(passInput.getPassword())).length();
+
+                if(l1 == 0  || l2 == 0){
+                    System.out.println("Empty");
                 }
                 else
-                    System.out.println("Login bad (");
+                    if(getAuthorise()){
+                       System.out.println("Success connection");
+                        currentUser = loginInput.getText();
+                    }
 
             }
         };
+
         loginInput.addActionListener(connListener);
         passInput.addActionListener(connListener);
+
+        serverInput.setEnabled(false);
+        serverInput.setText("localhost");
+        jPanel.add(isLocalHost);
+        jPanel.add(serverInput);
+        jPanel.add(loginInput);
+        jPanel.add(passInput);
+
+
+    }
+
+    private boolean getAuthorise() {
+        String serverName = serverInput.getText();
+        String login = loginInput.getText();
+        String password = new String(passInput.getPassword());
+
+        boolean connectionStatus = ConnectionManager.getConnection(serverName, login, password);
+
+        return false;
     }
 
 
