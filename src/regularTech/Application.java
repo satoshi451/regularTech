@@ -1,8 +1,10 @@
 package regularTech;
 
-import java.awt.BorderLayout;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class Application extends JFrame {
 	private int width = 800;
@@ -11,10 +13,19 @@ public class Application extends JFrame {
 	private int y_cord;
 	
 	private BorderLayout curLayout;
-	private Workspace workSpace;
+	private JPanel jPanel;
 	private ApplicationMenu appMenu;
-	  
-	public Application(){
+    public static Dimension inputDimension;
+
+    static{
+        inputDimension = new Dimension(180, 40);
+    }
+
+    private JTextField serverInput;
+    private JTextField loginInput;
+    private JPasswordField passInput;
+
+    public Application(){
 		super("Office support [alpha]");
 		
 		setBounds(x_cord, y_cord, width, height);
@@ -22,15 +33,51 @@ public class Application extends JFrame {
 		setLayout(curLayout);
 		
 		appMenu = new ApplicationMenu();
-		workSpace = new Workspace();
+		jPanel = new JPanel();
+
+        initLoginPanel();
 		
-		add(workSpace, BorderLayout.CENTER);
+		add(jPanel, BorderLayout.CENTER);
 		add(appMenu, BorderLayout.NORTH);
-		
-		
+
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
 	}
-	
+
+    private void initLoginPanel() {
+        serverInput = new JTextField();
+        loginInput = new JTextField();
+        passInput = new JPasswordField();
+
+        JCheckBox isLocalHost = new JCheckBox();
+
+        isLocalHost.setSelected(true);
+
+        serverInput.setPreferredSize(inputDimension);
+        loginInput.setPreferredSize(inputDimension);
+        passInput.setPreferredSize(inputDimension);
+
+        isLocalHost.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                serverInput.setText("localhost");
+                serverInput.setEnabled(false);
+            }
+        });
+        ActionListener connListener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                if(loginInput.getText().equals("") && (new String(passInput.getPassword())).equals("")){
+                    System.out.println("Login ok!");
+                }
+                else
+                    System.out.println("Login bad (");
+
+            }
+        };
+        loginInput.addActionListener(connListener);
+        passInput.addActionListener(connListener);
+    }
+
 
 }
