@@ -3,6 +3,8 @@ package regularTech;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).
@@ -21,6 +23,13 @@ public abstract class abstractGUI extends JFrame {
 
         add(graphPane, BorderLayout.CENTER);
 
+        // TODO: не работает windowsAdapter
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosed(WindowEvent windowEvent) {
+                System.out.println("Close GUI");
+            }
+        });
         setBounds(150, 100, 800, 600);
         setVisible(true);
     }
