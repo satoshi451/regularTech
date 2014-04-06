@@ -16,6 +16,7 @@ public class ConnectionManager {
 
     public static boolean getConnection(String ServerName, String Login, String Password) throws SQLException{
         Connection connection;
+        boolean isAdmin = false;
         try {
             // Название драйвера
             String driverName = "com.mysql.jdbc.Driver";
@@ -39,13 +40,14 @@ public class ConnectionManager {
             Statement stmt = connection.createStatement();
 
             ResultSet rs = stmt.executeQuery(query);
-            String dbtime;
-            System.out.println(rs.first());
+            String dbtime = null;
+            //System.out.println(rs.first());
 
-            while (rs.next()) {
+            if(rs.next()) {
                 dbtime = rs.getString(1);
                 System.out.println(dbtime);
-            } // end while
+            }
+            isAdmin = (dbtime == "1") ? true : false;
 
             connection.close();
         } // end try
@@ -54,6 +56,6 @@ public class ConnectionManager {
             // Could not find the database driver
         }
 
-        return false;
+        return isAdmin;
     }
 }

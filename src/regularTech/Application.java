@@ -3,6 +3,7 @@ package regularTech;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.print.Book;
 import java.sql.SQLException;
 
 import javax.swing.*;
@@ -79,9 +80,15 @@ public class Application extends JFrame {
                 if(l1 == 0  || l2 == 0){
                     System.out.println("Empty");
                 }
-                else
-                    if(getAuthorise()){
-                       System.out.println("Success connection");
+                else{
+                    Pair<Boolean, Boolean> result = getAuthorise();
+                    if(result.first == true){
+                        if(result.second == true)
+                            this.mainWindows = new AdminGUI();
+                        else
+                            this.mainWindow = new regularGUI();
+
+                    }
                         currentUser = loginInput.getText();
                     }
 
@@ -101,17 +108,21 @@ public class Application extends JFrame {
 
     }
 
-    private boolean getAuthorise() {
+    private Pair<Boolean, Boolean> getAuthorise() {
         String serverName = serverInput.getText();
         String login = loginInput.getText();
         String password = new String(passInput.getPassword());
+        boolean connectionStatus = false;
+        boolean isAdmin = false;
+
         try {
-            boolean connectionStatus = ConnectionManager.getConnection(serverName, login, password);
+            isAdmin = ConnectionManager.getConnection(serverName, login, password);
         }catch(SQLException sqlExeption){
             this.statusBar.setStatus(status.ACCESS_DENIED);
+            connectionStatus = false;
         }
 
-        return false;
+        return new Pair<Boolean, Boolean>(new Boolean(connectionStatus), new Boolean(isAdmin));
     }
 
 
