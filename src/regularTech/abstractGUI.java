@@ -10,16 +10,19 @@ import java.awt.*;
  * TIME: 14:45
  */
 public abstract class abstractGUI extends JFrame {
-    private abstractMenuBar menubar;
-    private GraphPane graphPane;
+    protected abstractMenuBar menubar;
+    protected GraphPane graphPane;
 
-    protected abstractGUI(String capture) throws HeadlessException {
+    public abstractGUI(String capture) throws HeadlessException {
         super(capture);
         this.setLayout(new BorderLayout());
 
         this.graphPane = new GraphPane();
 
         add(graphPane, BorderLayout.CENTER);
+
+        setBounds(150, 100, 800, 600);
+        setVisible(true);
     }
 
 }

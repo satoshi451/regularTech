@@ -47,8 +47,10 @@ public class ConnectionManager {
                 dbtime = rs.getString(1);
                 System.out.println(dbtime);
             }
-            isAdmin = (dbtime == "1") ? true : false;
-
+            if(dbtime.equals("1"))
+                isAdmin = true;
+            else
+                isAdmin = false;
             connection.close();
         } // end try
         catch (ClassNotFoundException e) {

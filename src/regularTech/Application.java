@@ -72,6 +72,8 @@ public class Application extends JFrame {
         });
         ActionListener connListener = new ActionListener() {
 
+            public abstractGUI mainWindows;
+
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 int l1 = loginInput.getText().length();
@@ -84,10 +86,10 @@ public class Application extends JFrame {
                     Pair<Boolean, Boolean> result = getAuthorise();
                     if(result.first == true){
                         if(result.second == true)
-                            this.mainWindows = new AdminGUI();
+                            this.mainWindows = new AdminGUI("Admin main window");
                         else
-                            this.mainWindow = new regularGUI();
-
+                            this.mainWindows = new regularGUI("Regular user main window");
+                    setVisible(false);
                     }
                         currentUser = loginInput.getText();
                     }
@@ -117,6 +119,7 @@ public class Application extends JFrame {
 
         try {
             isAdmin = ConnectionManager.getConnection(serverName, login, password);
+            connectionStatus = true;
         }catch(SQLException sqlExeption){
             this.statusBar.setStatus(status.ACCESS_DENIED);
             connectionStatus = false;
