@@ -17,6 +17,7 @@ public class GraphPane extends JPanel{
     private static Image monitor;
     private static Image router;
 
+    private List objects;
     //TODO: change path to classparth
     static{
         try {
@@ -35,6 +36,6 @@ public class GraphPane extends JPanel{
 
     @Override
     public void paintComponent(Graphics g){
-        
+
     }
 }
