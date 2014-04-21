@@ -28,4 +28,7 @@ public class Room {
     public Room() {
         objects = new LinkedList<officeObject>();
     }
+    public void addObject(officeObject officeObject){
+        this.objects.add(officeObject);
+    }
 }
