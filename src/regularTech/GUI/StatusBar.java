@@ -1,4 +1,6 @@
-package regularTech;
+package regularTech.GUI;
+
+import regularTech.status;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +13,7 @@ import java.awt.*;
 public class StatusBar extends JPanel{
 
 
-    private status status;
+    private regularTech.status status;
     private JLabel text;
 
     public StatusBar() {

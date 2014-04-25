@@ -1,4 +1,7 @@
-package regularTech;
+package regularTech.officeObjects;
+
+import regularTech.baseActions;
+import regularTech.graphObject;
 
 import java.math.BigDecimal;
 

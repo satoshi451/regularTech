@@ -1,4 +1,4 @@
-package regularTech;
+package regularTech.graphical;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).

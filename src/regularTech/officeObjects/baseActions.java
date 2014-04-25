@@ -1,4 +1,4 @@
-package regularTech;
+package regularTech.officeObjects;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).

@@ -1,4 +1,4 @@
-package regularTech;
+package regularTech.GUI;
 
 import javax.swing.*;
 

@@ -1,19 +1,19 @@
-package regularTech;
+package regularTech.GUI;
 
 import java.awt.*;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).
  * DATE: 06.04.2014
- * TIME: 16:06
+ * TIME: 15:10
  */
-public class regularGUI extends abstractGUI {
+public class AdminGUI extends abstractGUI{
 
-    public regularGUI(String capture) {
+    public AdminGUI(String capture) {
         super(capture);
-
-        menubar = new regularMenuBar();
+        this.menubar = new AdminMenuBar();
 
         add(menubar, BorderLayout.NORTH);
+
     }
 }

@@ -1,4 +1,6 @@
-package regularTech;
+package regularTech.graphical;
+
+import regularTech.officeObjects.officeObject;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -12,13 +14,13 @@ import java.util.List;
  * DATE: 18.04.2014
  * TIME: 22:21
  */
-public class Room {
+public class Room extends  graphObject{
     private static Image pict;
     private List<officeObject> objects;
     static{
         try{
             //TODO:change to classpath
-            pict = ImageIO.read(new File(""));
+            pict = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\bin\\regularTech\\img\\room.png"));
         }catch (IOException e){
          //TODO: change printStackTrace to logger
             e.printStackTrace();

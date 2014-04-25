@@ -1,4 +1,7 @@
-package regularTech;
+package regularTech.officeObjects;
+
+import regularTech.officeObjects.electronicFunctions;
+import regularTech.officeObjects.electronicObject;
 
 import java.awt.*;
 
@@ -10,10 +13,21 @@ import java.awt.*;
 public class PC extends electronicObject implements electronicFunctions {
     private Image pict;
 
+    public PC(Image pict) {
+        this.pict = pict;
+    }
+
+    public PC(Image pict, int x_cord, int y_cord) {
+        this(pict);
+        setX(x_cord);
+        setY(y_cord);
+
+    }
 
     @Override
     public void doDiagnostic() {
     //TODO: add item to list of queue diagnostic, make record in database, create  table 'diagnostic'
 
     }
+
 }
