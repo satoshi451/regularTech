@@ -7,4 +7,5 @@ package regularTech.officeObjects;
  */
 public interface baseActions {
     void changeRoom();
+    void changeStatus(Integer status);
 }

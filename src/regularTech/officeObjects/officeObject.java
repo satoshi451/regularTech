@@ -1,7 +1,6 @@
 package regularTech.officeObjects;
 
-import regularTech.baseActions;
-import regularTech.graphObject;
+import regularTech.graphical.graphObject;
 
 import java.math.BigDecimal;
 
@@ -14,8 +13,16 @@ public abstract class officeObject extends graphObject implements baseActions {
     protected String name;
     protected String description;
     protected BigDecimal IndentureNumber;
+    protected Integer status;
+
+    protected static final Integer ALL_IS_OK = 1;
+    protected static final Integer BREAK = 2;
+    protected static final Integer ON_DIAGNOSTIC = 3;
+    protected static final Integer BREAKED = 4;
+
 
     public officeObject() {
+
     }
 
     public String getName() {
@@ -43,4 +50,9 @@ public abstract class officeObject extends graphObject implements baseActions {
     public void changeRoom(){
 
     }
+    @Override
+    public  void changeStatus(Integer status){
+        this.status = status;
+    }
+
 }
