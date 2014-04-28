@@ -6,6 +6,8 @@ import regularTech.graphical.Room;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
@@ -25,11 +27,14 @@ public class GraphPane extends JPanel{
     private static Image monitor;
     private static Image router;
 
+    private static final String withoutRoom;
+
     private final AddRoomJDialog addRoomJDialog;
 
     private List<Room> roomList;
     //TODO: change path to classparth
     static{
+        withoutRoom = new String("Нет помещений");
         try {
             computer = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\computer.png"));
             printer = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\printer.png"));
@@ -45,6 +50,16 @@ public class GraphPane extends JPanel{
         this.addRoomJDialog = new AddRoomJDialog();
         roomList = new LinkedList<Room>();
 
+        final ActionListener addRoomListener = new ActionListener(){
+
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                roomList.add(new Room(addRoomJDialog.roomNameInput.getText()));
+            }
+        };
+        addRoomJDialog.addButton.addActionListener(addRoomListener);
+        addRoomJDialog.roomNameInput.addActionListener(addRoomListener);
+
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent mouseEvent) {
@@ -52,8 +67,9 @@ public class GraphPane extends JPanel{
                 System.out.println("mouseClicked");
                 System.out.println(mouseEvent);
 
-                if (mouseEvent.getButton() == 3){
-                    addRoomJDialog.setVisible(true);
+                if (mouseEvent.getButton() == 3) {
+                    addRoomJDialog.getRoomName();
+                    addRoomJDialog.setVisible(false);
                 }
 
             }
@@ -63,10 +79,13 @@ public class GraphPane extends JPanel{
 
     @Override
     public void paintComponent(Graphics g){
-        if(roomList.size() == 0)
+        if (roomList.size() == 0){
+            g.drawString(withoutRoom,getWidth()/2 - 50, getHeight()/2);
             return;
-
-
+        }
+        for (Room curRoom : roomList){
+            g.drawImage(Room.pict, curRoom.getX(), curRoom.getY(), null);
+        }
 
     }
 }

@@ -14,6 +14,5 @@ public class AdminGUI extends abstractGUI{
         this.menubar = new AdminMenuBar();
 
         add(menubar, BorderLayout.NORTH);
-
     }
 }

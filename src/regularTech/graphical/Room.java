@@ -15,7 +15,9 @@ import java.util.List;
  * TIME: 22:21
  */
 public class Room extends  graphObject{
-    private static Image pict;
+    public static Image pict;
+    private String name;
+
     private List<officeObject> objects;
     static{
         try{
@@ -30,6 +32,21 @@ public class Room extends  graphObject{
     public Room() {
         objects = new LinkedList<officeObject>();
     }
+
+    public Room(String name) {
+        this();
+        this.setName(name);
+        this.x = 100;
+        this.y = 100;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void addObject(officeObject officeObject){
         this.objects.add(officeObject);
     }

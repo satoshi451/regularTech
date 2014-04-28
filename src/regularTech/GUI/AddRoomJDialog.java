@@ -2,6 +2,8 @@ package regularTech.GUI;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).
@@ -10,8 +12,9 @@ import java.awt.*;
  */
 public class AddRoomJDialog extends JDialog {
 
+    public JButton addButton;
     private JLabel label;
-    private JTextField roomNameInput;
+    public JTextField roomNameInput;
     private int width;
     private int height;
     private static Dimension inputDimension;
@@ -23,19 +26,33 @@ public class AddRoomJDialog extends JDialog {
         super();
         this.setLayout(new FlowLayout());
         this.width = 400;
-        this.height = 80;
+        this.height = 100;
         this.label = new JLabel("Введите название помещения:");
-
+        this.addButton = new JButton("Добавить помещение");
         this.roomNameInput = new JTextField();
         this.roomNameInput.setPreferredSize(AddRoomJDialog.inputDimension);
 
-        setBounds(400,400, width, height);
+        setBounds(400, 400, width, height);
 
         add(label);
         add(roomNameInput);
+        add(addButton);
 
+        ActionListener addRoomListener = new ActionListener(){
+
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String name = roomNameInput.getText();
+
+            }
+        };
         setModal(true);
         setResizable(false);
         setTitle("Создание помещения");
+    }
+    public String getRoomName(){
+        this.roomNameInput.setText("");
+        this.setVisible(true);
+        return null;
     }
 }
