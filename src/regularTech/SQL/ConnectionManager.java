@@ -30,7 +30,9 @@ public class ConnectionManager {
             String username = Login;
             String password = Password;
 
-            connection = DriverManager.getConnection(url, username, password);
+            String DBPassword = "Ns5(!11PLus";
+            String DBUser = "root";
+            connection = DriverManager.getConnection(url, DBUser, DBPassword);
             System.out.println("is connect to DB" + connection);
 
             String query = new String("Select isAdmin FROM appUsers where login = '").concat(username).concat("' and password = '").concat(password).concat("';");
