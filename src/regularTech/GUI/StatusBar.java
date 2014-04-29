@@ -40,7 +40,7 @@ public class StatusBar extends JPanel{
     @Override
     public void paintComponent(Graphics g){
         g.setColor(this.textColor);
-        g.drawString(text, getWidth()/2 - 60, getHeight());
+        g.drawString(text, getWidth()/2 - 70, getHeight());
     }
 
 }

@@ -85,6 +85,7 @@ public class GraphPane extends JPanel{
         }
         for (Room curRoom : roomList){
             g.drawImage(Room.pict, curRoom.getX(), curRoom.getY(), null);
+            curRoom.drawObjects();
         }
 
     }

@@ -50,4 +50,7 @@ public class Room extends  graphObject{
     public void addObject(officeObject officeObject){
         this.objects.add(officeObject);
     }
+
+    public void drawObjects() {
+    }
 }
