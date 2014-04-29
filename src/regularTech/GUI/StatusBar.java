@@ -12,36 +12,35 @@ import java.awt.*;
  */
 public class StatusBar extends JPanel{
 
-
     private regularTech.status status;
-    private JLabel text;
+    private String text;
+    private Color textColor;
 
     public StatusBar() {
         super();
         setStatus(regularTech.status.OK_STATUS);
-        //add(text);
     }
 
     public void setStatus(status statusID) {
         this.status = statusID;
-
         switch(this.status){
-            case OK_STATUS: text =      new JLabel("<HTML><BODY><a style=\"color: GREEN;\">Please, enter login und password :)</a></BODY></HTML>");
+            case OK_STATUS: text =      "Please, enter login und password :)";
+                                        textColor = Color.GREEN;
                                         break;
-            case ACCESS_DENIED: text =  new JLabel("<HTML><BODY><a style=\"color: RED;\">ACCESS TO DATABASE DENIED :(</a></BODY></HTML>");
+            case ACCESS_DENIED: text =  "ACCESS TO DATABASE DENIED :(";
+                                        textColor = Color.RED;
                                         break;
-
         }
-        add(text);
     }
 
     public status getStatus() {
         return status;
     }
-/*
+
     @Override
     public void paintComponent(Graphics g){
-        g.drawString(text, 0, 0);
+        g.setColor(this.textColor);
+        g.drawString(text, getWidth()/2 - 60, getHeight());
     }
-*/
+
 }

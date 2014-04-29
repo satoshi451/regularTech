@@ -22,7 +22,8 @@ public abstract class officeObject extends graphObject implements baseActions {
 
 
     public officeObject() {
-
+        this.description = "no_description";
+        this.name = "no_name";
     }
 
     public String getName() {

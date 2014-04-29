@@ -25,4 +25,6 @@ public class graphObject {
     public void setY(Integer y) {
         this.y = y;
     }
+
+
 }

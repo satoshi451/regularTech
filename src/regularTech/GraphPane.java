@@ -50,11 +50,14 @@ public class GraphPane extends JPanel{
         this.addRoomJDialog = new AddRoomJDialog();
         roomList = new LinkedList<Room>();
 
-        final ActionListener addRoomListener = new ActionListener(){
+        ActionListener addRoomListener = new ActionListener(){
 
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+                addRoomJDialog.setVisible(false);
                 roomList.add(new Room(addRoomJDialog.roomNameInput.getText()));
+                addRoomJDialog.roomNameInput.setText("");
+                repaint();
             }
         };
         addRoomJDialog.addButton.addActionListener(addRoomListener);
@@ -68,13 +71,10 @@ public class GraphPane extends JPanel{
                 System.out.println(mouseEvent);
 
                 if (mouseEvent.getButton() == 3) {
-                    addRoomJDialog.getRoomName();
-                    addRoomJDialog.setVisible(false);
+                    addRoomJDialog.setVisible(true);
                 }
-
             }
         });
-
     }
 
     @Override

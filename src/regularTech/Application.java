@@ -6,12 +6,11 @@ import regularTech.GUI.abstractGUI;
 import regularTech.GUI.regularGUI;
 import regularTech.SQL.ConnectionManager;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
-
-import javax.swing.*;
 
 public class Application extends JFrame {
 	private int width = 800;
@@ -127,6 +126,7 @@ public class Application extends JFrame {
             connectionStatus = true;
         }catch(SQLException sqlExeption){
             this.statusBar.setStatus(status.ACCESS_DENIED);
+            this.statusBar.repaint();
             connectionStatus = false;
         }
 

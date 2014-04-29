@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 public class AddRoomJDialog extends JDialog {
 
     public JButton addButton;
+    private String roomName;
     private JLabel label;
     public JTextField roomNameInput;
     private int width;
@@ -42,17 +43,13 @@ public class AddRoomJDialog extends JDialog {
 
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                String name = roomNameInput.getText();
+                roomName = roomNameInput.getText();
 
             }
         };
+
         setModal(true);
         setResizable(false);
         setTitle("Создание помещения");
-    }
-    public String getRoomName(){
-        this.roomNameInput.setText("");
-        this.setVisible(true);
-        return null;
     }
 }
