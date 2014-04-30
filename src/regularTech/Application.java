@@ -22,7 +22,7 @@ public class Application extends JFrame {
 	private JPanel jPanel;
 	private ApplicationMenu appMenu;
     public static Dimension inputDimension;
-
+    public abstractGUI mainWindows;
     static{
         inputDimension = new Dimension(180, 40);
     }
@@ -76,8 +76,6 @@ public class Application extends JFrame {
         });
         ActionListener connListener = new ActionListener() {
 
-            public abstractGUI mainWindows;
-
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 int l1 = loginInput.getText().length();
@@ -90,9 +88,9 @@ public class Application extends JFrame {
                     Pair<Boolean, Boolean> result = getAuthorise();
                     if(result.first == true){
                         if(result.second == true)
-                            this.mainWindows = new AdminGUI("Admin main window");
+                            mainWindows = new AdminGUI("Admin main window");
                         else
-                            this.mainWindows = new regularGUI("Regular user main window");
+                            mainWindows = new regularGUI("Regular user main window");
                     setVisible(false);
                     }
                         currentUser = loginInput.getText();

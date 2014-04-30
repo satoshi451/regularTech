@@ -38,7 +38,6 @@ public class ConnectionManager {
             String query = new String("Select isAdmin FROM appUsers where login = '").concat(username).concat("' and password = '").concat(password).concat("';");
             System.out.println(query);
 
-
             Statement stmt = connection.createStatement();
 
             ResultSet rs = stmt.executeQuery(query);
