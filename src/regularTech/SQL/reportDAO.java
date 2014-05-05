@@ -14,6 +14,7 @@ public class reportDAO {
     private static String accessLogin;
     private static String accessPassword;
     private static String url;
+
     static{
         //TODO: create user in DB for access to data
         driverName = "com.mysql.jdbc.Driver";
