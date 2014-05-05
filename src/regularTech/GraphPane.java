@@ -34,7 +34,7 @@ public class GraphPane extends JPanel{
     private List<Room> roomList;
     //TODO: change path to classparth
     static{
-        withoutRoom = new String("Нет помещений");
+        withoutRoom = new String("Нет помещений. Чтобы добавить помещение, щелкните правой кнопкой.");
         try {
             computer = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\computer.png"));
             printer = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\printer.png"));
