@@ -1,0 +1,11 @@
+insert into office_oject_financial(office_oject_id,financial_types_id, cost) values(1,1, 12000);
+insert into office_oject_financial(office_oject_id,financial_types_id, cost) values(2,1, 15000);
+insert into office_oject_financial(office_oject_id,financial_types_id, cost) values(3,1, 32000);
+insert into office_oject_financial(office_oject_id,financial_types_id, cost) values(4,1, 26000);
+insert into office_oject_financial(office_oject_id,financial_types_id, cost) values(5,1, 17000);
+insert into office_oject_financial(office_oject_id,financial_types_id, cost) values(6,1, 22000);
+insert into office_oject_financial(office_oject_id,financial_types_id, cost) values(7,1, 7000);
+insert into office_oject_financial(office_oject_id,financial_types_id, cost) values(8,1, 5000);
+insert into office_oject_financial(office_oject_id,financial_types_id, cost) values(9,1, 3200);
+insert into office_oject_financial(office_oject_id,financial_types_id, cost) values(1,3, 500);
+insert into office_oject_financial(office_oject_id,financial_types_id, cost) values(2,3, 3000);
