@@ -80,7 +80,7 @@ public class GraphPane extends JPanel{
     @Override
     public void paintComponent(Graphics g){
         if (roomList.size() == 0){
-            g.drawString(withoutRoom,getWidth()/2 - 50, getHeight()/2);
+            g.drawString(withoutRoom,getWidth()/2 - 170, getHeight()/2);
             return;
         }
         for (Room curRoom : roomList){

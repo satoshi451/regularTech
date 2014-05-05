@@ -17,8 +17,8 @@ public class reportDAO {
     static{
         //TODO: create user in DB for access to data
         driverName = "com.mysql.jdbc.Driver";
-        accessLogin = "root";
-        accessPassword = "Ns5(!11PLus";
+        accessLogin = "root"; //"application";
+        accessPassword = "Ns5(!11PLus"; //"586945782541336";
         url = "jdbc:mysql://localhost/regulartech";
     }
 

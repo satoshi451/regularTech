@@ -24,7 +24,8 @@ public class AdminMenuBar extends abstractMenuBar {
                  window.setVisible(true);
             }
         });
-        buchMenu.add(showReport);
+
+        add(showReport);
         add(buchMenu);
     }
 }

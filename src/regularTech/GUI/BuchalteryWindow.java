@@ -25,6 +25,5 @@ public class BuchalteryWindow extends JFrame{
         add(new JScrollPane(table));
         setBounds(100, 150, width, height);
         setAlwaysOnTop(true);
-        setVisible(true);
     }
 }
