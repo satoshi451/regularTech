@@ -15,10 +15,4 @@ public class OfficeObjectListModel extends DefaultListModel {
         super();
         this.data = data;
     }
-
-    @Override
-    public int getSize() {
-        return data.size();
-    }
-
 }

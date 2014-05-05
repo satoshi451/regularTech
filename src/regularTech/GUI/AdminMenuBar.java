@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
  * TIME: 15:16
  */
 public class AdminMenuBar extends abstractMenuBar {
-    private final ReportActionWindow addReportActionWindow;
+    private ReportActionWindow addReportActionWindow;
     private BuchalteryWindow buchWindow;
     public AdminMenuBar() {
         super();
@@ -34,7 +34,6 @@ public class AdminMenuBar extends abstractMenuBar {
                 addReportActionWindow.setVisible(true);
             }
         });
-
 
         buchMenu.add(showReport);
         buchMenu.add(reportActions);

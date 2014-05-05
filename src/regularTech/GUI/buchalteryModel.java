@@ -19,7 +19,7 @@ public class buchalteryModel extends AbstractTableModel {
 
     public buchalteryModel() {
         super();
-        data = reportDAO.listObjects();
+        data = reportDAO.listReportObject();
         this.columnCount = 5;
         this.rowCount = data.size();
     }

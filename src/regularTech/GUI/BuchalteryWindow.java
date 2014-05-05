@@ -17,7 +17,7 @@ public class BuchalteryWindow extends JFrame{
         super(caption);
 
         this.width = 800;
-        this.height = 700;
+        this.height = 500;
         this.setLayout(new FlowLayout());
 
         table = new JBuchTable();

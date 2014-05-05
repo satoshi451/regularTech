@@ -3,6 +3,7 @@ package regularTech.GUI;
 import regularTech.SQL.reportDAO;
 
 import javax.swing.*;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -17,10 +18,7 @@ public class OfficeObjectList extends JList{
     public OfficeObjectList() {
         super();
         data = reportDAO.listAll();
-        model = new OfficeObjectListModel(data);
-        setModel(model);
-        
-        initList();
+        rebuildList();
     }
 
     private void initList() {
@@ -29,7 +27,25 @@ public class OfficeObjectList extends JList{
         }
     }
     public void filterList(String pattern){
+        data = reportDAO.listAll();
 
+        if(pattern.equals("")){
+            rebuildList();
+            return;
+        }
+        List<String> newData = new LinkedList<String>();
+
+        for (String listElem : data)
+            if(listElem.contains(pattern))
+                newData.add(listElem);
+
+        this.data = newData;
+        rebuildList();
     }
-
+    private void rebuildList(){
+        model = new OfficeObjectListModel(data);
+        initList();
+        setModel(model);
+        repaint();
+    }
 }
