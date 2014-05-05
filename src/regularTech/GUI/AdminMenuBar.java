@@ -10,21 +10,33 @@ import java.awt.event.ActionListener;
  * TIME: 15:16
  */
 public class AdminMenuBar extends abstractMenuBar {
-    private BuchalteryWindow window;
+    private final ReportActionWindow addReportActionWindow;
+    private BuchalteryWindow buchWindow;
     public AdminMenuBar() {
         super();
         JMenu buchMenu = new JMenu("Бухгалтерия");
-        JMenuItem showReport = new JMenuItem("Показать отчетность");
 
-        window = new BuchalteryWindow("Отчетность");
+        JMenuItem showReport = new JMenuItem("Показать отчетность");
+        JMenuItem reportActions = new JMenuItem("Внести отчетность");
+
+        buchWindow = new BuchalteryWindow("Отчетность");
+        addReportActionWindow = new ReportActionWindow("Действия с отчетностью");
 
         showReport.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                 window.setVisible(true);
+                 buchWindow.setVisible(true);
             }
         });
+        reportActions.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                addReportActionWindow.setVisible(true);
+            }
+        });
+
         buchMenu.add(showReport);
+        buchMenu.add(reportActions);
         add(buchMenu);
     }
 }

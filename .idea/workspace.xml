@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f472e995-df61-42ae-8414-1c8362a6c99e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java" afterPath="$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/GUI/BuchalteryWindow.java" afterPath="$PROJECT_DIR$/src/regularTech/GUI/BuchalteryWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/GUI/JBuchTable.java" afterPath="$PROJECT_DIR$/src/regularTech/GUI/JBuchTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/GUI/buchalteryModel.java" afterPath="$PROJECT_DIR$/src/regularTech/GUI/buchalteryModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" afterPath="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -45,23 +43,9 @@
         <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/BuchalteryWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminMenuBar.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5741556" vertical-offset="0" max-vertical-offset="681">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#566#743#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,11 +55,38 @@
         <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/JBuchTable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#434#435#0" expanded="true" />
                 <element signature="e#467#468#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminMenuBar.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6989721" vertical-offset="0" max-vertical-offset="731">
+              <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1011#1202#0" expanded="true" />
+                <element signature="e#1191#1192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportActionWindow.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding>
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,12 +105,14 @@
       <file leaf-file-name="reportDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="918">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#742#752#0" expanded="true" />
-                <marker date="1399263017322" expanded="true" signature="878:908" placeholder="SELECT * FRO..finantial_report..." />
+                <element signature="initializer##0;class#reportDAO#0" expanded="false" />
+                <element signature="method#listObjects#0;class#reportDAO#0" expanded="false" />
+                <element signature="e#743#753#0" expanded="true" />
+                <marker date="1399264799980" expanded="true" signature="879:909" placeholder="SELECT * FRO..finantial_report..." />
               </folding>
             </state>
           </provider>
@@ -109,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/src/regularTech/officeObjects/officeObject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -171,10 +184,11 @@
         <option value="$PROJECT_DIR$/src/regularTech/SQL/OfficeObjectType.java" />
         <option value="$PROJECT_DIR$/src/regularTech/SQL/OfficeObject.java" />
         <option value="$PROJECT_DIR$/src/regularTech/SQL/ConnectionManager.java" />
-        <option value="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" />
         <option value="$PROJECT_DIR$/src/regularTech/GUI/BuchalteryWindow.java" />
         <option value="$PROJECT_DIR$/src/regularTech/GUI/JBuchTable.java" />
         <option value="$PROJECT_DIR$/src/regularTech/GUI/buchalteryModel.java" />
+        <option value="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" />
+        <option value="$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java" />
         <option value="$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java" />
       </list>
     </option>
@@ -635,12 +649,12 @@
       <workItem from="1398532929886" duration="1479000" />
       <workItem from="1398576970897" duration="2467000" />
       <workItem from="1398777259741" duration="12436000" />
-      <workItem from="1398842559267" duration="14318000" />
+      <workItem from="1398842559267" duration="15254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88551000" />
+    <option name="totallyTimeSpent" value="89487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-170" width="1936" height="1096" extended-state="6" />
@@ -720,14 +734,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="425">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/regularTech/GraphPane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="799">
@@ -1035,22 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/OfficeObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GraphPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="1326">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/buchalteryModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8267254" vertical-offset="219" max-vertical-offset="1156">
@@ -1081,22 +1071,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/BuchalteryWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="918">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#742#752#0" expanded="true" />
-            <marker date="1399263017322" expanded="true" signature="878:908" placeholder="SELECT * FRO..finantial_report..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/regularTech/GraphPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="1326">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/regularTech/officeObjects/officeObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#reportDAO#0" expanded="false" />
+            <element signature="method#listObjects#0;class#reportDAO#0" expanded="false" />
+            <element signature="e#743#753#0" expanded="true" />
+            <marker date="1399264799980" expanded="true" signature="879:909" placeholder="SELECT * FRO..finantial_report..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/OfficeObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1104,7 +1122,7 @@
     <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/JBuchTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#434#435#0" expanded="true" />
@@ -1113,24 +1131,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/BuchalteryWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="612">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5741556" vertical-offset="0" max-vertical-offset="681">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.6989721" vertical-offset="0" max-vertical-offset="731">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#566#743#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#1011#1202#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
           </folding>
         </state>
       </provider>
