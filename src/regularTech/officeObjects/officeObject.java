@@ -20,7 +20,6 @@ public abstract class officeObject extends graphObject implements baseActions {
     protected static final Integer ON_DIAGNOSTIC = 3;
     protected static final Integer BREAKED = 4;
 
-
     public officeObject() {
         this.description = "no_description";
         this.name = "no_name";

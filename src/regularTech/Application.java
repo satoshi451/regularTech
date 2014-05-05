@@ -95,7 +95,6 @@ public class Application extends JFrame {
                     }
                         currentUser = loginInput.getText();
                     }
-
             }
         };
 
