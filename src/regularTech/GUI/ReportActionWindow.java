@@ -8,7 +8,8 @@ import javax.swing.*;
  * TIME: 11:51
  */
 public class ReportActionWindow extends JFrame{
-    public ReportActionWindow(String s){
-        super(s);
+    public ReportActionWindow(String capture){
+        super(capture);
+
     }
 }

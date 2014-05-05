@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f472e995-df61-42ae-8414-1c8362a6c99e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java" afterPath="$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" afterPath="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java" afterPath="$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java" />
     </list>
     <ignored path="regularTech.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminMenuBar.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AdminMenuBar.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6989721" vertical-offset="0" max-vertical-offset="731">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
               <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -79,15 +76,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReportActionWindow.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ReportActionWindow.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding>
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#258#259#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.2496329" vertical-offset="0" max-vertical-offset="681">
+              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -188,8 +182,8 @@
         <option value="$PROJECT_DIR$/src/regularTech/GUI/JBuchTable.java" />
         <option value="$PROJECT_DIR$/src/regularTech/GUI/buchalteryModel.java" />
         <option value="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" />
-        <option value="$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java" />
         <option value="$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java" />
+        <option value="$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java" />
       </list>
     </option>
   </component>
@@ -649,12 +643,12 @@
       <workItem from="1398532929886" duration="1479000" />
       <workItem from="1398576970897" duration="2467000" />
       <workItem from="1398777259741" duration="12436000" />
-      <workItem from="1398842559267" duration="15254000" />
+      <workItem from="1398842559267" duration="15468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89487000" />
+    <option name="totallyTimeSpent" value="89701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-170" width="1936" height="1096" extended-state="6" />
@@ -1131,26 +1125,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6989721" vertical-offset="0" max-vertical-offset="731">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
           <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1011#1202#0" expanded="true" />
             <element signature="e#1191#1192#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2496329" vertical-offset="0" max-vertical-offset="681">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
