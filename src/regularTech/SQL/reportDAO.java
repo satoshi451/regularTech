@@ -25,7 +25,7 @@ public class reportDAO {
 
     private static Connection con;
 
-    public static List<Object[]> listObjects() {
+    public static List<Object[]> listReportObject() {
         List<Object[]> result = new LinkedList<Object[]>();
 
         try {
@@ -34,9 +34,28 @@ public class reportDAO {
             PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             while (rs.next()){
-                System.out.println(rs.getString(1) + " " + rs.getString(2) + " " + rs.getString(3) + " " + rs.getInt(4) + " " +  rs.getDate(5));
+               // System.out.println(rs.getString(1) + " " + rs.getString(2) + " " + rs.getString(3) + " " + rs.getInt(4) + " " +  rs.getDate(5));
                 result.add(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getInt(4), rs.getDate(5)});
 
+            }
+            con.close();
+        }catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+        };
+        return result;
+    }
+    public static List<String> listAll(){
+        List<String> result = new LinkedList<String>();
+
+        try {
+            con = DriverManager.getConnection(url, accessLogin, accessPassword);
+            String sql = "SELECT name FROM office_oject";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                result.add(rs.getString(1));
             }
             con.close();
         }catch (SQLException e) {
