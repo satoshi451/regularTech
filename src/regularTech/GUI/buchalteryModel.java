@@ -2,8 +2,7 @@ package regularTech.GUI;
 
 import regularTech.SQL.reportDAO;
 
-import javax.swing.event.TableModelListener;
-import javax.swing.table.TableModel;
+import javax.swing.table.AbstractTableModel;
 import java.util.List;
 
 /**
@@ -11,7 +10,7 @@ import java.util.List;
  * DATE: 30.04.2014
  * TIME: 16:22
  */
-public class buchalteryModel implements TableModel {
+public class buchalteryModel extends AbstractTableModel {
     private int rowCount;
     private int columnCount;
     private String[] headers = {"Office object", "Type", "Deal", "Cost", "Date"};
@@ -19,9 +18,10 @@ public class buchalteryModel implements TableModel {
     private List<Object[]> data;
 
     public buchalteryModel() {
+        super();
         data = reportDAO.listObjects();
-        this.columnCount = data.size();
-        this.rowCount = 5;
+        this.columnCount = 5;
+        this.rowCount = data.size();
     }
 
     @Override
@@ -41,7 +41,7 @@ public class buchalteryModel implements TableModel {
 
     @Override
     public Class getColumnClass(int i) {
-        return getValueAt(0, i).getClass();
+        return Object.class;//getValueAt(0, i).getClass();
     }
 
     @Override
@@ -59,13 +59,4 @@ public class buchalteryModel implements TableModel {
 
     }
 
-    @Override
-    public void addTableModelListener(TableModelListener tableModelListener) {
-
-    }
-
-    @Override
-    public void removeTableModelListener(TableModelListener tableModelListener) {
-
-    }
 }

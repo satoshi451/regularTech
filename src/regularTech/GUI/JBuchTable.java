@@ -12,7 +12,9 @@ public class JBuchTable extends JTable {
     private TableModel tblModel;
 
     public JBuchTable() {
+        super();
         this.tblModel = new buchalteryModel();
+        this.setModel(tblModel);
     }
 
     public JBuchTable(TableModel tableModel) {

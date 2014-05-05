@@ -26,6 +26,5 @@ public class BuchalteryWindow extends JFrame{
         setBounds(100, 150, width, height);
         setAlwaysOnTop(true);
         setVisible(true);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 }
