@@ -30,6 +30,8 @@ public class ConnectionManager {
             String username = Login;
             String password = Password;
 
+            System.out.println(url);
+
             String DBPassword = "Ns5(!11PLus";
             String DBUser = "root";
             connection = DriverManager.getConnection(url, DBUser, DBPassword);

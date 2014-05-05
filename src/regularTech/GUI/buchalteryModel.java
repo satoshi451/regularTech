@@ -1,6 +1,6 @@
 package regularTech.GUI;
 
-import regularTech.SQL.OfficeObject;
+import regularTech.SQL.reportDAO;
 
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
@@ -14,14 +14,14 @@ import java.util.List;
 public class buchalteryModel implements TableModel {
     private int rowCount;
     private int columnCount;
-    private String[] headers = {"","",""};
+    private String[] headers = {"Office object", "Type", "Deal", "Cost", "Date"};
 
     private List<Object[]> data;
 
     public buchalteryModel() {
-        data = OfficeObject.listObjects();
+        data = reportDAO.listObjects();
         this.columnCount = data.size();
-        this.rowCount = 2;
+        this.rowCount = 5;
     }
 
     @Override
@@ -51,7 +51,7 @@ public class buchalteryModel implements TableModel {
 
     @Override
     public Object getValueAt(int i, int i2) {
-        return null;
+        return data.get(i)[i2];
     }
 
     @Override
