@@ -31,6 +31,7 @@ public class StatusBar extends JPanel{
                                         textColor = Color.RED;
                                         break;
         }
+        repaint();
     }
 
     public status getStatus() {
