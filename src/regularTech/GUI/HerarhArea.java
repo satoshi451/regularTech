@@ -24,4 +24,14 @@ public class HerarhArea extends JPanel{
         add(searchBar, BorderLayout.NORTH);
         add(new JScrollPane(officeObjectList), BorderLayout.CENTER);
     }
+
+    public ListSelectionModel getSelectionModel(){
+        return officeObjectList.getSelectionModel();
+    }
+
+    public Integer getCurElemId() {
+        String selectedValue = (String) officeObjectList.getSelectedValue();
+        Integer id = officeObjectList.getIdByValue(selectedValue);
+        return id;
+    }
 }

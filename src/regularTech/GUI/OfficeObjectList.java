@@ -1,5 +1,6 @@
 package regularTech.GUI;
 
+import regularTech.Pair;
 import regularTech.SQL.reportDAO;
 
 import javax.swing.*;
@@ -13,21 +14,15 @@ import java.util.List;
  */
 public class OfficeObjectList extends JList{
     private DefaultListModel model;
-    private List<String> data;
+    private List<Pair<Integer, String>> data;
 
     public OfficeObjectList() {
         super();
         data = reportDAO.listAll();
         rebuildList();
         this.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-
     }
 
-    private void initList() {
-        for(String curElem : data) {
-            model.addElement(curElem);
-        }
-    }
     public void filterList(String pattern){
         data = reportDAO.listAll();
 
@@ -35,10 +30,10 @@ public class OfficeObjectList extends JList{
             rebuildList();
             return;
         }
-        List<String> newData = new LinkedList<String>();
+        List<Pair<Integer, String>> newData = new LinkedList<Pair<Integer, String>>();
 
-        for (String listElem : data)
-            if(listElem.contains(pattern))
+        for (Pair<Integer, String> listElem : data)
+            if(listElem.getSecond().contains(pattern))
                 newData.add(listElem);
 
         this.data = newData;
@@ -46,8 +41,18 @@ public class OfficeObjectList extends JList{
     }
     private void rebuildList(){
         model = new OfficeObjectListModel(data);
-        initList();
+        for (Pair<Integer, String> listElem : data)
+            model.addElement(listElem.getSecond());
+
         setModel(model);
         repaint();
+    }
+
+    public Integer getIdByValue(String selectedValue) {
+        for(Pair<Integer, String> curElem : data)
+            if(curElem.getSecond().equals(selectedValue))
+                return curElem.getFirst();
+
+        return null;
     }
 }

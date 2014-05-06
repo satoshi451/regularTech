@@ -1,5 +1,7 @@
 package regularTech.GUI;
 
+import regularTech.Pair;
+
 import javax.swing.*;
 import java.util.List;
 
@@ -9,9 +11,9 @@ import java.util.List;
  * TIME: 15:45
  */
 public class OfficeObjectListModel extends DefaultListModel {
-    private List<String> data;
+    private  List<Pair<Integer, String>> data;
 
-    public OfficeObjectListModel(List<String> data) {
+    public OfficeObjectListModel(List<Pair<Integer, String>> data) {
         super();
         this.data = data;
     }

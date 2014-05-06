@@ -1,6 +1,8 @@
 package regularTech.GUI;
 
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 
 /**
@@ -11,7 +13,7 @@ import java.awt.*;
 public class ReportActionWindow extends JFrame{
 
     private ActionArea actionArea;
-    private JPanel herarhArea;
+    private HerarhArea herarhArea;
 
     public ReportActionWindow(String capture){
         super(capture);
@@ -21,6 +23,15 @@ public class ReportActionWindow extends JFrame{
 
         herarhArea = new HerarhArea();
         actionArea = new ActionArea();
+
+        ListSelectionModel listSelectionModel = herarhArea.getSelectionModel();
+        listSelectionModel.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent listSelectionEvent) {
+                Integer curElemId = herarhArea.getCurElemId();
+                actionArea.setObjectId(curElemId);
+            }
+        });
 
         add(herarhArea, BorderLayout.WEST);
         add(actionArea, BorderLayout.EAST);
