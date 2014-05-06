@@ -1,5 +1,7 @@
 package regularTech.SQL;
 
+import regularTech.Pair;
+
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
@@ -46,16 +48,16 @@ public class reportDAO {
         };
         return result;
     }
-    public static List<String> listAll(){
-        List<String> result = new LinkedList<String>();
+    public static List<Pair<Integer, String>> listAll(){
+        List<Pair<Integer, String>> result = new LinkedList<Pair<Integer, String>>();
 
         try {
             con = DriverManager.getConnection(url, accessLogin, accessPassword);
-            String sql = "SELECT name FROM office_oject";
+            String sql = "SELECT id, name FROM office_oject";
             PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             while (rs.next()){
-                result.add(rs.getString(1));
+                result.add(new Pair(rs.getInt(1),rs.getString(2)));
             }
             con.close();
         }catch (SQLException e) {
