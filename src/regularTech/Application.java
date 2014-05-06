@@ -86,8 +86,8 @@ public class Application extends JFrame {
                 }
                 else{
                     Pair<Boolean, Boolean> result = getAuthorise();
-                    if(result.first == true){
-                        if(result.second == true)
+                    if(result.getFirst() == true){
+                        if(result.getSecond() == true)
                             mainWindows = new AdminGUI("Admin main window");
                         else
                             mainWindows = new regularGUI("Regular user main window");
