@@ -19,6 +19,8 @@ public class OfficeObjectList extends JList{
         super();
         data = reportDAO.listAll();
         rebuildList();
+        this.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+
     }
 
     private void initList() {

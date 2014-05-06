@@ -62,7 +62,7 @@ public class reportDAO {
             e.printStackTrace();
         }
         finally {
-        };
+        }
         return result;
     }
 }

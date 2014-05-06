@@ -45,7 +45,7 @@ public class SearchBar extends JPanel implements ActionListener{
         inputSearchText.setPreferredSize(inputTextDimension);
         searchButton.setPreferredSize(searchButtonDimension);
 
-        //TODO: change action to runtime-typed symbol
+        // TODO: change action to runtime-typed symbol
         inputSearchText.addActionListener(this);
         searchButton.addActionListener(this);
         inputSearchText.addKeyListener(keyAdapter);

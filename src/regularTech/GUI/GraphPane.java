@@ -1,4 +1,4 @@
-package regularTech;
+package regularTech.GUI;
 
 import regularTech.GUI.AddRoomJDialog;
 import regularTech.graphical.Room;

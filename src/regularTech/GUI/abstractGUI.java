@@ -1,7 +1,5 @@
 package regularTech.GUI;
 
-import regularTech.GraphPane;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
