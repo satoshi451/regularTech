@@ -14,6 +14,7 @@ public class ReportActionWindow extends JFrame{
 
     private ActionArea actionArea;
     private HerarhArea herarhArea;
+    private Object[] currentObject;
 
     public ReportActionWindow(String capture){
         super(capture);
@@ -36,7 +37,7 @@ public class ReportActionWindow extends JFrame{
         add(herarhArea, BorderLayout.WEST);
         add(actionArea, BorderLayout.EAST);
 
-        setBounds(100, 100, 600, 400);
+        setBounds(100, 100, 800, 500);
         setResizable(false);
     }
 }
