@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f472e995-df61-42ae-8414-1c8362a6c99e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java" afterPath="$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" afterPath="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="regularTech.iws" />
@@ -89,10 +90,16 @@
       <file leaf-file-name="ActionArea.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8161435" vertical-offset="780" max-vertical-offset="2601">
-              <caret line="78" column="54" selection-start-line="78" selection-start-column="54" selection-end-line="78" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.68908817" vertical-offset="2089" max-vertical-offset="3672">
+              <caret line="150" column="181" selection-start-line="150" selection-start-column="181" selection-end-line="150" selection-end-column="181" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3815#6312#0" expanded="true" />
+                <element signature="e#5116#5394#0" expanded="true" />
+                <element signature="e#5375#5376#0" expanded="true" />
+                <element signature="e#5438#5661#0" expanded="true" />
+                <element signature="e#5642#5643#0" expanded="true" />
+                <element signature="e#6301#6302#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,13 +108,13 @@
       <file leaf-file-name="reportDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1564">
-              <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="848" max-vertical-offset="1632">
+              <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
               <folding>
                 <element signature="e#1679#1702#0" expanded="true" />
-                <marker date="1399444812838" expanded="true" signature="948:978" placeholder="SELECT * FRO..finantial_report..." />
-                <marker date="1399444812838" expanded="true" signature="1828:1861" placeholder="SELECT id, n..office_oject..." />
-                <marker date="1399444812838" expanded="true" signature="2462:2524" placeholder="SELECT name,..office_oject..." />
+                <marker date="1399471969341" expanded="true" signature="948:978" placeholder="SELECT * FRO..finantial_report..." />
+                <marker date="1399471969341" expanded="true" signature="1828:1861" placeholder="SELECT id, n..office_oject..." />
+                <marker date="1399471969341" expanded="true" signature="2462:2524" placeholder="SELECT name,..office_oject..." />
               </folding>
             </state>
           </provider>
@@ -169,8 +176,8 @@
         <option value="$PROJECT_DIR$/src/regularTech/GUI/HerarhArea.java" />
         <option value="$PROJECT_DIR$/src/regularTech/GUI/OfficeObjectList.java" />
         <option value="$PROJECT_DIR$/src/regularTech/SQL/OfficeObjectModel.java" />
-        <option value="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" />
         <option value="$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java" />
+        <option value="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" />
         <option value="$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java" />
       </list>
     </option>
@@ -676,12 +683,12 @@
       <workItem from="1398777259741" duration="12436000" />
       <workItem from="1398842559267" duration="14318000" />
       <workItem from="1399265928955" duration="19223000" />
-      <workItem from="1399378601833" duration="23766000" />
+      <workItem from="1399378601833" duration="28363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131540000" />
+    <option name="totallyTimeSpent" value="136137000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -826,7 +833,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java</url>
-          <line>114</line>
+          <line>177</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
@@ -837,7 +844,7 @@
           <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="55" />
+      <option name="time" value="56" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1181,19 +1188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1564">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-          <folding>
-            <element signature="e#1679#1702#0" expanded="true" />
-            <marker date="1399444812838" expanded="true" signature="948:978" placeholder="SELECT * FRO..finantial_report..." />
-            <marker date="1399444812838" expanded="true" signature="1828:1861" placeholder="SELECT id, n..office_oject..." />
-            <marker date="1399444812838" expanded="true" signature="2462:2524" placeholder="SELECT name,..office_oject..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8255132" vertical-offset="15" max-vertical-offset="782">
@@ -1246,12 +1240,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="848" max-vertical-offset="1632">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+          <folding>
+            <element signature="e#1679#1702#0" expanded="true" />
+            <marker date="1399471969341" expanded="true" signature="948:978" placeholder="SELECT * FRO..finantial_report..." />
+            <marker date="1399471969341" expanded="true" signature="1828:1861" placeholder="SELECT id, n..office_oject..." />
+            <marker date="1399471969341" expanded="true" signature="2462:2524" placeholder="SELECT name,..office_oject..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8161435" vertical-offset="780" max-vertical-offset="2601">
-          <caret line="78" column="54" selection-start-line="78" selection-start-column="54" selection-end-line="78" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.68908817" vertical-offset="2089" max-vertical-offset="3672">
+          <caret line="150" column="181" selection-start-line="150" selection-start-column="181" selection-end-line="150" selection-end-column="181" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3815#6312#0" expanded="true" />
+            <element signature="e#5116#5394#0" expanded="true" />
+            <element signature="e#5375#5376#0" expanded="true" />
+            <element signature="e#5438#5661#0" expanded="true" />
+            <element signature="e#5642#5643#0" expanded="true" />
+            <element signature="e#6301#6302#0" expanded="true" />
           </folding>
         </state>
       </provider>

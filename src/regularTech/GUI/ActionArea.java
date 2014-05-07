@@ -6,6 +6,8 @@ import regularTech.SQL.reportDAO;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -54,7 +56,7 @@ public class ActionArea extends JPanel{
         GridBagConstraints c = new GridBagConstraints();
 
         capture = new JLabel("Выберите объект");
-        c.fill = GridBagConstraints.HORIZONTAL;
+        c.fill = GridBagConstraints.BOTH;
         c.gridx = 0;
         c.gridy = 0;
       //  c.gridwidth = 2;
@@ -76,28 +78,89 @@ public class ActionArea extends JPanel{
         c.gridwidth = 1;
         add(description, c);
 
-        JButton minBtn = new JButton("Провсти операцию");
+        JButton minBtn = new JButton("Провести операцию");
         c.gridx = 1;
         c.gridy = 3;
         add(minBtn, c);
 
-        JComboBox operationType = new JComboBox();
-        operationType.addItem("buy");
-        operationType.addItem("sell");
-        operationType.addItem("fix");
+        final JComboBox operationType = new JComboBox();
+        operationType.addItem("покупка");
+        operationType.addItem("продажа");
+        operationType.addItem("ремонт");
         c.gridx = 2;
         c.gridy = 3;
         add(operationType, c);
 
-        JTextField inputCosts = new JTextField();
+        final JTextField inputCosts = new JTextField();
         inputCosts.setPreferredSize(new Dimension(50, 30));
         inputCosts.setToolTipText("Введите сумму операции");
         c.gridx = 3;
         c.gridy = 3;
         add(inputCosts, c);
 
+        ActionListener actionListener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                final JDialog acceptWindow = new JDialog();
+                acceptWindow.setLayout(new FlowLayout());
+                Integer listIndex = operationType.getSelectedIndex();
+                switch (listIndex){
+                    // buy
+                    case 1:
+                        break;
+                    // sell
+                    case 2:
+                        break;
+                    // fix
+                    case 3:
+                        break;
+                }
+                Integer costs;
+                try {
+                    costs = Integer.valueOf(inputCosts.getText());
+                }catch (NumberFormatException e){
+                    costs = 0;
+                    inputCosts.setText("");
+                }
+                String costTip = "На сумму: " + costs;
+
+                JPanel bottom = new JPanel();
+                bottom.setLayout(new FlowLayout());
+
+                // FIXME: windows must destroy after hide!!!
+                JButton agree  = new JButton("Подтвердить");
+                JButton cancel = new JButton("Отменить");
+                final Integer finalCosts = costs;
+                agree.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent actionEvent) {
+                        reportDAO.createNewReport(curentObject, operationType.getSelectedIndex(), finalCosts);
+                    }
+                });
+                cancel.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent actionEvent) {
+                        acceptWindow.setVisible(false);
+                    }
+                });
+
+                bottom.add(agree);
+                bottom.add(cancel);
 
 
+                acceptWindow.add(new JLabel("Вы хотите совершить операцию '" + operationType.getSelectedItem().toString() + "' над объектом '" + String.valueOf(curentObject[0]) + "'"));
+                acceptWindow.add(new JLabel(costTip));
+                acceptWindow.add(bottom);
+
+                acceptWindow.setBounds(200, 120, 500, 200);
+                acceptWindow.setTitle("Подтверждение операции");
+                acceptWindow.setModal(true);
+                acceptWindow.setVisible(true);
+                acceptWindow.setResizable(false);
+            }
+        };
+        inputCosts.addActionListener(actionListener);
+        minBtn.addActionListener(actionListener);
 
     }
     public void setObjectId(Integer objectId) {
