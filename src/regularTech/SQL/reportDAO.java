@@ -45,7 +45,7 @@ public class reportDAO {
             e.printStackTrace();
         }
         finally {
-        };
+        }
         return result;
     }
     public static List<Pair<Integer, String>> listAll(){
@@ -58,6 +58,26 @@ public class reportDAO {
             ResultSet rs = ps.executeQuery();
             while (rs.next()){
                 result.add(new Pair(rs.getInt(1),rs.getString(2)));
+            }
+            con.close();
+        }catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+        }
+        return result;
+    }
+
+    public static Object[] getOfficeObject(Integer objectId) {
+        Object[] result = null;
+
+        try {
+            con = DriverManager.getConnection(url, accessLogin, accessPassword);
+            String sql = "SELECT name, office_oject_type_id FROM office_oject WHERE id = ".concat(objectId.toString());
+            PreparedStatement ps = con.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()){
+                result = new Object[]{rs.getString(1), rs.getInt(2)};
             }
             con.close();
         }catch (SQLException e) {
