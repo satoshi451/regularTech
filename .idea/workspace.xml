@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f472e995-df61-42ae-8414-1c8362a6c99e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/img/computer.png" afterPath="$PROJECT_DIR$/src/regularTech/img/computer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/img/monitor.png" afterPath="$PROJECT_DIR$/src/regularTech/img/monitor.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/img/table.png" afterPath="$PROJECT_DIR$/src/regularTech/img/table.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java" afterPath="$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/SQL/OfficeObjectModel.java" afterPath="$PROJECT_DIR$/src/regularTech/SQL/OfficeObjectModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java" afterPath="$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" afterPath="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="regularTech.iws" />
@@ -43,58 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdminGUI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graphObject.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/regularTech/graphical/graphObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminMenuBar.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="799">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="e#781#962#0" expanded="true" />
-                <element signature="e#951#952#0" expanded="true" />
-                <element signature="e#1005#1196#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReportActionWindow.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="782">
-              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-              <folding>
-                <element signature="e#777#1044#0" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HerarhArea.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/HerarhArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="731">
+            <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="731">
               <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -140,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionArea.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ActionArea.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="950" max-vertical-offset="1785">
-              <caret line="94" column="85" selection-start-line="94" selection-start-column="85" selection-end-line="94" selection-end-column="85" />
+            <state vertical-scroll-proportion="0.8161435" vertical-offset="780" max-vertical-offset="2601">
+              <caret line="78" column="54" selection-start-line="78" selection-start-column="54" selection-end-line="78" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reportDAO.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="reportDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47653958" vertical-offset="882" max-vertical-offset="1564">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1564">
+              <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
               <folding>
                 <element signature="e#1679#1702#0" expanded="true" />
                 <marker date="1399444812838" expanded="true" signature="948:978" placeholder="SELECT * FRO..finantial_report..." />
@@ -224,8 +170,8 @@
         <option value="$PROJECT_DIR$/src/regularTech/GUI/OfficeObjectList.java" />
         <option value="$PROJECT_DIR$/src/regularTech/SQL/OfficeObjectModel.java" />
         <option value="$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java" />
-        <option value="$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java" />
         <option value="$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java" />
+        <option value="$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java" />
       </list>
     </option>
   </component>
@@ -730,12 +676,12 @@
       <workItem from="1398777259741" duration="12436000" />
       <workItem from="1398842559267" duration="14318000" />
       <workItem from="1399265928955" duration="19223000" />
-      <workItem from="1399378601833" duration="14498000" />
+      <workItem from="1399378601833" duration="23766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122272000" />
+    <option name="totallyTimeSpent" value="131540000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -781,7 +727,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18869936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18869936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2642487" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -880,7 +826,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java</url>
-          <line>66</line>
+          <line>114</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
@@ -1158,14 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/graphical/graphObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/StatusBar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30307466" vertical-offset="116" max-vertical-offset="816">
@@ -1222,27 +1160,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="799">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#781#962#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#1005#1196#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/regularTech/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2159">
@@ -1250,18 +1167,6 @@
           <folding>
             <element signature="e#2112#3017#0" expanded="true" />
             <element signature="e#3006#3007#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/HerarhArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="731">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1276,20 +1181,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java">
+    <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="950" max-vertical-offset="1785">
-          <caret line="94" column="85" selection-start-line="94" selection-start-column="85" selection-end-line="94" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1564">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1679#1702#0" expanded="true" />
+            <marker date="1399444812838" expanded="true" signature="948:978" placeholder="SELECT * FRO..finantial_report..." />
+            <marker date="1399444812838" expanded="true" signature="1828:1861" placeholder="SELECT id, n..office_oject..." />
+            <marker date="1399444812838" expanded="true" signature="2462:2524" placeholder="SELECT name,..office_oject..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="782">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.8255132" vertical-offset="15" max-vertical-offset="782">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
           <folding>
             <element signature="e#777#1044#0" expanded="true" />
             <element signature="e#1033#1034#0" expanded="true" />
@@ -1297,15 +1205,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/reportDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47653958" vertical-offset="882" max-vertical-offset="1564">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.60117304" vertical-offset="117" max-vertical-offset="799">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
           <folding>
-            <element signature="e#1679#1702#0" expanded="true" />
-            <marker date="1399444812838" expanded="true" signature="948:978" placeholder="SELECT * FRO..finantial_report..." />
-            <marker date="1399444812838" expanded="true" signature="1828:1861" placeholder="SELECT id, n..office_oject..." />
-            <marker date="1399444812838" expanded="true" signature="2462:2524" placeholder="SELECT name,..office_oject..." />
+            <element signature="e#781#962#0" expanded="false" />
+            <element signature="e#951#952#0" expanded="false" />
+            <element signature="e#1005#1196#0" expanded="false" />
+            <element signature="e#1185#1186#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/regularTech/graphical/graphObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29912025" vertical-offset="0" max-vertical-offset="682">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.398827" vertical-offset="0" max-vertical-offset="682">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/HerarhArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="731">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8161435" vertical-offset="780" max-vertical-offset="2601">
+          <caret line="78" column="54" selection-start-line="78" selection-start-column="54" selection-end-line="78" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

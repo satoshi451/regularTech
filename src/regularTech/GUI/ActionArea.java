@@ -5,6 +5,7 @@ import regularTech.SQL.reportDAO;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -29,29 +30,76 @@ public class ActionArea extends JPanel{
     private BufferedImage pict;
     private JLabel capture;
 
-    public ActionArea() {
-        super();
-        // TODO: change full path to relative
+    // TODO: change full path to relative
+    // JLabel lblImage = new JLabel(new ImageIcon(getClass().getResource("/image.png")));
+    static {
         try {
-            this.computerImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\computer.png"));
-            this.tableImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\table.png"));
-            this.commonImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\common.png"));
-            this.monitorImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\monitor.png"));
-            this.laptopImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\laptop.png"));
-            this.routerImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\router.png"));
-            this.printerImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\printer.png"));
+            computerImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\computer.png"));
+            tableImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\table.png"));
+            commonImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\common.png"));
+            monitorImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\monitor.png"));
+            laptopImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\laptop.png"));
+            routerImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\router.png"));
+            printerImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\printer.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
-        capture = new JLabel();
+    public ActionArea() {
+        super();
+        LayoutManager lm = new GridBagLayout();
+        setLayout(lm);
+        pict = ActionArea.commonImg;
+        GridBagConstraints c = new GridBagConstraints();
+
+        capture = new JLabel("Выберите объект");
+        c.fill = GridBagConstraints.HORIZONTAL;
+        c.gridx = 0;
+        c.gridy = 0;
+      //  c.gridwidth = 2;
+      //  c.gridheight = 1;
+        add(capture, c);
+
         imageLabel = new JLabel();
-        add(capture);
-        add(imageLabel);
+        c.gridx = 0;
+        c.gridy = 1;
+        c.gridwidth = 2;
+        add(imageLabel, c);
+
+        JTextArea description = new JTextArea("Описание объекта. Здесь должно быть красивое, душевное описание того, что это за объект");//"Описание объекта. Здесь должно быть красивое, душевное описание того, что это за объект. Возможно, Вы захотите добавить его характеристики и кому он приналежит.");
+        description.setSize(new Dimension(200, 100));
+        description.setLineWrap(true);
+        description.setEnabled(false);
+        c.gridx = 2;
+        c.gridy = 1;
+        c.gridwidth = 1;
+        add(description, c);
+
+        JButton minBtn = new JButton("Провсти операцию");
+        c.gridx = 1;
+        c.gridy = 3;
+        add(minBtn, c);
+
+        JComboBox operationType = new JComboBox();
+        operationType.addItem("buy");
+        operationType.addItem("sell");
+        operationType.addItem("fix");
+        c.gridx = 2;
+        c.gridy = 3;
+        add(operationType, c);
+
+        JTextField inputCosts = new JTextField();
+        inputCosts.setPreferredSize(new Dimension(50, 30));
+        inputCosts.setToolTipText("Введите сумму операции");
+        c.gridx = 3;
+        c.gridy = 3;
+        add(inputCosts, c);
+
+
 
 
     }
-
     public void setObjectId(Integer objectId) {
         this.objectId = objectId;
         initPanel();
