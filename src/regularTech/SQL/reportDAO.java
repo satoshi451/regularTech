@@ -87,4 +87,8 @@ public class reportDAO {
         }
         return result;
     }
+
+    public static void createNewReport(Object[] curentObject, int selectedIndex, Integer finalCosts) {
+
+    }
 }
