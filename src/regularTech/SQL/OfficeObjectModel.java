@@ -5,6 +5,6 @@ package regularTech.SQL;
  * DATE: 30.04.2014
  * TIME: 16:35
  */
-public class OfficeObject {
+public class OfficeObjectModel {
 
 }
