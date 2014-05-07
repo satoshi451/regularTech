@@ -35,7 +35,7 @@ public class ReportActionWindow extends JFrame{
         });
 
         add(herarhArea, BorderLayout.WEST);
-        add(actionArea, BorderLayout.EAST);
+        add(actionArea, BorderLayout.CENTER);
 
         setBounds(100, 100, 800, 500);
         setResizable(false);
