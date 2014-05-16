@@ -39,12 +39,12 @@ public class ActionArea extends JPanel{
             System.out.println(ActionArea.class.getResource(""));
 
             computerImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/computer.png"));
-            tableImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/table.png"));
-            commonImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/common.png"));
-            monitorImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/monitor.png"));
-            laptopImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/laptop.png"));
-            routerImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/router.png"));
-            printerImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/printer.png"));
+            tableImg    = ImageIO.read(ActionArea.class.getResource("/regularTech/img/table.png"));
+            commonImg   = ImageIO.read(ActionArea.class.getResource("/regularTech/img/common.png"));
+            monitorImg  = ImageIO.read(ActionArea.class.getResource("/regularTech/img/monitor.png"));
+            laptopImg   = ImageIO.read(ActionArea.class.getResource("/regularTech/img/laptop.png"));
+            routerImg   = ImageIO.read(ActionArea.class.getResource("/regularTech/img/router.png"));
+            printerImg  = ImageIO.read(ActionArea.class.getResource("/regularTech/img/printer.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -70,8 +70,8 @@ public class ActionArea extends JPanel{
         c.gridy = 1;
         c.gridwidth = 2;
         add(imageLabel, c);
-
-        JTextArea description = new JTextArea("Описание объекта. Здесь должно быть красивое, душевное описание того, что это за объект");//"Описание объекта. Здесь должно быть красивое, душевное описание того, что это за объект. Возможно, Вы захотите добавить его характеристики и кому он приналежит.");
+        // TODO: add description from DB
+        JTextArea description = new JTextArea("Описание объекта. Здесь должно быть красивое, душевное описание того, что это за объект"); //"Описание объекта. Здесь должно быть красивое, душевное описание того, что это за объект. Возможно, Вы захотите добавить его характеристики и кому он приналежит.");
         description.setSize(new Dimension(200, 100));
         description.setLineWrap(true);
         description.setEnabled(false);
