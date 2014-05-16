@@ -1,10 +1,9 @@
 package regularTech.graphical;
 
-import regularTech.officeObjects.officeObject;
+import regularTech.officeObjects.OfficeObject;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
-import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
@@ -14,15 +13,14 @@ import java.util.List;
  * DATE: 18.04.2014
  * TIME: 22:21
  */
-public class Room extends  graphObject{
+public class Room extends GraphObject {
     public static Image pict;
     private String name;
 
-    private List<officeObject> objects;
+    private List<OfficeObject> objects;
     static{
         try{
-            //TODO:change to classpath
-            pict = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\bin\\regularTech\\img\\room.png"));
+            pict = ImageIO.read(Room.class.getResource("/regularTech/img/room.png"));
         }catch (IOException e){
          //TODO: change printStackTrace to logger
             e.printStackTrace();
@@ -30,7 +28,7 @@ public class Room extends  graphObject{
     }
 
     public Room() {
-        objects = new LinkedList<officeObject>();
+        objects = new LinkedList<OfficeObject>();
     }
 
     public Room(String name) {
@@ -47,7 +45,7 @@ public class Room extends  graphObject{
         this.name = name;
     }
 
-    public void addObject(officeObject officeObject){
+    public void addObject(OfficeObject officeObject){
         this.objects.add(officeObject);
     }
 

@@ -1,7 +1,7 @@
 package regularTech.GUI;
 
 import regularTech.SQL.OfficeObjectModel;
-import regularTech.SQL.reportDAO;
+import regularTech.SQL.ReportDAO;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -9,7 +9,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 
 /**
@@ -28,7 +27,7 @@ public class ActionArea extends JPanel{
 
     private JLabel imageLabel;
     private Integer objectId;
-    private Object[] curentObject;
+    private OfficeObjectModel currentObject;
     private BufferedImage pict;
     private JLabel capture;
 
@@ -36,13 +35,16 @@ public class ActionArea extends JPanel{
     // JLabel lblImage = new JLabel(new ImageIcon(getClass().getResource("/image.png")));
     static {
         try {
-            computerImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\computer.png"));
-            tableImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\table.png"));
-            commonImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\common.png"));
-            monitorImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\monitor.png"));
-            laptopImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\laptop.png"));
-            routerImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\router.png"));
-            printerImg = ImageIO.read(new File("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\printer.png"));
+            System.out.println(ActionArea.class.getResource("/regularTech/img/computer.png"));
+            System.out.println(ActionArea.class.getResource(""));
+
+            computerImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/computer.png"));
+            tableImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/table.png"));
+            commonImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/common.png"));
+            monitorImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/monitor.png"));
+            laptopImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/laptop.png"));
+            routerImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/router.png"));
+            printerImg = ImageIO.read(ActionArea.class.getResource("/regularTech/img/printer.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -134,7 +136,7 @@ public class ActionArea extends JPanel{
                 agree.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent actionEvent) {
-                        reportDAO.createNewReport(curentObject, operationType.getSelectedIndex(), finalCosts);
+                        ReportDAO.createNewReport(currentObject, operationType.getSelectedIndex(), finalCosts);
                     }
                 });
                 cancel.addActionListener(new ActionListener() {
@@ -147,8 +149,8 @@ public class ActionArea extends JPanel{
                 bottom.add(agree);
                 bottom.add(cancel);
 
-
-                acceptWindow.add(new JLabel("Вы хотите совершить операцию '" + operationType.getSelectedItem().toString() + "' над объектом '" + String.valueOf(curentObject[0]) + "'"));
+                // FIXME: change to fields of class
+                acceptWindow.add(new JLabel("Вы хотите совершить операцию '" + operationType.getSelectedItem().toString() + "' над объектом '" + currentObject.getName() + "'"));
                 acceptWindow.add(new JLabel(costTip));
                 acceptWindow.add(bottom);
 
@@ -175,10 +177,10 @@ public class ActionArea extends JPanel{
          * add buttons: 'add costs'
          * add drop down list: buy, fix, sell
          */
-        this.curentObject = reportDAO.getOfficeObject(this.objectId);
-        String curName = String.valueOf(curentObject[0]);
+        this.currentObject = ReportDAO.getOfficeObject(this.objectId);
+        String curName = currentObject.getName();
         capture.setText(curName);
-        Integer curTypeId = (Integer)curentObject[1];
+        Integer curTypeId = currentObject.getOfficeObjectTypeId();
 
         switch (curTypeId) {
             case OfficeObjectModel.OFFICE_OBJECT_PC:
@@ -201,6 +203,8 @@ public class ActionArea extends JPanel{
                 break;
             case OfficeObjectModel.OFFICE_OBJECT_PRINTER:
                 this.pict = ActionArea.printerImg;
+                break;
+            default:
                 break;
         }
         imageLabel.setIcon(new ImageIcon(pict)); //= new JLabel(new ImageIcon(pict));

@@ -14,4 +14,25 @@ public class OfficeObjectModel {
     public static final int OFFICE_OBJECT_MONITOR   = 6;
     public static final int OFFICE_OBJECT_LAPTOP    = 7;
 
+    private Integer id;
+    private String name;
+    private Integer officeObjectTypeId;
+
+    public OfficeObjectModel(Integer id, String name, Integer officeObjectTypeId) {
+        this.id = id;
+        this.name = name;
+        this.officeObjectTypeId = officeObjectTypeId;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getOfficeObjectTypeId() {
+        return officeObjectTypeId;
+    }
 }

@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
  * DATE: 06.04.2014
  * TIME: 15:16
  */
-public class AdminMenuBar extends abstractMenuBar {
+public class AdminMenuBar extends AbstractMenuBar {
     private ReportActionWindow addReportActionWindow;
     private BuchalteryWindow buchWindow;
     public AdminMenuBar() {

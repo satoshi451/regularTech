@@ -7,7 +7,7 @@ import java.awt.*;
  * DATE: 06.04.2014
  * TIME: 15:10
  */
-public class AdminGUI extends abstractGUI{
+public class AdminGUI extends AbstractGUI {
 
     public AdminGUI(String capture) {
         super(capture);

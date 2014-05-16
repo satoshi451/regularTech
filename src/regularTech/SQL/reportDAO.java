@@ -11,7 +11,7 @@ import java.util.List;
  * DATE: 05.05.2014
  * TIME: 10:12
  */
-public class reportDAO {
+public class ReportDAO {
     private static String driverName;
     private static String accessLogin;
     private static String accessPassword;
@@ -37,7 +37,7 @@ public class reportDAO {
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next())
-                result.add(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getInt(4), rs.getDate(5)});\
+                result.add(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getInt(4), rs.getDate(5)});
 
             con.close();
         }catch (SQLException e) {

@@ -1,6 +1,6 @@
 package regularTech.GUI;
 
-import regularTech.SQL.reportDAO;
+import regularTech.SQL.ReportDAO;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.List;
@@ -10,16 +10,15 @@ import java.util.List;
  * DATE: 30.04.2014
  * TIME: 16:22
  */
-public class buchalteryModel extends AbstractTableModel {
+public class BuchalteryModel extends AbstractTableModel {
     private int rowCount;
     private int columnCount;
     private String[] headers = {"Office object", "Type", "Deal", "Cost", "Date"};
 
     private List<Object[]> data;
 
-    public buchalteryModel() {
-        super();
-        data = reportDAO.listReportObject();
+    public BuchalteryModel() {
+        data = ReportDAO.listReportObject();
         this.columnCount = 5;
         this.rowCount = data.size();
     }

@@ -13,7 +13,7 @@ public class JBuchTable extends JTable {
 
     public JBuchTable() {
         super();
-        this.tblModel = new buchalteryModel();
+        this.tblModel = new BuchalteryModel();
         this.setModel(tblModel);
     }
 

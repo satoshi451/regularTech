@@ -7,13 +7,11 @@ import java.awt.*;
  * DATE: 06.04.2014
  * TIME: 16:06
  */
-public class regularGUI extends abstractGUI {
+public class RegularGUI extends AbstractGUI {
 
-    public regularGUI(String capture) {
+    public RegularGUI(String capture) {
         super(capture);
-
-        menubar = new regularMenuBar();
-
+        menubar = new RegularMenuBar();
         add(menubar, BorderLayout.NORTH);
     }
 }

@@ -5,7 +5,7 @@ package regularTech.officeObjects;
  * DATE: 18.04.2014
  * TIME: 22:16
  */
-public class PC extends electronicObject implements electronicFunctions {
+public class PC extends ElectronicObject implements electronicFunctions {
 
 
     public PC() {

@@ -1,7 +1,7 @@
 package regularTech.GUI;
 
 import regularTech.Pair;
-import regularTech.SQL.reportDAO;
+import regularTech.SQL.ReportDAO;
 
 import javax.swing.*;
 import java.util.LinkedList;
@@ -18,13 +18,13 @@ public class OfficeObjectList extends JList{
 
     public OfficeObjectList() {
         super();
-        data = reportDAO.listAll();
+        data = ReportDAO.listAll();
         rebuildList();
         this.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
     }
 
     public void filterList(String pattern){
-        data = reportDAO.listAll();
+        data = ReportDAO.listAll();
 
         if(pattern.equals("")){
             rebuildList();

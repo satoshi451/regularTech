@@ -10,11 +10,11 @@ import java.awt.event.WindowEvent;
  * DATE: 06.04.2014
  * TIME: 14:45
  */
-public abstract class abstractGUI extends JFrame {
-    protected abstractMenuBar menubar;
+public abstract class AbstractGUI extends JFrame {
+    protected AbstractMenuBar menubar;
     protected GraphPane graphPane;
 
-    public abstractGUI(String capture) throws HeadlessException {
+    public AbstractGUI(String capture) throws HeadlessException {
         super(capture);
         this.setLayout(new BorderLayout());
 

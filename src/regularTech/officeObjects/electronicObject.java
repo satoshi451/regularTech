@@ -6,7 +6,7 @@ package regularTech.officeObjects;
  * TIME: 22:04
  */
 
-public abstract class electronicObject extends officeObject implements electronicFunctions {
+public abstract class ElectronicObject extends OfficeObject implements electronicFunctions {
 
 
 }

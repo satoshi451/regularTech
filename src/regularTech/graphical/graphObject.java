@@ -5,11 +5,11 @@ package regularTech.graphical;
  * DATE: 18.04.2014
  * TIME: 22:06
  */
-public class graphObject {
+public class GraphObject {
     protected Integer x;
     protected Integer y;
 
-    public graphObject() {
+    public GraphObject() {
     }
 
     public Integer getX() {

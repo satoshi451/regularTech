@@ -7,12 +7,9 @@ import javax.swing.*;
  * DATE: 06.04.2014
  * TIME: 16:08
  */
-public class regularMenuBar extends abstractMenuBar {
-    public regularMenuBar() {
-        super();
-
+public class RegularMenuBar extends AbstractMenuBar {
+    public RegularMenuBar() {
         JMenu userMenu = new JMenu("User menu");
-
         add(userMenu);
     }
 }

@@ -16,6 +16,8 @@ public class ConnectionManager {
 
     public static boolean getConnection(String ServerName, String Login, String Password) throws SQLException{
         Connection connection;
+        Statement stmt = null;
+        ResultSet rs = null;
         boolean isAdmin = false;
         try {
             // Название драйвера
@@ -32,17 +34,18 @@ public class ConnectionManager {
 
             System.out.println(url);
 
+            // TODO: Change to read from config file
             String DBPassword = "Ns5(!11PLus";
             String DBUser = "root";
             connection = DriverManager.getConnection(url, DBUser, DBPassword);
             System.out.println("is connect to DB" + connection);
 
-            String query = new String("Select isAdmin FROM appUsers where login = '").concat(username).concat("' and password = '").concat(password).concat("';");
+            String query = "Select isAdmin FROM appUsers where login = '".concat(username).concat("' and password = '").concat(password).concat("';");
             System.out.println(query);
 
-            Statement stmt = connection.createStatement();
+            stmt = connection.createStatement();
 
-            ResultSet rs = stmt.executeQuery(query);
+            rs = stmt.executeQuery(query);
             String dbtime = null;
             //System.out.println(rs.first());
 
@@ -50,15 +53,25 @@ public class ConnectionManager {
                 dbtime = rs.getString(1);
                 System.out.println(dbtime);
             }
-            if(dbtime.equals("1"))
-                isAdmin = true;
-            else
-                isAdmin = false;
+            if(dbtime != null) {
+                if (dbtime.equals("1"))
+                    isAdmin = true;
+                else
+                    isAdmin = false;
+            }
             connection.close();
-        } // end try
-        catch (ClassNotFoundException e) {
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
             // Could not find the database driver
+        } finally {
+            try {
+                if (stmt != null)
+                    stmt.close();
+                if (rs != null)
+                    rs.close();
+            } catch (Exception e){
+                // TODO: Add logger message
+            }
         }
 
         return isAdmin;

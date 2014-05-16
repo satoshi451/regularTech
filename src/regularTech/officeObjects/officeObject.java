@@ -1,6 +1,6 @@
 package regularTech.officeObjects;
 
-import regularTech.graphical.graphObject;
+import regularTech.graphical.GraphObject;
 
 import java.math.BigDecimal;
 
@@ -9,7 +9,7 @@ import java.math.BigDecimal;
  * DATE: 18.04.2014
  * TIME: 21:41
  */
-public abstract class officeObject extends graphObject implements baseActions {
+public abstract class OfficeObject extends GraphObject implements baseActions {
     protected String name;
     protected String description;
     protected BigDecimal IndentureNumber;
@@ -20,7 +20,7 @@ public abstract class officeObject extends graphObject implements baseActions {
     protected static final Integer ON_DIAGNOSTIC = 3;
     protected static final Integer BREAKED = 4;
 
-    public officeObject() {
+    public OfficeObject() {
         this.description = "no_description";
         this.name = "no_name";
     }

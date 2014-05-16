@@ -1,9 +1,9 @@
 package regularTech;
 
+import regularTech.GUI.AbstractGUI;
 import regularTech.GUI.AdminGUI;
+import regularTech.GUI.RegularGUI;
 import regularTech.GUI.StatusBar;
-import regularTech.GUI.abstractGUI;
-import regularTech.GUI.regularGUI;
 import regularTech.SQL.ConnectionManager;
 
 import javax.swing.*;
@@ -21,8 +21,8 @@ public class Application extends JFrame {
 	private BorderLayout curLayout;
 	private JPanel jPanel;
 	private ApplicationMenu appMenu;
-    public static Dimension inputDimension;
-    public abstractGUI mainWindows;
+    public final static Dimension inputDimension;
+    public AbstractGUI mainWindows;
     static{
         inputDimension = new Dimension(180, 40);
     }
@@ -90,7 +90,7 @@ public class Application extends JFrame {
                         if(result.getSecond() == true)
                             mainWindows = new AdminGUI("Admin main window");
                         else
-                            mainWindows = new regularGUI("Regular user main window");
+                            mainWindows = new RegularGUI("Regular user main window");
                     setVisible(false);
                     }
                         currentUser = loginInput.getText();
@@ -127,7 +127,7 @@ public class Application extends JFrame {
             connectionStatus = false;
         }
 
-        return new Pair<Boolean, Boolean>(new Boolean(connectionStatus), new Boolean(isAdmin));
+        return new Pair<Boolean, Boolean>(Boolean.valueOf(connectionStatus), Boolean.valueOf(isAdmin));
     }
 
 
