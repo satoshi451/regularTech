@@ -59,21 +59,25 @@ public class Application extends JFrame {
         loginInput = new JTextField();
         passInput = new JPasswordField();
 
-        JCheckBox isLocalHost = new JCheckBox();
+        final JCheckBox isLocalHost = new JCheckBox();
 
         isLocalHost.setSelected(true);
-
+        isLocalHost.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                if(isLocalHost.isSelected() == true){
+                    serverInput.setText("localhost");
+                    serverInput.setEnabled(false);
+                } else{
+                    serverInput.setText("");
+                    serverInput.setEnabled(true);
+                }
+            }
+        });
         serverInput.setPreferredSize(inputDimension);
         loginInput.setPreferredSize(inputDimension);
         passInput.setPreferredSize(inputDimension);
 
-        isLocalHost.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                serverInput.setText("localhost");
-                serverInput.setEnabled(false);
-            }
-        });
         ActionListener connListener = new ActionListener() {
 
             @Override

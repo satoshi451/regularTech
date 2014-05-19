@@ -129,7 +129,6 @@ public class ActionArea extends JPanel{
                 JPanel bottom = new JPanel();
                 bottom.setLayout(new FlowLayout());
 
-                // FIXME: windows must destroy after hide!!!
                 JButton agree  = new JButton("Подтвердить");
                 JButton cancel = new JButton("Отменить");
                 final Integer finalCosts = costs;
@@ -149,7 +148,6 @@ public class ActionArea extends JPanel{
                 bottom.add(agree);
                 bottom.add(cancel);
 
-                // FIXME: change to fields of class
                 acceptWindow.add(new JLabel("Вы хотите совершить операцию '" + operationType.getSelectedItem().toString() + "' над объектом '" + currentObject.getName() + "'"));
                 acceptWindow.add(new JLabel(costTip));
                 acceptWindow.add(bottom);
@@ -171,12 +169,6 @@ public class ActionArea extends JPanel{
     }
 
     private void initPanel() {
-        /**
-         * TODO: get type of object
-         * paint picture of object
-         * add buttons: 'add costs'
-         * add drop down list: buy, fix, sell
-         */
         this.currentObject = ReportDAO.getOfficeObject(this.objectId);
         String curName = currentObject.getName();
         capture.setText(curName);

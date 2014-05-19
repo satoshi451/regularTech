@@ -27,6 +27,10 @@ public class ReportDAO {
 
     private static Connection con;
 
+    /**
+     *
+     * @return
+     */
     public static List<Object[]> listReportObject() {
         List<Object[]> result = new LinkedList<Object[]>();
         PreparedStatement ps = null;
@@ -113,6 +117,30 @@ public class ReportDAO {
     }
 
     public static void createNewReport(Object curentObject, int selectedIndex, Integer finalCosts) {
+        OfficeObjectModel result = null;
+        ResultSet rs = null;
+        PreparedStatement ps = null;
 
+        try {
+            String insertTableSQL = "INSERT INTO DBUSER"
+                    + "(USER_ID, USERNAME, CREATED_BY, CREATED_DATE) VALUES"
+                    + "(?,?,?,?)";
+            ps = con.prepareStatement(insertTableSQL);
+            ps.setInt(1, 11);
+            ps.setString(2, "mkyong");
+            ps.setString(3, "system");
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (ps != null)
+                    ps.close();
+                if (rs != null)
+                    rs.close();
+            } catch (Exception e){
+                // TODO: Add logger message
+            }
+        }
     }
 }

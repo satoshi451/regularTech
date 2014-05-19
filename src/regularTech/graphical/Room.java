@@ -3,7 +3,7 @@ package regularTech.graphical;
 import regularTech.officeObjects.OfficeObject;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
  * TIME: 22:21
  */
 public class Room extends GraphObject {
-    public static Image pict;
+    private static BufferedImage pict;
     private String name;
 
     private List<OfficeObject> objects;
@@ -33,9 +33,16 @@ public class Room extends GraphObject {
 
     public Room(String name) {
         this();
-        this.setName(name);
-        this.x = 100;
-        this.y = 100;
+        setName(name);
+        x = 100;
+        y = 100;
+    }
+
+    public Room(int clickedX, int clickedY, String text) {
+        this();
+        setName(text);
+        x = clickedX;
+        y = clickedY;
     }
 
     public String getName() {
@@ -50,5 +57,16 @@ public class Room extends GraphObject {
     }
 
     public void drawObjects() {
+    }
+
+    public static BufferedImage getPict() {
+        return pict;
+    }
+
+    public static int getImageWidth() {
+        return pict.getWidth();
+    }
+    public static int getImageHeight(){
+        return  pict.getHeight();
     }
 }

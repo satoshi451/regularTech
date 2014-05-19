@@ -21,33 +21,42 @@ public class AddRoomJDialog extends JDialog {
     static{
         inputDimension = new Dimension(200, 25);
     }
+
+    private int clickedX;
+    private int clickedY;
+
     public AddRoomJDialog() {
         super();
-        this.setLayout(new FlowLayout());
-        this.width = 400;
-        this.height = 100;
-        this.label = new JLabel("Введите название помещения:");
-        this.addButton = new JButton("Добавить помещение");
-        this.roomNameInput = new JTextField();
-        this.roomNameInput.setPreferredSize(AddRoomJDialog.inputDimension);
+        setLayout(new FlowLayout());
+        width = 400;
+        height = 100;
+        label = new JLabel("Введите название помещения:");
+        addButton = new JButton("Добавить помещение");
+        roomNameInput = new JTextField();
+        roomNameInput.setPreferredSize(AddRoomJDialog.inputDimension);
 
         setBounds(400, 400, width, height);
 
         add(label);
         add(roomNameInput);
         add(addButton);
-/*
-        ActionListener addRoomListener = new ActionListener(){
 
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                roomName = roomNameInput.getText();
-
-            }
-        };
-*/
         setModal(true);
         setResizable(false);
         setTitle("Создание помещения");
+    }
+
+    public void setClickedX(int clickedX) {
+        this.clickedX = clickedX;
+    }
+    public int getClickedX() {
+        return clickedX;
+    }
+
+    public void setClickedY(int clickedY) {
+        this.clickedY = clickedY;
+    }
+    public int getClickedY() {
+        return clickedY;
     }
 }
