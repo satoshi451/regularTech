@@ -12,7 +12,7 @@ import java.util.Properties;
  * TIME: 22:00
  */
 public class ConnectionManager {
-
+    // TODO: create user in database kile this: 'create user application identified by password'
     private static String driverName;
     private static String serverName;
     private static String mydatabase;
@@ -35,10 +35,10 @@ public class ConnectionManager {
             e.printStackTrace();
         }
     }
-
+    // TODO: May be needs to make metho private?...
     public static void loadConfig() throws IOException {
         properties = new Properties();
-        InputStream input = null;//Main.class.getClassLoader().getResourceAsStream(propertiesFileName);
+        InputStream input = null; //Main.class.getClassLoader().getResourceAsStream(propertiesFileName);
         String path = Main.class.getProtectionDomain().getCodeSource().getLocation().getPath();
         path += propertiesFileName;
         System.out.println(path);

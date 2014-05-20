@@ -25,6 +25,9 @@ public class ReportDAO {
         ResultSet rs = null;
         try {
             con = ConnectionManager.getConnection();
+            if (con == null){
+                return null;
+            }
             String sql = "SELECT * FROM finantial_report";
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
@@ -52,6 +55,9 @@ public class ReportDAO {
         ResultSet rs = null;
         try {
             con = ConnectionManager.getConnection();
+            if (con == null){
+                return null;
+            }
             String sql = "SELECT id, name FROM office_oject";
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
@@ -81,6 +87,9 @@ public class ReportDAO {
 
         try {
             con = ConnectionManager.getConnection();
+            if (con == null){
+                return null;
+            }
             String sql = "SELECT id, name, office_oject_type_id FROM office_oject WHERE id = ".concat(objectId.toString());
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
@@ -108,8 +117,11 @@ public class ReportDAO {
 
         try {
             con = ConnectionManager.getConnection();
-            String insertTableSQL = "INSERT INTO office_oject_financial(office_oject_id,  financial_types_id, cost, action_date)" +
-                    " VALUES (?,?,?,?)";
+            if (con == null){
+                return ;
+            }
+             //TODO: add time to data format
+            String insertTableSQL = "INSERT INTO office_oject_financial(office_oject_id,  financial_types_id, cost, action_date)  VALUES (?,?,?,?)";
 
             ps = con.prepareStatement(insertTableSQL);
             ps.setInt(1, object.getId());
