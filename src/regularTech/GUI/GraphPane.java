@@ -74,7 +74,7 @@ public class GraphPane extends JPanel{
             @Override
             public void mouseDragged(MouseEvent mouseEvent) {
                 if ( SwingUtilities.isLeftMouseButton(mouseEvent)) {
-                        System.out.println("[left] " + mouseEvent.getButton());
+                        System.out.println("[left] X: " + mouseEvent.getX() + " | Y: " + mouseEvent.getY());
                 }
                 int clickedX = mouseEvent.getX();
                 int clickedY = mouseEvent.getY();

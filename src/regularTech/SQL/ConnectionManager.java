@@ -1,6 +1,10 @@
 package regularTech.SQL;
 
+import regularTech.Main;
+
+import java.io.*;
 import java.sql.*;
+import java.util.Properties;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).
@@ -9,42 +13,86 @@ import java.sql.*;
  */
 public class ConnectionManager {
 
+    private static String driverName;
+    private static String serverName;
+    private static String mydatabase;
+    private static String DBPassword;
+    private static String DBUser;
+    private static Properties properties;
+    private static String port;
 
+    private final static String propertiesFileName = "config.properties";
+    static{
+        driverName = "com.mysql.jdbc.Driver";
+        mydatabase = "regularTech";
+        DBPassword = "Ns5(!11PLus";
+        DBUser = "root";
+        try {
+            loadConfig();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void loadConfig() throws IOException {
+        properties = new Properties();
+        InputStream input = null;//Main.class.getClassLoader().getResourceAsStream(propertiesFileName);
+        String path = Main.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        path += propertiesFileName;
+        System.out.println(path);
+
+        input = new FileInputStream(path);
+
+        if(input == null){
+            // TODO: add logger warning
+            return;
+        }
+        properties.load(input);
+
+        driverName = properties.getProperty("driver");
+        mydatabase = properties.getProperty("database");
+        DBPassword = properties.getProperty("password");
+        port = properties.getProperty("port");
+        DBUser = properties.getProperty("username");
+
+        try {
+            input.close();
+        } catch (IOException e) {
+            // TODO: add logger
+            e.printStackTrace();
+        }
+
+    }
     public static Boolean getConnection(String ServerName, String Login, String Password) throws SQLException{
-        Connection connection;
+        Connection connection = null;
         Statement stmt = null;
         ResultSet rs = null;
         boolean isAdmin = false;
         Boolean isConnected = false;
         try {
-            // Название драйвера
-            String driverName = "com.mysql.jdbc.Driver";
-
             Class.forName(driverName);
+            serverName = ServerName;
 
-            // Create a connection to the database
-            String serverName = ServerName;
-            String mydatabase = "regularTech";
+            if(port != null)
+                if(Integer.parseInt(port) != 0){
+                    serverName += port;
+                }
+
             String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
-            String username = Login;
-            String password = Password;
 
             System.out.println(url);
 
-            // TODO: Change to read from config file
-            String DBPassword = "Ns5(!11PLus";
-            String DBUser = "root";
             connection = DriverManager.getConnection(url, DBUser, DBPassword);
             System.out.println("is connect to DB" + connection);
 
-            String query = "Select isAdmin FROM appUsers where login = '".concat(username).concat("' and password = '").concat(password).concat("';");
+            String query = "Select isAdmin FROM appUsers where login = '".concat(Login).concat("' and password = '").concat(Password).concat("';");
             System.out.println(query);
 
             stmt = connection.createStatement();
-
             rs = stmt.executeQuery(query);
             String dbtime = null;
-            //System.out.println(rs.first());
 
             if(rs.next()) {
                 dbtime = rs.getString(1);
