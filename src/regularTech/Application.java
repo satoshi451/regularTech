@@ -10,14 +10,17 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.sql.SQLException;
 
 public class Application extends JFrame {
-	private int width = 800;
+    private WindowAdapter windowAdapter;
+    private int width = 800;
 	private int height = 300;
 	private int x_cord = 200;
 	private int y_cord = 150;
-	
+
 	private BorderLayout curLayout;
 	private JPanel jPanel;
 	private ApplicationMenu appMenu;
@@ -32,10 +35,19 @@ public class Application extends JFrame {
     private JPasswordField passInput;
     private String currentUser;
     private StatusBar statusBar;
+    private JCheckBox isLocalHost;
 
     public Application(){
 		super("Office support [alpha]");
-		
+
+        windowAdapter = new WindowAdapter(){
+            @Override
+            public void windowClosing(WindowEvent windowEvent) {
+                super.windowClosing(windowEvent);
+                System.out.println("window closing... now gui will reset...");
+                resetGUI();
+            }
+        };
 		setBounds(x_cord, y_cord, width, height);
 		curLayout = new BorderLayout();
 		setLayout(curLayout);
@@ -55,12 +67,31 @@ public class Application extends JFrame {
 		setVisible(true);
 	}
 
+    private void resetGUI() {
+        currentUser = null;
+        resetInputFields();
+        mainWindows.setVisible(false);
+        setVisible(true);
+    }
+
+    private void resetInputFields() {
+        System.out.println("resetInputFields");
+
+        serverInput.setText("localhost");
+        serverInput.setEnabled(false);
+        isLocalHost.setSelected(true);
+        loginInput.setText("");
+        passInput.setText("");
+
+        statusBar.setStatus(status.OK_STATUS);
+    }
+
     private void initLoginPanel() {
         serverInput = new JTextField();
         loginInput = new JTextField();
         passInput = new JPasswordField();
 
-        final JCheckBox isLocalHost = new JCheckBox();
+        isLocalHost = new JCheckBox();
 
         isLocalHost.setSelected(true);
         isLocalHost.addActionListener(new ActionListener() {
@@ -89,14 +120,13 @@ public class Application extends JFrame {
                 if(l1 == 0  || l2 == 0){
                     System.out.println("Empty");
                     statusBar.setStatus(status.EMPTY_LOGIN_OR_PASSWORD);
-                }
-                else{
+                } else{
                     Pair<Boolean, Boolean> result = getAuthorise();
                     if(result.getFirst() == true){
                         if(result.getSecond() == true)
-                            mainWindows = new AdminGUI("Admin main window");
+                            mainWindows = new AdminGUI("Admin main window", windowAdapter);
                         else
-                            mainWindows = new RegularGUI("Regular user main window");
+                            mainWindows = new RegularGUI("Regular user main window", windowAdapter);
                     setVisible(false);
                     }
                         currentUser = loginInput.getText();
@@ -113,8 +143,6 @@ public class Application extends JFrame {
         jPanel.add(serverInput);
         jPanel.add(loginInput);
         jPanel.add(passInput);
-
-
     }
 
     private Pair<Boolean, Boolean> getAuthorise() {
@@ -137,10 +165,9 @@ public class Application extends JFrame {
             statusBar.setStatus(status.FATAL_ERROR);
             statusBar.repaint();
             connectionStatus = false;
+            return null;
         }
 
         return new Pair<Boolean, Boolean>(Boolean.valueOf(connectionStatus), Boolean.valueOf(isAdmin));
     }
-
-
 }

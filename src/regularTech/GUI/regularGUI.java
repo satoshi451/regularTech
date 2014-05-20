@@ -1,6 +1,7 @@
 package regularTech.GUI;
 
 import java.awt.*;
+import java.awt.event.WindowAdapter;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).
@@ -9,8 +10,8 @@ import java.awt.*;
  */
 public class RegularGUI extends AbstractGUI {
 
-    public RegularGUI(String capture) {
-        super(capture);
+    public RegularGUI(String capture, WindowAdapter windowAdapter) {
+        super(capture, windowAdapter);
         menubar = new RegularMenuBar();
         add(menubar, BorderLayout.NORTH);
     }
