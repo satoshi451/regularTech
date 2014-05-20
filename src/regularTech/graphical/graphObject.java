@@ -6,8 +6,8 @@ package regularTech.graphical;
  * TIME: 22:06
  */
 public class GraphObject {
-    protected Integer x;
-    protected Integer y;
+    private Integer x;
+    private Integer y;
 
     public GraphObject() {
     }

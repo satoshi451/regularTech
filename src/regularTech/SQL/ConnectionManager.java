@@ -1,10 +1,6 @@
 package regularTech.SQL;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).
@@ -14,11 +10,12 @@ import java.sql.Statement;
 public class ConnectionManager {
 
 
-    public static boolean getConnection(String ServerName, String Login, String Password) throws SQLException{
+    public static Boolean getConnection(String ServerName, String Login, String Password) throws SQLException{
         Connection connection;
         Statement stmt = null;
         ResultSet rs = null;
         boolean isAdmin = false;
+        Boolean isConnected = false;
         try {
             // Название драйвера
             String driverName = "com.mysql.jdbc.Driver";
@@ -52,6 +49,7 @@ public class ConnectionManager {
             if(rs.next()) {
                 dbtime = rs.getString(1);
                 System.out.println(dbtime);
+                isConnected = true;
             }
             if(dbtime != null) {
                 if (dbtime.equals("1"))
@@ -74,6 +72,9 @@ public class ConnectionManager {
             }
         }
 
-        return isAdmin;
+        if (!isConnected)
+            return null;
+        else
+            return isAdmin;
     }
 }

@@ -34,15 +34,15 @@ public class Room extends GraphObject {
     public Room(String name) {
         this();
         setName(name);
-        x = 100;
-        y = 100;
+        setX(100);
+        setY(100);
     }
 
     public Room(int clickedX, int clickedY, String text) {
         this();
         setName(text);
-        x = clickedX;
-        y = clickedY;
+        setX(clickedX);
+        setY(clickedY);
     }
 
     public String getName() {

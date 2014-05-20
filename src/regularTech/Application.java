@@ -43,6 +43,7 @@ public class Application extends JFrame {
 		appMenu = new ApplicationMenu();
 		jPanel = new JPanel();
         statusBar = new StatusBar();
+        statusBar.setPreferenceHeight(50);
 
         initLoginPanel();
 		
@@ -87,6 +88,7 @@ public class Application extends JFrame {
 
                 if(l1 == 0  || l2 == 0){
                     System.out.println("Empty");
+                    statusBar.setStatus(status.EMPTY_LOGIN_OR_PASSWORD);
                 }
                 else{
                     Pair<Boolean, Boolean> result = getAuthorise();
@@ -120,14 +122,20 @@ public class Application extends JFrame {
         String login = loginInput.getText();
         String password = new String(passInput.getPassword());
         boolean connectionStatus = false;
-        boolean isAdmin = false;
+        Boolean isAdmin = false;
 
         try {
             isAdmin = ConnectionManager.getConnection(serverName, login, password);
-            connectionStatus = true;
-        }catch(SQLException sqlExeption){
-            this.statusBar.setStatus(status.ACCESS_DENIED);
-            this.statusBar.repaint();
+            if(isAdmin == null){
+                connectionStatus = false;
+                statusBar.setStatus(status.SQL_ERROR);
+            } else {
+                connectionStatus = true;
+            }
+            repaint();
+        } catch(SQLException sqlExeption){
+            statusBar.setStatus(status.FATAL_ERROR);
+            statusBar.repaint();
             connectionStatus = false;
         }
 

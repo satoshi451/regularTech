@@ -7,5 +7,5 @@ package regularTech;
  */
 public enum status {
     ACCESS_DENIED,
-    OK_STATUS
+    SQL_ERROR, FATAL_ERROR, EMPTY_LOGIN_OR_PASSWORD, OK_STATUS
 }
