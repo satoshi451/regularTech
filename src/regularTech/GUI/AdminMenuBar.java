@@ -25,7 +25,8 @@ public class AdminMenuBar extends AbstractMenuBar {
         showReport.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                 buchWindow.setVisible(true);
+                buchWindow.updateTable();
+                buchWindow.setVisible(true);
             }
         });
         reportActions.addActionListener(new ActionListener() {

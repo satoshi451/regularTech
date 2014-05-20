@@ -57,6 +57,10 @@ public class ConnectionManager {
         port = properties.getProperty("port");
         DBUser = properties.getProperty("username");
 
+        if(port != null)
+            if(Integer.parseInt(port) != 0)
+                serverName += port;
+
         try {
             input.close();
         } catch (IOException e) {
@@ -64,6 +68,24 @@ public class ConnectionManager {
             e.printStackTrace();
         }
 
+    }
+    public static Connection getConnection(){
+        Connection connection = null;
+        try {
+            Class.forName(driverName);
+
+            String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
+
+            System.out.println(url);
+
+            connection = DriverManager.getConnection(url, DBUser, DBPassword);
+            } catch (SQLException e) {
+                // TODO: change to logger
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        return connection;
     }
     public static Boolean getConnection(String ServerName, String Login, String Password) throws SQLException{
         Connection connection = null;
@@ -74,11 +96,6 @@ public class ConnectionManager {
         try {
             Class.forName(driverName);
             serverName = ServerName;
-
-            if(port != null)
-                if(Integer.parseInt(port) != 0){
-                    serverName += port;
-                }
 
             String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
 

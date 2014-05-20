@@ -17,7 +17,7 @@ public class ReportDAO {
     private static String accessPassword;
     private static String url;
 
-    static{
+    static {
         //TODO: create user in DB for access to data
         driverName = "com.mysql.jdbc.Driver";
         accessLogin = "root"; //"application";
@@ -100,7 +100,7 @@ public class ReportDAO {
                 result = new OfficeObjectModel(rs.getInt(1), rs.getString(2), rs.getInt(3));
             }
             con.close();
-        }catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         finally {
@@ -116,19 +116,19 @@ public class ReportDAO {
         return result;
     }
 
-    public static void createNewReport(Object curentObject, int selectedIndex, Integer finalCosts) {
-        OfficeObjectModel result = null;
-        ResultSet rs = null;
+    public static void createNewReport(OfficeObjectModel object, int operationType, Integer costs) {
         PreparedStatement ps = null;
 
         try {
-            String insertTableSQL = "INSERT INTO DBUSER"
-                    + "(USER_ID, USERNAME, CREATED_BY, CREATED_DATE) VALUES"
-                    + "(?,?,?,?)";
+            con = ConnectionManager.getConnection();
+            String insertTableSQL = "INSERT INTO office_oject_financial(office_oject_id,  financial_types_id, cost, action_date)" +
+                    " VALUES (?,?,?,?)";
+
             ps = con.prepareStatement(insertTableSQL);
-            ps.setInt(1, 11);
-            ps.setString(2, "mkyong");
-            ps.setString(3, "system");
+            ps.setInt(1, object.getId());
+            ps.setInt(2, operationType + 1);
+            ps.setInt(3, costs);
+            ps.setDate(4, new Date((new java.util.Date()).getTime()));
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -136,8 +136,6 @@ public class ReportDAO {
             try {
                 if (ps != null)
                     ps.close();
-                if (rs != null)
-                    rs.close();
             } catch (Exception e){
                 // TODO: Add logger message
             }

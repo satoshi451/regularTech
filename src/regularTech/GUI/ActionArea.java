@@ -120,7 +120,7 @@ public class ActionArea extends JPanel{
                 Integer costs;
                 try {
                     costs = Integer.valueOf(inputCosts.getText());
-                }catch (NumberFormatException e){
+                } catch (NumberFormatException e){
                     costs = 0;
                     inputCosts.setText("");
                 }
@@ -131,11 +131,20 @@ public class ActionArea extends JPanel{
 
                 JButton agree  = new JButton("Подтвердить");
                 JButton cancel = new JButton("Отменить");
+                cancel.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent actionEvent) {
+                        acceptWindow.setVisible(false);
+                    }
+                });
+
                 final Integer finalCosts = costs;
                 agree.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent actionEvent) {
                         ReportDAO.createNewReport(currentObject, operationType.getSelectedIndex(), finalCosts);
+                        inputCosts.setText("");
+                        acceptWindow.setVisible(false);
                     }
                 });
                 cancel.addActionListener(new ActionListener() {
@@ -161,7 +170,6 @@ public class ActionArea extends JPanel{
         };
         inputCosts.addActionListener(actionListener);
         minBtn.addActionListener(actionListener);
-
     }
     public void setObjectId(Integer objectId) {
         this.objectId = objectId;
