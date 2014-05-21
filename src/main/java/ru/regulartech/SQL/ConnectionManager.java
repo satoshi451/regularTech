@@ -40,7 +40,7 @@ public class ConnectionManager {
             e.printStackTrace();
         }
     }
-    // TODO: May be needs to make metho private?...
+    // TODO: May be needs to make method private?...
     public static void loadConfig() throws IOException {
         properties = new Properties();
         InputStream input = null;

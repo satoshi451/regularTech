@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/regulartech.iml" filepath="$PROJECT_DIR$/regulartech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/regularTech.iml" filepath="$PROJECT_DIR$/regularTech.iml" />
     </modules>
   </component>
 </project>
