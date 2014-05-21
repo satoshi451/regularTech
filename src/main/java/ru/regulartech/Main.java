@@ -1,4 +1,6 @@
-package ru.regulartech.application;
+package ru.regulartech;
+
+import ru.regulartech.application.Application;
 
 public class Main {
 

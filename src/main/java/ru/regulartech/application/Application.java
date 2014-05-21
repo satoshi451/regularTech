@@ -16,9 +16,10 @@ import java.awt.event.WindowEvent;
 import java.sql.SQLException;
 
 public class Application extends JFrame {
+    private static final String DEFAULT_SERVER_NAME = "smarty-griditup.rhcloud.com";
     private WindowAdapter windowAdapter;
-    private int width = 800;
-	private int height = 300;
+    private int width = 700;
+	private int height = 150;
 	private int x_cord = 200;
 	private int y_cord = 150;
 
@@ -27,7 +28,7 @@ public class Application extends JFrame {
 	private ApplicationMenu appMenu;
     public final static Dimension inputDimension;
     public AbstractGUI mainWindows;
-    static{
+    static {
         inputDimension = new Dimension(180, 40);
     }
 
@@ -40,7 +41,7 @@ public class Application extends JFrame {
     private JCheckBox isLocalHost;
 
     public Application(){
-		super("Office support [alpha]");
+		super("Office support [alpha] v.2.0");
 
         windowAdapter = new WindowAdapter(){
             @Override
@@ -66,6 +67,7 @@ public class Application extends JFrame {
         add(statusBar, BorderLayout.SOUTH);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setResizable(false);
 		setVisible(true);
 	}
 
@@ -79,7 +81,7 @@ public class Application extends JFrame {
     private void resetInputFields() {
         System.out.println("resetInputFields");
 
-        serverInput.setText("localhost");
+        serverInput.setText(DEFAULT_SERVER_NAME);
         serverInput.setEnabled(false);
         isLocalHost.setSelected(true);
         loginInput.setText("");
@@ -100,7 +102,7 @@ public class Application extends JFrame {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 if(isLocalHost.isSelected() == true){
-                    serverInput.setText("localhost");
+                    serverInput.setText(DEFAULT_SERVER_NAME);
                     serverInput.setEnabled(false);
                 } else{
                     serverInput.setText("");
@@ -120,7 +122,6 @@ public class Application extends JFrame {
                 int l2 = (new String(passInput.getPassword())).length();
 
                 if(l1 == 0  || l2 == 0){
-                    System.out.println("Empty");
                     statusBar.setStatus(status.EMPTY_LOGIN_OR_PASSWORD);
                 } else{
                     Pair<Boolean, Boolean> result = getAuthorise();
@@ -140,7 +141,7 @@ public class Application extends JFrame {
         passInput.addActionListener(connListener);
 
         serverInput.setEnabled(false);
-        serverInput.setText("localhost");
+        serverInput.setText(DEFAULT_SERVER_NAME);
         jPanel.add(isLocalHost);
         jPanel.add(serverInput);
         jPanel.add(loginInput);
