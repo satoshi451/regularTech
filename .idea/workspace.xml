@@ -1,13 +1,415 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/regularTech/Application.java" line="144" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="f472e995-df61-42ae-8414-1c8362a6c99e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/regularTech/SQL/ReportDAO.java" afterPath="$PROJECT_DIR$/src/regularTech/SQL/ReportDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/regularTech/SQL/ConnectionManager.java" afterPath="$PROJECT_DIR$/src/regularTech/SQL/ConnectionManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/GraphPane$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/ActionArea.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/AbstractGUI$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/ReportActionWindow$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/img/refresh_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/AddRoomJDialog.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/test/java/ru/regulartech/app/AppTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/img/monitor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/img/scape_glass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/officeObjects/PC.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/AdminMenuBar$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/BuchalteryModel.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/ActionArea$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/SearchBar.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/officeObjects/OfficeObject.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/img/laptop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/img/printer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/officeObjects/ElectronicObject.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/ActionArea$1$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/img/computer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/ActionArea$1$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/AdminMenuBar$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/img/common.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/RegularMenuBar.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/RegularGUI.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/ApplicationMenu.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/graphical/GraphObject.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/StatusBar.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/SQL/OfficeObjectModel.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/StatusBar$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/img/table.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/GraphPane.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/ReportActionWindow.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/Application$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/AdminMenuBar.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/AdminGUI.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/img/room.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/officeObjects/electronicFunctions.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/officeObjects/baseActions.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/img/router.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/SQL/ConnectionManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/BuchalteryWindow.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/SearchBar$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/status.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/test-classes/ru/regulartech/app/AppTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/Main.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/graphical/Room.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/AbstractGUI.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/AbstractMenuBar.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/OfficeObjectListModel.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/Application.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/Application$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/HerarhArea.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/GraphPane$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/Pair.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/SQL/ReportDAO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/ActionArea$1$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/Application$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/GraphPane$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/img/room_old.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/JBuchTable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regulartech/target/classes/regularTech/GUI/OfficeObjectList.class" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\ConnectionRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ProfilerEventHandlerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\V1toV2StatementInterceptorAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Constants.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\log\Log.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\doc\sources\errorMapToDocbook.xsl" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\jdbc4\MySQLNonTransientConnectionException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\docs\README.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\COPYING" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4ClientInfoProviderSP.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\AuthenticationPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\util\BaseBugReport.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\PreparedStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\StatementRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\authentication\MysqlOldPasswordPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\MysqlPooledConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\SuspendableXAConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\StandardSocketFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\StringRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\DeadlockTimeoutRollbackMarker.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ConnectionFeatureNotAvailableException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\NotImplemented.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\MysqlErrorNumbers.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLTransientException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\IterateBlock.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ByteArrayRow.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\jdbc4\StatementsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\PerVmServerConfigCacheFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLQueryInterruptedException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\TestBug57662Logger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ConnectionPropertiesImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\NumbersTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\BlobFromLocator.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\jdbc4\MySQLTransactionRollbackException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\OperationNotSupportedException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\LocalizedErrorMessages.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\MetaDataRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\log\StandardLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jmx\LoadBalanceConnectionGroupManagerMBean.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\SyntaxRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\JDBC4MysqlXAConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\MysqlDataSourceFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\build.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\configs\fullDebug.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\profiler\ProfilerEventHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\authentication\MysqlClearPasswordPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLInvalidAuthorizationSpecException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\util\LRUCache.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\profiler\LoggingProfilerEventHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\PingTarget.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\CallableStatementWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\LoadBalancingConnectionProxy.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\BlobTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLTransactionRollbackException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLIntegrityConstraintViolationException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ResultSetImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\RowData.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\MysqlXAConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ResultSetInternalMethods.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\RandomBalanceStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\PerConnectionLRUFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\integration\jboss\ExtendedMysqlExceptionSorter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\ssl-test-certs\ca-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\XATest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\RowDataStatic.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\MysqlConnectionPoolDataSource.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\interceptors\ServerStatusDiffInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\docs\connector-j.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\AbandonedConnectionCleanupThread.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\jdbc4\MySQLTimeoutException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ConnectionProperties.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\jdbc4\MySQLSyntaxErrorException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\EscapeProcessorRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ServerPreparedStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4ClientInfoProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ReplicationDriver.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\CommunicationsException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\.project" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\configs\coldFusion.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\EscapeProcessorResult.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLNonTransientException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\authentication\Sha256PasswordPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\BufferRow.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\MySQLConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\StatementInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\SingleByteCharsetConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\PacketTooBigException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\JDBC4SuspendableXAConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\configs\3-0-Compat.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\NdbLoadBalanceExceptionChecker.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\doc\sources\placeholder.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\ssl-test-certs\server-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\CharsetTests.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\EscapeTokenizer.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\jdbc4\CommunicationsException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\DatabaseMetaData.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\util\ServerController.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\NamedPipeSocketFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLTransientConnectionException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\JDBC4ConnectionWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\RowDataCursor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ResultSetMetaData.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\log\NullLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\BaseTestCase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\SequentialBalanceStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\src\SQLScripts\fillFinancialTypes.sql" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\jdbc4\MySQLTransientException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\TimeUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\EscapeProcessingTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\util\ResultSetUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\OutputStreamWatcher.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\CallableStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\BestResponseTimeBalanceStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\CallableStatementRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\StatementsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\SQLError.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\LoadBalancedAutoCommitInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLSyntaxErrorException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4LoadBalancedMySQLConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\configs\clusterBase.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\CharsetMapping.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\doc\sources\pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4NClob.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\MysqlDataSource.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4ServerPreparedStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\LicenseConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\integration\jboss\MysqlValidConnectionChecker.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\UpdatabilityTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\DocsConnectionPropsHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\log\Slf4JLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\WatchableWriter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\jdbc4\MySQLDataException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\NoSubInterceptorWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4Connection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ReflectiveStatementInterceptorAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\ConnectionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\BalanceStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/tablelayout.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\MiniAdmin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ConnectionGroup.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Clob.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\CHANGES" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\MysqlXAException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\SubqueriesRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\MysqlDefs.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\TransactionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\UnreliableSocketFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\jdbc4\MySQLIntegrityConstraintViolationException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\JDBC4PreparedStatementWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\integration\c3p0\MysqlConnectionTester.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\.idea\uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Extension.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\JDBC4CallableStatementWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\CachedResultSetMetaData.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Field.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\MysqlParameterMetadata.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\MysqlIO.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\jdbc4\MySQLTransientConnectionException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\ssl-test-certs\ca-key.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\UpdatableResultSet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\lib\c3p0-0.9.1-pre6.src.zip" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\ConnectionWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\AssertionFailedException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\src\SQLScripts\fillOfficeObjectType.sql" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Security.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\StreamingNotifiable.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\NonRegisteringDriver.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\DataSourceTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\configs\5-0-Compat.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\README.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Buffer.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\src\SQLScripts\fillOfficeObject.sql" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Connection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\MysqlSavepoint.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\MetadataTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ReplicationConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\ReadOnlyCallableStatementTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\ServerControllerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\authentication\MysqlNativePasswordPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\NotUpdatable.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\log\Jdk14Logger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\WrapperBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\util\VersionFSHierarchyMaker.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\EscapeProcessor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\LoadBalanceExceptionChecker.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\interceptors\ResultSetScannerInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\ssl-test-certs\server-key.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\log\LogFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\perf\BasePerfTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4DatabaseMetaData.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\src\SQLScripts\fillOfficeObjectFinantial.sql" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLStatementCancelledException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\util\TimezoneDump.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ParameterBindings.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ResultSetRow.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\MysqlDataTruncation.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\SocketFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\StringUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\jdbc4\MySQLInvalidAuthorizationSpecException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\CachedRowsetTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\ResultSetRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ConnectionGroupManager.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ConnectionLifecycleInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\src\SQLScripts\createViewScript.sql" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4PreparedStatementHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\.classpath" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ExportControlled.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\CompressedInputStream.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\src\SQLScripts\createTableScript.sql" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\StressRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4UpdatableResultSet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\JDBC4StatementWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\DatabaseMetaDataUsingInfoSchema.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\util\ReadAheadInputStream.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\docs\connector-j.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\NumbersRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\jdbc4\MySQLNonTransientException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\StatementInterceptorV2.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\tb2-data.txt.gz" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\ssl-test-certs\server-req.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Charsets.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\StandardLoadBalanceExceptionChecker.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\SplitDBdotNameTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLNonTransientConnectionException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\ResultSetTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\doc\sources\connPropsToDocbook.xsl" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Driver.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\configs\solarisMaxPerformance.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\RowDataDynamic.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\MiniAdminTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\ssl-test-certs\test-cert-store" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\util\ErrorMappingsDocGenerator.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Blob.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\util\PropertiesDocGenerator.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Util.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\StatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\org\gjt\mm\mysql\Driver.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\log\LogUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ConnectionPropertiesTransform.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\MysqlXADataSource.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\BlobRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\interceptors\SessionAssociationInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\SimpleTransformer.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\PooledConnectionRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4CallableStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\DateTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLTimeoutException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\PreparedStatementWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\LoadBalancedMySQLConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\NonRegisteringReplicationDriver.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4MysqlSQLXML.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\DataSourceRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4CommentClientInfoProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\TestLifecycleInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\exceptions\MySQLDataException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4MySQLConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\JDBC4MysqlPooledConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\FailoverConnectionProxy.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\regression\MicroPerformanceRegressionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ExceptionInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4ResultSet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\ConnectionImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\profiler\ProfilerEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4DatabaseMetaDataUsingInfoSchema.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\NetworkResources.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\CallableStatementTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jmx\LoadBalanceConnectionGroupManager.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\TraversalTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Statement.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\SocketMetadata.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\WriterWatcher.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\MysqlXid.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\CacheAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\CacheAdapterFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\jdbc2\optional\StatementWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\simple\SSLTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\perf\LoadStorePerfTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\testsuite\perf\RetrievalPerfTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\Messages.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\JDBC4PreparedStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\WatchableOutputStream.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\wiseman\CODE\regularTech\lib\mysql-connector-java-5.1.24 (MySQL official plugin)\src\com\mysql\jdbc\configs\maxPerformance.properties" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\officeObjects\baseActions.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/officeObjects/baseActions.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\HerarhArea.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/HerarhArea.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\img\printer.png" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/img/printer.png" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\img\refresh_icon.png" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/img/refresh_icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/regulartech/.idea/modules.xml" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\StatusBar.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/StatusBar.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\SearchBar.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/SearchBar.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/regulartech/.idea/copyright/profiles_settings.xml" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\GraphPane.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/GraphPane.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\officeObjects\PC.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/officeObjects/PC.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\regularTech.iml" afterPath="$PROJECT_DIR$/regulartech/regulartech.iml" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\JBuchTable.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/JBuchTable.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\officeObjects\electronicObject.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\Pair.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/application/Pair.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/regulartech/.idea/scopes/scope_settings.xml" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\SQL\reportDAO.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/SQL/ReportDAO.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\officeObjects\officeObject.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/officeObjects/OfficeObject.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\AddRoomJDialog.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/AddRoomJDialog.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\OfficeObjectListModel.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/OfficeObjectListModel.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\buchalteryModel.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/BuchalteryModel.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\abstractGUI.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/AbstractGUI.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\SQL\ConnectionManager.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/SQL/ConnectionManager.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\SQL\OfficeObjectModel.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/SQL/OfficeObjectModel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/regulartech/.idea/vcs.xml" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\OfficeObjectList.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/OfficeObjectList.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\ActionArea.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/ActionArea.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\regularGUI.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/RegularGUI.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\regularMenuBar.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/RegularMenuBar.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\img\monitor.png" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/img/monitor.png" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\officeObjects\electronicFunctions.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/officeObjects/electronicFunctions.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\img\router.png" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/img/router.png" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\img\room_old.png" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/img/room_old.png" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\img\table.png" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/img/table.png" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\ApplicationMenu.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/application/ApplicationMenu.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\img\computer.png" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/img/computer.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/findbugs-idea.xml" afterPath="$PROJECT_DIR$/regulartech/.idea/findbugs-idea.xml" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\img\room.png" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/img/room.png" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\ReportActionWindow.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/ReportActionWindow.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/regulartech/.idea/encodings.xml" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\img\common.png" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/img/common.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/regulartech/.idea/misc.xml" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\graphical\graphObject.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/graphical/GraphObject.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\AdminGUI.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/AdminGUI.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\Main.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/application/Main.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\BuchalteryWindow.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/BuchalteryWindow.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\config.properties" afterPath="$PROJECT_DIR$/regulartech/src/main/resources/config.properties" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\graphical\Room.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/graphical/Room.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/regulartech/.idea/compiler.xml" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\Application.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/application/Application.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\img\laptop.png" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/img/laptop.png" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\img\scape_glass.png" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/img/scape_glass.png" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\AdminMenuBar.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/AdminMenuBar.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\GUI\abstractMenuBar.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/GUI/AbstractMenuBar.java" />
+      <change type="MOVED" beforePath="C:\Users\wiseman\CODE\regularTech\src\regularTech\status.java" afterPath="$PROJECT_DIR$/regulartech/src/main/java/ru/regulartech/application/status.java" />
     </list>
     <ignored path="regularTech.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,72 +439,7 @@
     <favorites_list name="regularTech" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ReportDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/ReportDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2533">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1441#1464#0" expanded="true" />
-                <marker date="1400589090941" expanded="true" signature="668:698" placeholder="SELECT * FRO..finantial_report..." />
-                <marker date="1400589090941" expanded="true" signature="1700:1733" placeholder="SELECT id, n..office_oject..." />
-                <marker date="1400589090941" expanded="true" signature="2667:2733" placeholder="SELECT id, n..office_oject..." />
-                <marker date="1400589090941" expanded="true" signature="3729:3828" placeholder="INSERT INTO ..." />
-                <marker date="1400589090941" expanded="true" signature="3729:3838" placeholder="INSERT INTO ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/regularTech/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1504" max-vertical-offset="2669">
-              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionArea.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3400">
-              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-              <folding>
-                <element signature="e#5035#5258#0" expanded="true" />
-                <element signature="e#5239#5240#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OfficeObjectModel.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/OfficeObjectModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34366578" vertical-offset="0" max-vertical-offset="742">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectionManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/ConnectionManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2567">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1400588304611" expanded="true" signature="3401:3445" placeholder="Select isAdm..appUsers..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -207,7 +544,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -216,72 +552,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="regularTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="regularTech" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="regularTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="regularTech" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="regularTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="regularTech" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="regularTech" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="regularTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="regularTech" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="regularTech" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQL" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -608,12 +881,13 @@
       <workItem from="1400216378636" duration="525000" />
       <workItem from="1400406600330" duration="7751000" />
       <workItem from="1400495305763" duration="5694000" />
-      <workItem from="1400561810404" duration="23384000" />
+      <workItem from="1400561810404" duration="23390000" />
+      <workItem from="1400645289246" duration="288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182487000" />
+    <option name="totallyTimeSpent" value="182781000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -636,15 +910,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-170" width="1936" height="1096" extended-state="7" />
-    <editor active="true" />
+    <frame x="-1928" y="-170" width="1936" height="1096" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32746115" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24041452" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2569948" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3326425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -654,26 +927,27 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35751295" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284974" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22176166" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21801706" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19829424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20207255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20207255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2569948" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22176166" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32746115" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284974" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -691,8 +965,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2238342" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -755,20 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/OfficeObjectListModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21771611" vertical-offset="0" max-vertical-offset="937">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/Pair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37335286" vertical-offset="0" max-vertical-offset="683">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Enviroment/glassfish3/jdk/jre/lib/rt.jar!/javax/swing/ImageIcon.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1853">
@@ -780,379 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1233672" vertical-offset="0" max-vertical-offset="1887">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/mysql-connector-java-5.1.24 (MySQL official plugin)/src/com/mysql/jdbc/ConnectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33284023" vertical-offset="64222" max-vertical-offset="100640">
-          <caret line="3936" column="73" selection-start-line="3936" selection-start-column="73" selection-end-line="3936" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/SearchBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="1020">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AbstractMenuBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/BuchalteryModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15178572" vertical-offset="85" max-vertical-offset="884">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/RegularMenuBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SQLScripts/createViewScript.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.76" vertical-offset="0" max-vertical-offset="272">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SQLScripts/createTableScript.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.02" vertical-offset="60" max-vertical-offset="663">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SQLScripts/fillFinancialTypes.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SQLScripts/fillOfficeObject.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SQLScripts/fillOfficeObjectFinantial.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="535">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SQLScripts/fillOfficeObjectType.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="535">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/img/common.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/img/laptop.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/img/monitor.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/officeObjects/ElectronicObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/officeObjects/PC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.classpath">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="562">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="562">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/regularTech.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3893">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/officeObjects/baseActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12518409" vertical-offset="0" max-vertical-offset="679">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/graphical/GraphObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/graphical/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7172524" vertical-offset="146" max-vertical-offset="986">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1629393" vertical-offset="0" max-vertical-offset="626">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/StatusBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="1071">
-          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/RegularGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29872206" vertical-offset="0" max-vertical-offset="626">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/HerarhArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="680">
-          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/OfficeObjectList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="1003">
-          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AbstractGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66233766" vertical-offset="0" max-vertical-offset="816">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/officeObjects/OfficeObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="816">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AddRoomJDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40134907" vertical-offset="187" max-vertical-offset="1003">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/mysql-connector-java-5.1.24 (MySQL official plugin)/src/com/mysql/jdbc/SQLError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3328841" vertical-offset="16226" max-vertical-offset="22185">
-          <caret line="1014" column="0" selection-start-line="1014" selection-start-column="0" selection-end-line="1014" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29784366" vertical-offset="0" max-vertical-offset="742">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/JBuchTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2837274" vertical-offset="0" max-vertical-offset="719">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/BuchalteryWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91631204" vertical-offset="0" max-vertical-offset="850">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/AdminMenuBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54986525" vertical-offset="0" max-vertical-offset="742">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13746631" vertical-offset="0" max-vertical-offset="742">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/GraphPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8018868" vertical-offset="0" max-vertical-offset="1887">
-          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ReportActionWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6415094" vertical-offset="0" max-vertical-offset="742">
-          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1504" max-vertical-offset="2669">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/GUI/ActionArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3400">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding>
-            <element signature="e#5035#5258#0" expanded="true" />
-            <element signature="e#5239#5240#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/ReportDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2533">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1441#1464#0" expanded="true" />
-            <marker date="1400589090941" expanded="true" signature="668:698" placeholder="SELECT * FRO..finantial_report..." />
-            <marker date="1400589090941" expanded="true" signature="1700:1733" placeholder="SELECT id, n..office_oject..." />
-            <marker date="1400589090941" expanded="true" signature="2667:2733" placeholder="SELECT id, n..office_oject..." />
-            <marker date="1400589090941" expanded="true" signature="3729:3828" placeholder="INSERT INTO ..." />
-            <marker date="1400589090941" expanded="true" signature="3729:3838" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/ConnectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2567">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1400588304611" expanded="true" signature="3401:3445" placeholder="Select isAdm..appUsers..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/regularTech/SQL/OfficeObjectModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34366578" vertical-offset="0" max-vertical-offset="742">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
