@@ -8,9 +8,6 @@
   <name>regulartech</name>
   <url>http://maven.apache.org</url>
 
-  <modules>
-
-  </modules>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
