@@ -1,5 +1,7 @@
 package ru.regulartech.GUI;
 
+import ru.regulartech.graphical.ImageManager;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -13,7 +15,7 @@ import java.awt.event.ActionListener;
 public class BuchalteryWindow extends JFrame implements ActionListener {
     private int height;
     private int width;
-    private static final ImageIcon reloadIcon = new ImageIcon(BuchalteryWindow.class.getProtectionDomain().getCodeSource().getLocation().getPath() + "img/refresh_icon.png");
+    private static final ImageIcon reloadIcon = ImageManager.getRefreshIcon();
     private JBuchTable table;
     private JButton refreshBtn;
 

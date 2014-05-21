@@ -2,15 +2,13 @@ package ru.regulartech.GUI;
 
 import ru.regulartech.SQL.OfficeObjectModel;
 import ru.regulartech.SQL.ReportDAO;
+import ru.regulartech.graphical.ImageManager;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).
@@ -32,25 +30,14 @@ public class ActionArea extends JPanel{
     private BufferedImage pict;
     private JLabel capture;
 
-    private static final String systemResourcesDir = GraphPane.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-
-    // TODO: change full path to relative
-    // JLabel lblImage = new JLabel(new ImageIcon(getClass().getResource("/image.png")));
     static {
-        try {
-            System.out.println(ActionArea.class.getResource("/regularTech/img/computer.png"));
-            System.out.println(ActionArea.class.getResource(""));
-
-            computerImg = ImageIO.read(new File(systemResourcesDir + "img/computer.png"));
-            tableImg    = ImageIO.read(new File(systemResourcesDir + "img/table.png"));
-            commonImg   = ImageIO.read(new File(systemResourcesDir + "img/common.png"));
-            monitorImg  = ImageIO.read(new File(systemResourcesDir + "img/monitor.png"));
-            laptopImg   = ImageIO.read(new File(systemResourcesDir + "img/laptop.png"));
-            routerImg   = ImageIO.read(new File(systemResourcesDir + "img/router.png"));
-            printerImg  = ImageIO.read(new File(systemResourcesDir + "img/printer.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        computerImg = ImageManager.getComputerImg();
+        tableImg    = ImageManager.getTableImg();
+        commonImg   = ImageManager.getCommonImg();
+        monitorImg  = ImageManager.getMonitorImg();
+        laptopImg   = ImageManager.getLaptopImg();
+        routerImg   = ImageManager.getRouterImg();
+        printerImg  = ImageManager.getPrinterImg();
     }
 
     public ActionArea() {

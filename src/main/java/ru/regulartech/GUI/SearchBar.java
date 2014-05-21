@@ -1,5 +1,7 @@
 package ru.regulartech.GUI;
 
+import ru.regulartech.graphical.ImageManager;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -15,7 +17,7 @@ import java.awt.event.KeyEvent;
 public class SearchBar extends JPanel implements ActionListener{
     private static ImageIcon searchIcon;
     static {
-         searchIcon = new ImageIcon ("C:\\Users\\wiseman\\CODE\\regularTech\\src\\regularTech\\img\\scape_glass.png");
+         searchIcon = ImageManager.getSearchIcon();
     }
 
     private JTextField inputSearchText;
@@ -45,7 +47,6 @@ public class SearchBar extends JPanel implements ActionListener{
         inputSearchText.setPreferredSize(inputTextDimension);
         searchButton.setPreferredSize(searchButtonDimension);
 
-        // TODO: change action to runtime-typed symbol
         inputSearchText.addActionListener(this);
         searchButton.addActionListener(this);
         inputSearchText.addKeyListener(keyAdapter);

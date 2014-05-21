@@ -1,6 +1,8 @@
 package ru.regulartech.SQL;
 
 
+import org.apache.log4j.Logger;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -24,7 +26,8 @@ public class ConnectionManager {
     private static String port;
 
     private final static String propertiesFileName = "config.properties";
-    static{
+    private final static Logger logger = Logger.getLogger(ConnectionManager.class);
+    static {
         driverName = "com.mysql.jdbc.Driver";
         mydatabase = "regularTech";
         DBPassword = "Ns5(!11PLus";
@@ -49,7 +52,7 @@ public class ConnectionManager {
         input = new FileInputStream(path);
 
         if(input == null){
-            // TODO: add logger warning
+            logger.warn("Could not find " + propertiesFileName + " properties file.");
             return;
         }
         properties.load(input);
@@ -67,23 +70,19 @@ public class ConnectionManager {
         try {
             input.close();
         } catch (IOException e) {
-            // TODO: add logger
+            logger.info("Properties file was closed with errors.");
             e.printStackTrace();
         }
 
     }
     public static Connection getConnection(){
         Connection connection = null;
+        String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
         try {
             Class.forName(driverName);
-
-            String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
-
-            System.out.println(url);
-
             connection = DriverManager.getConnection(url, DBUser, DBPassword);
             } catch (SQLException e) {
-                // TODO: change to logger
+                logger.error("Could not get connection to server with url: " + url + ". Please, check properties file: USERNAME, PASSWORD.");
                 e.printStackTrace();
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
@@ -128,7 +127,7 @@ public class ConnectionManager {
             connection.close();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-            // Could not find the database driver
+            logger.fatal("Could not find jdbc driver.");
         } finally {
             try {
                 if (stmt != null)
@@ -136,7 +135,7 @@ public class ConnectionManager {
                 if (rs != null)
                     rs.close();
             } catch (Exception e){
-                // TODO: Add logger message
+                logger.info("JDBC connection closed with errors.");
             }
         }
 

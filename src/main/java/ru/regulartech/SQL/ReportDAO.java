@@ -1,6 +1,7 @@
 package ru.regulartech.SQL;
 
 
+import org.apache.log4j.Logger;
 import ru.regulartech.application.Pair;
 
 import java.sql.*;
@@ -15,7 +16,7 @@ import java.util.List;
 public class ReportDAO {
 
     private static Connection con;
-
+    private static final Logger logger = Logger.getLogger(ReportDAO.class);
     /**
      *
      * @return
@@ -38,6 +39,7 @@ public class ReportDAO {
             con.close();
         } catch (SQLException e) {
             e.printStackTrace();
+            logger.error("SQL query execution errors. Error: " + e.getSQLState() + " | " + e.getErrorCode());
         } finally {
             try {
                 if (ps != null)
@@ -45,7 +47,7 @@ public class ReportDAO {
                 if (rs != null)
                     rs.close();
             } catch (Exception e){
-                // TODO: Add logger message
+                logger.warn("Connection was closed with errors.");
             }
         }
         return result;
@@ -68,6 +70,7 @@ public class ReportDAO {
             con.close();
         } catch (SQLException e) {
             e.printStackTrace();
+            logger.error("SQL query execution errors. Error: " + e.getSQLState() + " | " + e.getErrorCode());
         } finally {
             try {
                 if (ps != null)
@@ -75,7 +78,7 @@ public class ReportDAO {
                 if (rs != null)
                     rs.close();
             } catch (Exception e){
-                // TODO: Add logger message
+                logger.warn("Connection was closed with errors.");
             }
         }
         return result;
@@ -100,6 +103,7 @@ public class ReportDAO {
             con.close();
         } catch (SQLException e) {
             e.printStackTrace();
+            logger.error("SQL query execution errors. Error: " + e.getSQLState() + " | " + e.getErrorCode());
         } finally {
             try {
                 if (ps != null)
@@ -107,7 +111,7 @@ public class ReportDAO {
                 if (rs != null)
                     rs.close();
             } catch (Exception e){
-                // TODO: Add logger message
+                logger.warn("Connection was closed with errors.");
             }
         }
         return result;
@@ -132,12 +136,13 @@ public class ReportDAO {
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+            logger.error("SQL query execution errors. Error: " + e.getSQLState() + " | " + e.getErrorCode());
         } finally {
             try {
                 if (ps != null)
                     ps.close();
             } catch (Exception e){
-                // TODO: Add logger message
+                logger.warn("Connection was closed with errors.");
             }
         }
     }

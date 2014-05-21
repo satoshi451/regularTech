@@ -1,13 +1,11 @@
 package ru.regulartech.GUI;
 
+import ru.regulartech.graphical.ImageManager;
 import ru.regulartech.graphical.Room;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.File;
-import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -29,21 +27,17 @@ public class GraphPane extends JPanel{
     private final AddRoomJDialog addRoomJDialog;
 
     private List<Room> roomList;
-    private static String systemResourcesDir;
 
     static {
         withoutRoom = "Нет помещений. Чтобы добавить помещение, щелкните правой кнопкой.";
-        try {
-            systemResourcesDir = GraphPane.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-            computer = ImageIO.read(new File(systemResourcesDir + "img/computer.png"));
-            printer = ImageIO.read(new File(systemResourcesDir + "img/printer.png"));
-            monitor = ImageIO.read(new File(systemResourcesDir + "img/monitor.png"));
-            router = ImageIO.read(new File(systemResourcesDir + "img/router.png"));
-            laptop = ImageIO.read(new File(systemResourcesDir + "img/laptop.png"));
-            common = ImageIO.read(new File(systemResourcesDir + "img/common.png"));
-        } catch(IOException e){
-            e.printStackTrace();
-        }
+
+        computer = ImageManager.getComputerImg();
+        printer = ImageManager.getPrinterImg();
+        monitor = ImageManager.getMonitorImg();
+        router = ImageManager.getRouterImg();
+        laptop = ImageManager.getLaptopImg();
+        common = ImageManager.getCommonImg();
+
     }
     public GraphPane() {
         super();

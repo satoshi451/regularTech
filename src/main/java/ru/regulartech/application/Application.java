@@ -1,5 +1,6 @@
 package ru.regulartech.application;
 
+import org.apache.log4j.Logger;
 import ru.regulartech.GUI.AbstractGUI;
 import ru.regulartech.GUI.AdminGUI;
 import ru.regulartech.GUI.RegularGUI;
@@ -30,6 +31,7 @@ public class Application extends JFrame {
         inputDimension = new Dimension(180, 40);
     }
 
+    private final Logger logger = Logger.getLogger(Application.class);
     private JTextField serverInput;
     private JTextField loginInput;
     private JPasswordField passInput;
@@ -164,6 +166,7 @@ public class Application extends JFrame {
         } catch(SQLException sqlException){
             statusBar.setStatus(status.FATAL_ERROR);
             statusBar.repaint();
+
             connectionStatus = false;
             return null;
         }

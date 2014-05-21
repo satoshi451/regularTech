@@ -3,9 +3,7 @@ package ru.regulartech.graphical;
 
 import ru.regulartech.officeObjects.OfficeObject;
 
-import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -19,13 +17,8 @@ public class Room extends GraphObject {
     private String name;
 
     private List<OfficeObject> objects;
-    static{
-        try{
-            pict = ImageIO.read(Room.class.getResource("/regularTech/img/room.png"));
-        }catch (IOException e){
-         //TODO: change printStackTrace to logger
-            e.printStackTrace();
-        }
+    static {
+        pict = ImageManager.getRoomImage();
     }
 
     public Room() {
