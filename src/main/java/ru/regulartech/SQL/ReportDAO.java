@@ -61,7 +61,7 @@ public class ReportDAO {
             if (con == null){
                 return null;
             }
-            String sql = "SELECT id, name FROM office_oject";
+            String sql = "SELECT id, name FROM office_object";
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()){
@@ -94,7 +94,7 @@ public class ReportDAO {
             if (con == null){
                 return null;
             }
-            String sql = "SELECT id, name, office_oject_type_id FROM office_oject WHERE id = ".concat(objectId.toString());
+            String sql = "SELECT id, name, office_object_type_id FROM office_object WHERE id = ".concat(objectId.toString());
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             if (rs.next()){
@@ -126,7 +126,7 @@ public class ReportDAO {
                 return ;
             }
              //TODO: add time to data format
-            String insertTableSQL = "INSERT INTO office_oject_financial(office_oject_id,  financial_types_id, cost, action_date)  VALUES (?,?,?,?)";
+            String insertTableSQL = "INSERT INTO office_object_finantial(office_object_id,  finantial_types_id, cost, action_date)  VALUES (?,?,?,?)";
 
             ps = con.prepareStatement(insertTableSQL);
             ps.setInt(1, object.getId());

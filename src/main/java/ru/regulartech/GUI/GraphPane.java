@@ -37,8 +37,10 @@ public class GraphPane extends JPanel{
         router = ImageManager.getRouterImg();
         laptop = ImageManager.getLaptopImg();
         common = ImageManager.getCommonImg();
-
     }
+
+    private JPopupMenu rightPopUpMenu;
+
     public GraphPane() {
         super();
 
@@ -63,39 +65,44 @@ public class GraphPane extends JPanel{
             @Override
             public void mouseClicked(MouseEvent mouseEvent) {
                 super.mouseClicked(mouseEvent);
+                processMouseClick(mouseEvent);
 
-                if (mouseEvent.getButton() == 3) {
-                    addRoomJDialog.setClickedX(mouseEvent.getX());
-                    addRoomJDialog.setClickedY(mouseEvent.getY());
-                    addRoomJDialog.setVisible(true);
-                }
             }
         });
-        addMouseMotionListener(new MouseMotionAdapter() {
-            @Override
-            public void mouseDragged(MouseEvent mouseEvent) {
-                if ( SwingUtilities.isLeftMouseButton(mouseEvent)) {
-                        System.out.println("[left] X: " + mouseEvent.getX() + " | Y: " + mouseEvent.getY());
-                }
-                int clickedX = mouseEvent.getX();
-                int clickedY = mouseEvent.getY();
-                Room  room = getFollowRoom(clickedX, clickedY);
-                if (room != null){
-                    System.out.println("Dragged " + room.getName());
-                    room.setX(clickedX);
-                    room.setY(clickedY);
-                    repaint();
-                }
+        addMouseMotionListener(new RoomMotionAdapter());
+
+    }
+
+    private void processMouseClick(MouseEvent mouseEvent) {
+        if(rightPopUpMenu != null)
+            rightPopUpMenu.setVisible(false);
+        if (mouseEvent.getButton() == 3) {
+            int x_coord = mouseEvent.getX();
+            int y_coord = mouseEvent.getY();
+            Room curRoom = getFollowRoom(x_coord, y_coord);
+            if(curRoom != null){
+                showRightClickMenu(curRoom);
+                System.out.println("find room " + curRoom.getName());
+                return;
             }
-        });
+            addRoomJDialog.setClickedX(x_coord);
+            addRoomJDialog.setClickedY(y_coord);
+            addRoomJDialog.setVisible(true);
+        }
+    }
+
+    private void showRightClickMenu(Room curRoom) {
+        rightPopUpMenu = new RightClickMenu(curRoom);
+
     }
 
     private Room getFollowRoom(int x, int y) {
         for(Room curRoom : roomList){
-            if(x > curRoom.getX() && x < Room.getImageWidth()
-                    && y > curRoom.getY() && y < Room.getImageHeight()){
+            if(x > curRoom.getX() && x < curRoom.getX() + Room.getImageWidth()
+                    && y > curRoom.getY() && y < curRoom.getY() + Room.getImageHeight()){
                 return curRoom;
             }
+           // else System.out.println("[" + curRoom.getX() + "|" + x + "|" + "]");
         }
         return null;
     }
@@ -118,7 +125,31 @@ public class GraphPane extends JPanel{
     private void drawRoom(Graphics g, Room room) {
         g.drawImage(Room.getPict(), room.getX(), room.getY(), null);
         g.drawString(room.getName(), room.getX(), room.getY() - 15);
+       // g.drawString("" + room.getX()  + "|" + room.getY(),room.getX() - 15, room.getY() + 15);
+      //  g.drawString("" + room.getX() + Room.getImageWidth() + "|" + room.getY() + Room.getImageHeight(), room.getX() - 15 +  Room.getImageWidth(), room.getY() + 15 + room.getY() + Room.getImageHeight());
         room.drawObjects();
+    }
+
+    private class RoomMotionAdapter extends MouseMotionAdapter {
+        private int oldX = 0;
+        private int oldY = 0;
+
+        @Override
+        public void mouseDragged(MouseEvent mouseEvent) {
+            if (SwingUtilities.isLeftMouseButton(mouseEvent)) {
+                System.out.println("[left] X: " + mouseEvent.getX() + " | Y: " + mouseEvent.getY());
+                int clickedX = mouseEvent.getX();
+                int clickedY = mouseEvent.getY();
+                oldX = clickedX;
+                oldY = clickedY;
+                Room  room = getFollowRoom(clickedX, clickedY);
+                if (room != null){
+                    System.out.println("Dragged " + room.getName());
+                    room.moveTo(clickedX - oldX, clickedY - oldY);
+                    repaint();
+                }
+            }
+        }
     }
 }
 //[MOUSE_CLICKED,(499,136),absolute(657,289),button=3,modifiers=Meta+Button3,extModifiers=Meta,clickCount=1]

@@ -58,9 +58,14 @@ public class Room extends GraphObject {
     }
 
     public static int getImageWidth() {
-        return pict.getWidth();
+        return pict.getTileWidth();
     }
     public static int getImageHeight(){
-        return  pict.getHeight();
+        return  pict.getTileHeight();
+    }
+
+    public void moveTo(int newX, int newY) {
+        setX(getX() + newX);
+        setY(getY() + newY);
     }
 }

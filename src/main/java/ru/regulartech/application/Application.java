@@ -16,7 +16,7 @@ import java.awt.event.WindowEvent;
 import java.sql.SQLException;
 
 public class Application extends JFrame {
-    private static final String DEFAULT_SERVER_NAME = "smarty-griditup.rhcloud.com";
+    private static final String DEFAULT_SERVER_NAME = "localhost";//"smarty-griditup.rhcloud.com";
     private WindowAdapter windowAdapter;
     private int width = 700;
 	private int height = 150;

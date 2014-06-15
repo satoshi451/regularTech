@@ -3,10 +3,10 @@ package ru.regulartech.graphical;
 import org.apache.log4j.Logger;
 
 import javax.imageio.ImageIO;
-import javax.swing.*;import javax.swing.ImageIcon;
+import javax.swing.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;import java.lang.String;
+import java.io.IOException;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).
@@ -34,7 +34,7 @@ public final class ImageManager {
             computerImg = ImageIO.read(new File(systemResourcesDir + "img/computer.png"));
             printerImg = ImageIO.read(new File(systemResourcesDir + "img/printer.png"));
             monitorImg = ImageIO.read(new File(systemResourcesDir + "img/monitor.png"));
-            routerImg = ImageIO.read(new File(systemResourcesDir + "img/router.png"));
+            routerImg = ImageIO.read(new File(systemResourcesDir + "img/1router.png"));
             laptopImg = ImageIO.read(new File(systemResourcesDir + "img/laptop.png"));
             commonImg = ImageIO.read(new File(systemResourcesDir + "img/common.png"));
             tableImg = ImageIO.read(new File(systemResourcesDir + "img/table.png"));
