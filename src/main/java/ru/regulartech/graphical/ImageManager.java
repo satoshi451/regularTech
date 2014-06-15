@@ -23,6 +23,10 @@ public final class ImageManager {
     private static BufferedImage routerImg;
     private static BufferedImage roomImage;
 
+    private static BufferedImage computerImgSmall;
+    private static BufferedImage printerImgSmall;
+    private static BufferedImage laptopImgSmall;
+
     private static ImageIcon refreshIcon;
     private static ImageIcon searchIcon;
 
@@ -40,6 +44,10 @@ public final class ImageManager {
             tableImg = ImageIO.read(new File(systemResourcesDir + "img/table.png"));
             roomImage = ImageIO.read(new File(systemResourcesDir + "img/room.png"));
 
+            computerImgSmall = ImageIO.read(new File(systemResourcesDir + "img/computer_small.png"));
+            printerImgSmall = ImageIO.read(new File(systemResourcesDir + "img/laptop_small.png"));
+            laptopImgSmall = ImageIO.read(new File(systemResourcesDir + "img/printer_small.png"));
+
         } catch(IOException e){
             // TODO: in betta version remove printStackTrace
             logger.fatal("{Could not load image.}" + e);
@@ -48,7 +56,6 @@ public final class ImageManager {
         refreshIcon = new ImageIcon(ImageManager.class.getProtectionDomain().getCodeSource().getLocation().getPath() + "img/refresh_icon.png");
         searchIcon = new ImageIcon(ImageManager.class.getProtectionDomain().getCodeSource().getLocation().getPath() + "img/scape_glass.png");
     }
-
 
 
     public static BufferedImage getRoomImage() {
@@ -93,5 +100,17 @@ public final class ImageManager {
 
     public static ImageIcon getSearchIcon() {
         return searchIcon;
+    }
+
+    public static BufferedImage getComputerImgSmall() {
+        return computerImgSmall;
+    }
+
+    public static BufferedImage getPrinterImgSmall() {
+        return printerImgSmall;
+    }
+
+    public static BufferedImage getLaptopImgSmall() {
+        return laptopImgSmall;
     }
 }

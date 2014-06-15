@@ -5,6 +5,8 @@ import ru.regulartech.graphical.Room;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.io.PipedReader;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).
@@ -21,8 +23,17 @@ public class RightClickMenu extends JPopupMenu{
         addObject.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                ObjectTypeSelectorWindow getObjectType = new ObjectTypeSelectorWindow();
-                int type = getObjectType.getObjectType();
+                PipedReader pipedReader = new PipedReader();
+                ObjectTypeSelectorWindow getObjectType = new ObjectTypeSelectorWindow(pipedReader);
+                //getObjectType.setVisible(false);
+                int type = 0;
+                try {
+                    type = pipedReader.read();
+                    pipedReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                System.out.println(type);
             }
         });
         add(addObject);
