@@ -2,6 +2,7 @@ package ru.regulartech.officeObjects;
 
 import ru.regulartech.graphical.GraphObject;
 
+import java.awt.*;
 import java.math.BigDecimal;
 
 /**
@@ -14,6 +15,8 @@ public abstract class OfficeObject extends GraphObject implements baseActions {
     protected String description;
     protected BigDecimal IndentureNumber;
     protected Integer status;
+
+    protected Image image;
 
     protected static final Integer ALL_IS_OK = 1;
     protected static final Integer BREAK = 2;
@@ -55,4 +58,10 @@ public abstract class OfficeObject extends GraphObject implements baseActions {
         this.status = status;
     }
 
+    public Image getObjectImage(){
+        return image;
+    }
+    public void setObjectImage(Image image){
+        this.image = image;
+    }
 }

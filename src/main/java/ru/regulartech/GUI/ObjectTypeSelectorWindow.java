@@ -22,8 +22,6 @@ public class ObjectTypeSelectorWindow extends JDialog{
     private static BufferedImage printer = ImageManager.getPrinterImgSmall();
     private static BufferedImage laptop = ImageManager.getLaptopImgSmall();
 
-    private int selectedTtype;
-
     private PipedWriter pipedWriter;
 
     public ObjectTypeSelectorWindow(PipedReader pipedReader) {
@@ -35,10 +33,19 @@ public class ObjectTypeSelectorWindow extends JDialog{
         }
         setTitle("Выберите тип добавляемого объекта");
         setLayout(new FlowLayout());
-        setBounds(500, 500, 400, 100);
+        setBounds(500, 500, getCalculatedWidth(), getCalculatedHeight());
         setModal(true);
         setVisible(true);
+        setResizable(false);
 
+    }
+
+    private int getCalculatedHeight() {
+        return 150;
+    }
+
+    private int getCalculatedWidth() {
+        return 400;
     }
 
     @Override
@@ -50,7 +57,6 @@ public class ObjectTypeSelectorWindow extends JDialog{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 writeType(OfficeObjectModel.OFFICE_OBJECT_PC);
-
             }
         });
         JButton laptopButton = new JButton(new ImageIcon(laptop));
@@ -76,14 +82,10 @@ public class ObjectTypeSelectorWindow extends JDialog{
         try {
             pipedWriter.write(officeObjectType);
             pipedWriter.flush();
-            //pipedWriter.close();
             setVisible(false);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public int getObjectType(){
-        return selectedTtype;
-    }
 }

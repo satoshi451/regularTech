@@ -70,18 +70,18 @@ public class GraphPane extends JPanel{
             }
         });
         addMouseMotionListener(new RoomMotionAdapter());
-
     }
 
     private void processMouseClick(MouseEvent mouseEvent) {
-        if(rightPopUpMenu != null)
-            rightPopUpMenu.setVisible(false);
+        hideRightClickMenu();
         if (mouseEvent.getButton() == 3) {
             int x_coord = mouseEvent.getX();
             int y_coord = mouseEvent.getY();
+
             Room curRoom = getFollowRoom(x_coord, y_coord);
+
             if(curRoom != null){
-                showRightClickMenu(curRoom);
+                showRightClickMenu(curRoom, x_coord, y_coord);
                 System.out.println("find room " + curRoom.getName());
                 return;
             }
@@ -91,19 +91,24 @@ public class GraphPane extends JPanel{
         }
     }
 
-    private void showRightClickMenu(Room curRoom) {
-        rightPopUpMenu = new RightClickMenu(curRoom);
+    private void showRightClickMenu(Room curRoom, int x_coord, int y_coord) {
+        Room room = getFollowRoom(x_coord, y_coord);
+        if (room != null){
+            room.setParentComponent(this);
+            room.showRightClickMenu();
+        }
+    }
 
+    private void hideRightClickMenu() {
+        for (Room room : roomList)
+            room.hideRightClickMenu();
     }
 
     private Room getFollowRoom(int x, int y) {
-        for(Room curRoom : roomList){
+        for(Room curRoom : roomList)
             if(x > curRoom.getX() && x < curRoom.getX() + Room.getImageWidth()
-                    && y > curRoom.getY() && y < curRoom.getY() + Room.getImageHeight()){
+                    && y > curRoom.getY() && y < curRoom.getY() + Room.getImageHeight())
                 return curRoom;
-            }
-           // else System.out.println("[" + curRoom.getX() + "|" + x + "|" + "]");
-        }
         return null;
     }
 
@@ -125,9 +130,7 @@ public class GraphPane extends JPanel{
     private void drawRoom(Graphics g, Room room) {
         g.drawImage(Room.getPict(), room.getX(), room.getY(), null);
         g.drawString(room.getName(), room.getX(), room.getY() - 15);
-       // g.drawString("" + room.getX()  + "|" + room.getY(),room.getX() - 15, room.getY() + 15);
-      //  g.drawString("" + room.getX() + Room.getImageWidth() + "|" + room.getY() + Room.getImageHeight(), room.getX() - 15 +  Room.getImageWidth(), room.getY() + 15 + room.getY() + Room.getImageHeight());
-        room.drawObjects();
+        room.drawObjects(g);
     }
 
     private class RoomMotionAdapter extends MouseMotionAdapter {

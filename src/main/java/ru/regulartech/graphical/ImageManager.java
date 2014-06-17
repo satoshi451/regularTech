@@ -45,8 +45,8 @@ public final class ImageManager {
             roomImage = ImageIO.read(new File(systemResourcesDir + "img/room.png"));
 
             computerImgSmall = ImageIO.read(new File(systemResourcesDir + "img/computer_small.png"));
-            printerImgSmall = ImageIO.read(new File(systemResourcesDir + "img/laptop_small.png"));
-            laptopImgSmall = ImageIO.read(new File(systemResourcesDir + "img/printer_small.png"));
+            printerImgSmall = ImageIO.read(new File(systemResourcesDir + "img/printer_small.png"));
+            laptopImgSmall = ImageIO.read(new File(systemResourcesDir + "img/laptop_small.png"));
 
         } catch(IOException e){
             // TODO: in betta version remove printStackTrace
@@ -56,7 +56,6 @@ public final class ImageManager {
         refreshIcon = new ImageIcon(ImageManager.class.getProtectionDomain().getCodeSource().getLocation().getPath() + "img/refresh_icon.png");
         searchIcon = new ImageIcon(ImageManager.class.getProtectionDomain().getCodeSource().getLocation().getPath() + "img/scape_glass.png");
     }
-
 
     public static BufferedImage getRoomImage() {
         return roomImage;
@@ -92,10 +91,6 @@ public final class ImageManager {
 
     public static ImageIcon getRefreshIcon() {
         return refreshIcon;
-    }
-
-    public static void setRefreshIcon(ImageIcon refreshIcon) {
-        ImageManager.refreshIcon = refreshIcon;
     }
 
     public static ImageIcon getSearchIcon() {

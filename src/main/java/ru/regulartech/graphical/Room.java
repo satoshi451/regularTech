@@ -1,8 +1,10 @@
 package ru.regulartech.graphical;
 
 
+import ru.regulartech.GUI.RightClickMenu;
 import ru.regulartech.officeObjects.OfficeObject;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,10 +21,15 @@ public class Room extends GraphObject {
     private List<OfficeObject> objects;
     static {
         pict = ImageManager.getRoomImage();
+
     }
+
+    private RightClickMenu rightClickMenu;
+    private Component parentComponent;
 
     public Room() {
         objects = new LinkedList<OfficeObject>();
+        rightClickMenu = new RightClickMenu(this);
     }
 
     public Room(String name) {
@@ -50,7 +57,40 @@ public class Room extends GraphObject {
         this.objects.add(officeObject);
     }
 
-    public void drawObjects() {
+    public void drawObjects(Graphics g) {
+        if(objects.size() == 0)
+            return;
+        int cntX = 0;
+        int cntY = 0;
+        int maxCntX = getImageWidth()/(110 + 20);
+        int maxCntY = getImageHeight()/(110 + 20);
+
+        for (OfficeObject curObject : objects) {
+            if(cntX >= maxCntX){
+                cntX = 0;
+                cntY++;
+                System.out.println("New line of objects");
+            }
+            if(cntY >= maxCntY){
+                System.out.println("End od free space in room");
+                //JOptionPane.showMessageDialog(null, "[WARNING] Not all object was draw");
+                return;
+            }
+
+            int h_gap = 20;
+            int v_gap = 10;
+            int child_y = getY() + cntY*(curObject.getObjectImage().getHeight(null) + v_gap) + 20;
+            int child_x = getX() + cntX++*(curObject.getObjectImage().getWidth(null) + h_gap) + 20;
+
+            curObject.setX(child_x);
+            curObject.setY(child_y);
+
+            if(child_x >= getImageWidth()) {
+                cntY++;
+                cntX = 0;
+            }
+            g.drawImage(curObject.getObjectImage(), child_x, child_y, null);
+        }
     }
 
     public static BufferedImage getPict() {
@@ -68,5 +108,30 @@ public class Room extends GraphObject {
     public void moveTo(int newX, int newY) {
         setX(getX() + newX);
         setY(getY() + newY);
+    }
+
+    public OfficeObject getObject(int x, int y) {
+        for (OfficeObject curObject : objects){
+            if(x > curObject.getX() && x < curObject.getX() + curObject.getObjectImage().getWidth(null)
+                    && y > curObject.getY() && y  < curObject.getObjectImage().getHeight(null)){
+                System.out.println("find: " + curObject.getClass());
+            }
+
+        }
+        return null;
+    }
+
+    public void hideRightClickMenu() {
+        rightClickMenu.setVisible(false);
+
+    }
+
+    public void showRightClickMenu() {
+        rightClickMenu.setVisible(true);
+    }
+
+    public void setParentComponent(Component parentComponent) {
+        this.parentComponent = parentComponent;
+        rightClickMenu.setComponent(parentComponent);
     }
 }

@@ -1,5 +1,7 @@
 package ru.regulartech.officeObjects;
 
+import ru.regulartech.graphical.ImageManager;
+
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).
  * DATE: 18.04.2014
@@ -10,7 +12,9 @@ public class PC extends ElectronicObject implements electronicFunctions {
 
     public PC() {
         super();
-
+        setX(0);
+        setY(0);
+        setObjectImage(ImageManager.getComputerImgSmall());
     }
 
     public PC(int x_cord, int y_cord) {
