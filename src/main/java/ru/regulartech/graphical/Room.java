@@ -96,8 +96,14 @@ public class Room extends GraphObject {
                 cntY++;
                 cntX = 0;
             }
-            g.drawImage(curObject.getObjectImage(), child_x, child_y, null);
+            drawObject(curObject, g, child_x, child_y);
+
         }
+    }
+
+    private void drawObject(OfficeObject curObject, Graphics g, int x, int y) {
+        g.drawImage(curObject.getObjectImage(), x, y, null);
+        g.drawString(curObject.getName(), x, y + curObject.getObjectImage().getHeight(null) + 10);
     }
 
     public static BufferedImage getPict() {

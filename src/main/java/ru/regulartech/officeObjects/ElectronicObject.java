@@ -28,7 +28,7 @@ public abstract class ElectronicObject extends OfficeObject implements electroni
             diagnostic.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent actionEvent) {
-
+                    ((ElectronicObject)getOfficeObject()).doDiagnostic();
                 }
             });
             add(diagnostic);

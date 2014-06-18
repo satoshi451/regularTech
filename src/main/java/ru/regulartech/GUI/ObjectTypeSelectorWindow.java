@@ -25,7 +25,7 @@ public class ObjectTypeSelectorWindow extends JDialog{
     private static BufferedImage monitor = ImageManager.getMonitorImgSmall();
 
     private PipedWriter pipedWriter;
-    private int objectCount = 0;
+    private int objectCount;
 
     public ObjectTypeSelectorWindow(PipedReader pipedReader) {
         pipedWriter = new PipedWriter();
@@ -43,11 +43,11 @@ public class ObjectTypeSelectorWindow extends JDialog{
     }
 
     private int getCalculatedHeight() {
-        return 150;
+        return computer.getHeight(null) + 60;
     }
 
     private int getCalculatedWidth() {
-        return 400;
+        return objectCount*(computer.getWidth(null) + 50) + 20;
     }
 
     @Override
@@ -59,14 +59,6 @@ public class ObjectTypeSelectorWindow extends JDialog{
         addSelectButton(laptop, OfficeObject.OFFICE_OBJECT_LAPTOP);
         addSelectButton(monitor, OfficeObject.OFFICE_OBJECT_MONITOR);
         addSelectButton(router, OfficeObject.OFFICE_OBJECT_ROUTER);
-        setSize();
-    }
-
-    private void setSize() {
-        int width = objectCount*(computer.getWidth(null) + 10);
-        int height = computer.getHeight(null) + 20;
-
-        setBounds(300, 300, width, height);
     }
 
     private void addSelectButton(BufferedImage computer, final int OFFICE_OBJECT_TYPE_CONST) {

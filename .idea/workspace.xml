@@ -5,41 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7f39c04-a8f6-4db7-8d16-5f76301b1b22" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GetOfficeObjectNameDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Monitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Router.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Table.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/SQL_scripts/build_database/createOfficeObjectStatus.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/SQL_scripts/fill_start_data/fillOfficeObjectStatus.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/img/computer_small.png" afterPath="$PROJECT_DIR$/src/main/resources/img/computer_small.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/img/laptop_small.png" afterPath="$PROJECT_DIR$/src/main/resources/img/laptop_small.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/img/monitor.png" afterPath="$PROJECT_DIR$/src/main/resources/img/monitor.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/img/printer_small.png" afterPath="$PROJECT_DIR$/src/main/resources/img/printer_small.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/img/router.png" afterPath="$PROJECT_DIR$/src/main/resources/img/router.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ActionArea.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ActionArea.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/HerarhArea.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/HerarhArea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/ImageManager.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/ImageManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Laptop.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Laptop.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ObjectTypeSelectorWindow.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ObjectTypeSelectorWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectList.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectListModel.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectListModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/PC.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/PC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Printer.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Printer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ReportActionWindow.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ReportActionWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/SQL/ReportDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/SQL/ReportDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/RightClickMenu.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/RightClickMenu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/Room.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/Room.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/baseActions.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/baseActions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/SQL_scripts/build_database/createOfficeObject.sql" afterPath="$PROJECT_DIR$/src/main/resources/SQL_scripts/build_database/createOfficeObject.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/findbugs-idea.xml" afterPath="$PROJECT_DIR$/.idea/findbugs-idea.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="regulartech.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,8 +36,8 @@
       <file leaf-file-name="GraphPane.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1343" max-vertical-offset="2720">
-              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1251" max-vertical-offset="2720">
+              <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
               <folding>
                 <element signature="e#1956#2180#0" expanded="true" />
                 <element signature="e#2169#2170#0" expanded="true" />
@@ -78,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OfficeObject.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="OfficeObject.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="2635" max-vertical-offset="3162">
-              <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2652" max-vertical-offset="3196">
+              <caret line="205" column="28" selection-start-line="205" selection-start-column="28" selection-end-line="205" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1393#1394#0" expanded="true" />
@@ -94,6 +62,9 @@
                 <element signature="e#3238#3239#0" expanded="true" />
                 <element signature="e#3279#3280#0" expanded="true" />
                 <element signature="e#5689#5891#0" expanded="true" />
+                <element signature="e#5876#5877#0" expanded="true" />
+                <element signature="e#6315#6316#0" expanded="true" />
+                <element signature="e#6358#6359#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,21 +73,24 @@
       <file leaf-file-name="ElectronicObject.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="697">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="697">
+              <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+              <folding>
+                <element signature="e#866#1091#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Room.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Room.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/Room.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="2414">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state vertical-scroll-proportion="1.0598291" vertical-offset="1245" max-vertical-offset="2516">
+              <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
               <folding>
-                <element signature="e#3781#3782#0" expanded="true" />
-                <element signature="e#3829#3830#0" expanded="true" />
+                <element signature="e#4008#4009#0" expanded="true" />
+                <element signature="e#4056#4057#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,8 +122,8 @@
       <file leaf-file-name="RightClickMenu.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/RightClickMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1377">
-              <caret line="49" column="39" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1377">
+              <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
               <folding>
                 <element signature="e#632#2357#0" expanded="true" />
                 <element signature="e#2346#2347#0" expanded="true" />
@@ -161,26 +135,17 @@
       <file leaf-file-name="ObjectTypeSelectorWindow.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ObjectTypeSelectorWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="636" max-vertical-offset="1479">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="1462">
+              <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
               <folding>
-                <element signature="e#2761#2762#0" expanded="true" />
-                <element signature="e#2790#2791#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/ImageManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="1666">
-              <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-              <folding>
-                <element signature="e#4173#4174#0" expanded="true" />
-                <element signature="e#4210#4211#0" expanded="true" />
-                <element signature="e#4266#4267#0" expanded="true" />
-                <element signature="e#4304#4305#0" expanded="true" />
+                <element signature="e#1502#1503#0" expanded="true" />
+                <element signature="e#1554#1555#0" expanded="true" />
+                <element signature="e#1594#1595#0" expanded="true" />
+                <element signature="e#1664#1665#0" expanded="true" />
+                <element signature="e#2308#2496#0" expanded="true" />
+                <element signature="e#2485#2486#0" expanded="true" />
+                <element signature="e#2611#2612#0" expanded="true" />
+                <element signature="e#2640#2641#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -262,16 +227,16 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GetOfficeObjectNameDialog.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/baseActions.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Laptop.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/Room.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/SQL/ReportDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/RightClickMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/ImageManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Router.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ObjectTypeSelectorWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/PC.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ObjectTypeSelectorWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/Room.java" />
       </list>
     </option>
   </component>
@@ -964,12 +929,12 @@
       <workItem from="1403014161171" duration="295000" />
       <workItem from="1403015857384" duration="3462000" />
       <workItem from="1403035535137" duration="2154000" />
-      <workItem from="1403039180336" duration="28049000" />
+      <workItem from="1403039180336" duration="29627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113551000" />
+    <option name="totallyTimeSpent" value="115129000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1003,7 +968,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4715026" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4715026" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1018,7 +983,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18603411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24352331" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24352331" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1087,31 +1052,37 @@
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java</url>
-          <line>95</line>
-          <properties />
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java</url>
           <line>196</line>
           <properties />
           <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java</url>
-          <line>99</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ObjectTypeSelectorWindow.java</url>
+          <line>64</line>
           <properties />
-          <option name="timeStamp" value="103" />
+          <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java</url>
-          <line>143</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ObjectTypeSelectorWindow.java</url>
+          <line>45</line>
           <properties />
-          <option name="timeStamp" value="105" />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ObjectTypeSelectorWindow.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ObjectTypeSelectorWindow.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="110" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="106" />
+      <option name="time" value="111" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1468,57 +1439,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/ImageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="1666">
-          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-          <folding>
-            <element signature="e#4173#4174#0" expanded="true" />
-            <element signature="e#4210#4211#0" expanded="true" />
-            <element signature="e#4266#4267#0" expanded="true" />
-            <element signature="e#4304#4305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ObjectTypeSelectorWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="636" max-vertical-offset="1479">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="e#2761#2762#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Router.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/RightClickMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1377">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="39" />
-          <folding>
-            <element signature="e#632#2357#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="2414">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="e#3781#3782#0" expanded="true" />
-            <element signature="e#3829#3830#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1529,25 +1454,6 @@
           <folding>
             <element signature="e#679#680#0" expanded="true" />
             <element signature="e#718#719#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="697">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1343" max-vertical-offset="2720">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding>
-            <element signature="e#1956#2180#0" expanded="true" />
-            <element signature="e#2169#2170#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1574,8 +1480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2635" max-vertical-offset="3162">
-          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2652" max-vertical-offset="3196">
+          <caret line="205" column="28" selection-start-line="205" selection-start-column="28" selection-end-line="205" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1393#1394#0" expanded="true" />
@@ -1587,6 +1493,83 @@
             <element signature="e#3238#3239#0" expanded="true" />
             <element signature="e#3279#3280#0" expanded="true" />
             <element signature="e#5689#5891#0" expanded="true" />
+            <element signature="e#5876#5877#0" expanded="true" />
+            <element signature="e#6315#6316#0" expanded="true" />
+            <element signature="e#6358#6359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="697">
+          <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+          <folding>
+            <element signature="e#866#1091#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/ImageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66230935" vertical-offset="478" max-vertical-offset="1666">
+          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+          <folding>
+            <element signature="e#4173#4174#0" expanded="true" />
+            <element signature="e#4210#4211#0" expanded="true" />
+            <element signature="e#4266#4267#0" expanded="true" />
+            <element signature="e#4304#4305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/RightClickMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1377">
+          <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+          <folding>
+            <element signature="e#632#2357#0" expanded="true" />
+            <element signature="e#2346#2347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1251" max-vertical-offset="2720">
+          <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+          <folding>
+            <element signature="e#1956#2180#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ObjectTypeSelectorWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="1462">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+          <folding>
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1664#1665#0" expanded="true" />
+            <element signature="e#2308#2496#0" expanded="true" />
+            <element signature="e#2485#2486#0" expanded="true" />
+            <element signature="e#2611#2612#0" expanded="true" />
+            <element signature="e#2640#2641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0598291" vertical-offset="1245" max-vertical-offset="2516">
+          <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
+          <folding>
+            <element signature="e#4008#4009#0" expanded="true" />
+            <element signature="e#4056#4057#0" expanded="true" />
           </folding>
         </state>
       </provider>
