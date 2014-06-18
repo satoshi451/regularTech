@@ -10,7 +10,19 @@ import ru.regulartech.graphical.ImageManager;
 public class Printer extends ElectronicObject {
 
     public Printer() {
+        super();
         setObjectImage(ImageManager.getPrinterImgSmall());
+    }
+
+    @Override
+    public Integer getType() {
+        return OFFICE_OBJECT_PRINTER;
+    }
+
+    public Printer(Integer id, String name) {
+        super(id, name);
+        setObjectImage(ImageManager.getPrinterImgSmall());
+
     }
 
     @Override

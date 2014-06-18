@@ -9,7 +9,6 @@ import ru.regulartech.graphical.ImageManager;
  */
 public class PC extends ElectronicObject implements electronicFunctions {
 
-
     public PC() {
         super();
         setX(0);
@@ -21,7 +20,17 @@ public class PC extends ElectronicObject implements electronicFunctions {
         this();
         setX(x_cord);
         setY(y_cord);
+    }
 
+    public PC(Integer id, String name) {
+        super(id, name);
+        setObjectImage(ImageManager.getComputerImgSmall());
+
+    }
+
+    @Override
+    public Integer getType() {
+        return OFFICE_OBJECT_PC;
     }
 
     @Override

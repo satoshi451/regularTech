@@ -1,10 +1,7 @@
 package ru.regulartech.GUI;
 
-import ru.regulartech.SQL.OfficeObjectModel;
 import ru.regulartech.graphical.Room;
-import ru.regulartech.officeObjects.Laptop;
-import ru.regulartech.officeObjects.PC;
-import ru.regulartech.officeObjects.Printer;
+import ru.regulartech.officeObjects.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -38,25 +35,31 @@ public class RightClickMenu extends JPopupMenu{
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                System.out.println(type);
+                //System.out.println(type);
 
                 switch (type){
-                    case OfficeObjectModel.OFFICE_OBJECT_PC:
+                    case OfficeObject.OFFICE_OBJECT_PC:
                         curRoom.addObject(new PC());
-                        parentComponent.repaint();
                         break;
 
-                    case OfficeObjectModel.OFFICE_OBJECT_LAPTOP:
+                    case OfficeObject.OFFICE_OBJECT_LAPTOP:
                         curRoom.addObject(new Laptop());
-                        parentComponent.repaint();
                         break;
 
-                    case OfficeObjectModel.OFFICE_OBJECT_PRINTER:
+                    case OfficeObject.OFFICE_OBJECT_PRINTER:
                         curRoom.addObject(new Printer());
-                        parentComponent.repaint();
+                        break;
+
+                    case OfficeObject.OFFICE_OBJECT_ROUTER:
+                        curRoom.addObject(new Router());
+                        break;
+
+                    case OfficeObject.OFFICE_OBJECT_MONITOR:
+                        curRoom.addObject(new Monitor());
                         break;
                     //TODO: add more types object
                 }
+                parentComponent.repaint();
 
                 if(curRoom != null || parentComponent != null) {
                     setLocation(curRoom.getX() + 300, curRoom.getY() + 300);

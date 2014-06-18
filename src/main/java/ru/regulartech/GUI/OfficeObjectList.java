@@ -1,7 +1,7 @@
 package ru.regulartech.GUI;
 
 import ru.regulartech.SQL.ReportDAO;
-import ru.regulartech.application.Pair;
+import ru.regulartech.officeObjects.OfficeObject;
 
 import javax.swing.*;
 import java.util.LinkedList;
@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class OfficeObjectList extends JList{
     private DefaultListModel model;
-    private List<Pair<Integer, String>> data;
+    private List<OfficeObject> data;
 
     public OfficeObjectList() {
         super();
@@ -30,10 +30,10 @@ public class OfficeObjectList extends JList{
             rebuildList();
             return;
         }
-        List<Pair<Integer, String>> newData = new LinkedList<Pair<Integer, String>>();
+        List<OfficeObject> newData = new LinkedList<OfficeObject>();
 
-        for (Pair<Integer, String> listElem : data)
-            if(listElem.getSecond().contains(pattern))
+        for (OfficeObject listElem : data)
+            if(listElem.getName().contains(pattern))
                 newData.add(listElem);
 
         this.data = newData;
@@ -41,18 +41,20 @@ public class OfficeObjectList extends JList{
     }
     private void rebuildList(){
         model = new OfficeObjectListModel(data);
-        for (Pair<Integer, String> listElem : data)
-            model.addElement(listElem.getSecond());
+        for (OfficeObject listElem : data)
+            model.addElement(listElem.getName());
 
         setModel(model);
         repaint();
     }
 
-    public Integer getIdByValue(String selectedValue) {
-        for(Pair<Integer, String> curElem : data)
-            if(curElem.getSecond().equals(selectedValue))
-                return curElem.getFirst();
+    public OfficeObject getByValue(String selectedValue) {
+        for(OfficeObject curObj : data){
+            if(curObj.getName().equals(selectedValue)){
+                return curObj;
+            }
 
+        }
         return null;
     }
 }

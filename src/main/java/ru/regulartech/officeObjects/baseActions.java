@@ -7,5 +7,9 @@ package ru.regulartech.officeObjects;
  */
 public interface baseActions {
     void changeRoom();
+
     void changeStatus(Integer status);
+    void setOfficeObjectStatusId(Integer status);
+
+    Integer getOfficeObjectStatusId();
 }

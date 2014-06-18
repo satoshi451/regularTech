@@ -1,7 +1,7 @@
 package ru.regulartech.GUI;
 
 
-import ru.regulartech.application.Pair;
+import ru.regulartech.officeObjects.OfficeObject;
 
 import javax.swing.*;
 import java.util.List;
@@ -12,9 +12,9 @@ import java.util.List;
  * TIME: 15:45
  */
 public class OfficeObjectListModel extends DefaultListModel {
-    private  List<Pair<Integer, String>> data;
+    private  List<OfficeObject> data;
 
-    public OfficeObjectListModel(List<Pair<Integer, String>> data) {
+    public OfficeObjectListModel(List<OfficeObject> data) {
         super();
         this.data = data;
     }

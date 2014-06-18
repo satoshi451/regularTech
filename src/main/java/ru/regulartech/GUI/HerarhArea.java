@@ -1,5 +1,7 @@
 package ru.regulartech.GUI;
 
+import ru.regulartech.officeObjects.OfficeObject;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -12,6 +14,7 @@ public class HerarhArea extends JPanel{
 
     private OfficeObjectList officeObjectList;
     private SearchBar searchBar;
+    private OfficeObject currentOfficeObject;
 
     public HerarhArea() {
         super();
@@ -29,9 +32,19 @@ public class HerarhArea extends JPanel{
         return officeObjectList.getSelectionModel();
     }
 
-    public Integer getCurElemId() {
-        String selectedValue = (String) officeObjectList.getSelectedValue();
-        Integer id = officeObjectList.getIdByValue(selectedValue);
-        return id;
+    public OfficeObject getCurrentOfficeObject() {
+        return currentOfficeObject;
     }
+
+    public void setCurrentOfficeObject(OfficeObject currentOfficeObject) {
+        this.currentOfficeObject = currentOfficeObject;
+    }
+
+    public Integer getCurElem() {
+        String selectedValue = (String) officeObjectList.getSelectedValue();
+        OfficeObject officeObject = officeObjectList.getByValue(selectedValue);
+        setCurrentOfficeObject(officeObject);
+        return null;
+    }
+
 }

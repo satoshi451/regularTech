@@ -1,8 +1,9 @@
 package ru.regulartech.SQL;
 
 
+import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 import org.apache.log4j.Logger;
-import ru.regulartech.application.Pair;
+import ru.regulartech.officeObjects.OfficeObject;
 
 import java.sql.*;
 import java.util.LinkedList;
@@ -52,8 +53,8 @@ public class ReportDAO {
         }
         return result;
     }
-    public static List<Pair<Integer, String>> listAll(){
-        List<Pair<Integer, String>> result = new LinkedList<Pair<Integer, String>>();
+    public static List<OfficeObject> listAll(){
+        List<OfficeObject> result = new LinkedList<OfficeObject>();
         PreparedStatement ps = null;
         ResultSet rs = null;
         try {
@@ -61,11 +62,11 @@ public class ReportDAO {
             if (con == null){
                 return null;
             }
-            String sql = "SELECT id, name FROM office_object";
+            String sql = "SELECT id, name, office_object_type_id FROM office_object";
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()){
-                result.add(new Pair(rs.getInt(1),rs.getString(2)));
+                result.add(OfficeObject.loadOfficeObject(rs.getInt(1), rs.getString(2), rs.getInt(3)));
             }
             con.close();
         } catch (SQLException e) {
@@ -84,8 +85,8 @@ public class ReportDAO {
         return result;
     }
 
-    public static OfficeObjectModel getOfficeObject(Integer objectId) {
-        OfficeObjectModel result = null;
+    public static OfficeObject getOfficeObject(Integer objectId) {
+        OfficeObject result = null;
         ResultSet rs = null;
         PreparedStatement ps = null;
 
@@ -98,7 +99,7 @@ public class ReportDAO {
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             if (rs.next()){
-                result = new OfficeObjectModel(rs.getInt(1), rs.getString(2), rs.getInt(3));
+                result = OfficeObject.loadOfficeObject(rs.getInt(1), rs.getString(2), rs.getInt(3));
             }
             con.close();
         } catch (SQLException e) {
@@ -117,7 +118,7 @@ public class ReportDAO {
         return result;
     }
 
-    public static void createNewReport(OfficeObjectModel object, int operationType, Integer costs) {
+    public static void createNewReport(OfficeObject object, int operationType, Integer costs) {
         PreparedStatement ps = null;
 
         try {
@@ -133,6 +134,168 @@ public class ReportDAO {
             ps.setInt(2, operationType + 1);
             ps.setInt(3, costs);
             ps.setDate(4, new Date((new java.util.Date()).getTime()));
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error("SQL query execution errors. Error: " + e.getSQLState() + " | " + e.getErrorCode());
+        } finally {
+            try {
+                if (ps != null)
+                    ps.close();
+            } catch (Exception e){
+                logger.warn("Connection was closed with errors.");
+            }
+        }
+    }
+
+    public static void setStatus(OfficeObject officeObject, Integer status) {
+        PreparedStatement ps = null;
+
+        try {
+            con = ConnectionManager.getConnection();
+            if (con == null){
+                return ;
+            }
+            //TODO: add time to data format
+            String insertTableSQL = "UPDATE OFFICE_OBJECT SET OFFICE_OBJECT_STATUS_ID = (?) WHERE ID = (?)";
+
+            ps = con.prepareStatement(insertTableSQL);
+            ps.setInt(1, status);
+            ps.setInt(2, officeObject.getId());
+
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error("SQL query execution errors. Error: " + e.getSQLState() + " | " + e.getErrorCode());
+        } finally {
+            try {
+                if (ps != null)
+                    ps.close();
+            } catch (Exception e){
+                logger.warn("Connection was closed with errors.");
+            }
+        }
+    }
+
+    public static Integer getUniqueId() {
+        Integer result = null;
+        ResultSet rs = null;
+        PreparedStatement ps = null;
+
+        try {
+            con = ConnectionManager.getConnection();
+            if (con == null){
+                return null;
+            }
+            String sql = "SELECT max(id) + 1 FROM office_object";
+            ps = con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            if (rs.next()){
+                result = rs.getInt(1);
+            }
+            con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error("SQL query execution errors. Error: " + e.getSQLState() + " | " + e.getErrorCode());
+        } finally {
+            try {
+                if (ps != null)
+                    ps.close();
+                if (rs != null)
+                    rs.close();
+            } catch (Exception e){
+                logger.warn("Connection was closed with errors.");
+            }
+        }
+        return result;
+    }
+    public static Integer createOfficeObject(Integer OFFICE_OBJECT_TYPE_ID){
+        Integer id = getUniqueId();
+        PreparedStatement ps = null;
+
+        try {
+            con = ConnectionManager.getConnection();
+            if (con == null){
+                return null;
+            }
+            //TODO: add time to data format
+            String insertTableSQL = "INSERT INTO office_object(id, name, office_object_type_id, office_object_status_id)" +
+                    " VALUES (?,?,?,?)";
+
+            ps = con.prepareStatement(insertTableSQL);
+            ps.setInt(1, id);
+            ps.setString(2, "");
+            ps.setInt(3, OFFICE_OBJECT_TYPE_ID);
+            ps.setInt(4, OfficeObject.ALL_IS_OK);
+
+            ps.executeUpdate();
+        } catch (MySQLIntegrityConstraintViolationException e){
+            e.printStackTrace();
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+            logger.error("SQL query execution errors. Error: " + e.getSQLState() + " | " + e.getErrorCode());
+        } finally {
+            try {
+                if (ps != null)
+                    ps.close();
+            } catch (Exception e){
+                logger.warn("Connection was closed with errors.");
+            }
+        }
+        return id;
+    }
+
+    public static void createOfficeObject(Integer OFFICE_OBJECT_TYPE_ID, Integer id, String name) {
+        PreparedStatement ps = null;
+
+        try {
+            con = ConnectionManager.getConnection();
+            if (con == null){
+                return;
+            }
+            //TODO: add time to data format
+            String insertTableSQL = "INSERT INTO office_object(id, name, office_object_type_id, office_object_status_id)" +
+                    " VALUES (?,?,?,?)";
+
+            ps = con.prepareStatement(insertTableSQL);
+            ps.setInt(1, id);
+            ps.setString(2, "");
+            ps.setInt(3, OFFICE_OBJECT_TYPE_ID);
+            ps.setInt(4, OfficeObject.ALL_IS_OK);
+
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error("SQL query execution errors. Error: " + e.getSQLState() + " | " + e.getErrorCode());
+        } finally {
+            try {
+                if (ps != null)
+                    ps.close();
+            } catch (Exception e){
+                logger.warn("Connection was closed with errors.");
+            }
+        }
+    }
+
+    public static void createOfficeObject(OfficeObject officeObject) {
+        PreparedStatement ps = null;
+
+        try {
+            con = ConnectionManager.getConnection();
+            if (con == null){
+                return;
+            }
+            //TODO: add time to data format
+            String insertTableSQL = "INSERT INTO office_object(id, name, office_object_type_id, office_object_status_id)" +
+                    " VALUES (?,?,?,?)";
+
+            ps = con.prepareStatement(insertTableSQL);
+            ps.setInt(1, officeObject.getId());
+            ps.setString(2, officeObject.getName());
+            ps.setInt(3, officeObject.getType());
+            ps.setInt(4, officeObject.getOfficeObjectStatusId());
+
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

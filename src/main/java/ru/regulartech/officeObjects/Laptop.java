@@ -9,7 +9,19 @@ import ru.regulartech.graphical.ImageManager;
  */
 public class Laptop extends ElectronicObject {
     public Laptop() {
+        super();
         setObjectImage(ImageManager.getLaptopImgSmall());
+    }
+
+    @Override
+    public Integer getType() {
+        return OFFICE_OBJECT_LAPTOP;
+    }
+
+    public Laptop(Integer id, String name) {
+        this();
+        setId(id);
+        setName(name);
     }
 
     @Override

@@ -2,6 +2,7 @@ package ru.regulartech.GUI;
 
 import ru.regulartech.graphical.ImageManager;
 import ru.regulartech.graphical.Room;
+import ru.regulartech.officeObjects.OfficeObject;
 
 import javax.swing.*;
 import java.awt.*;
@@ -92,16 +93,24 @@ public class GraphPane extends JPanel{
     }
 
     private void showRightClickMenu(Room curRoom, int x_coord, int y_coord) {
-        Room room = getFollowRoom(x_coord, y_coord);
-        if (room != null){
-            room.setParentComponent(this);
-            room.showRightClickMenu();
+        if (curRoom != null){
+            OfficeObject officeObject = curRoom.getOfficeObject(x_coord, y_coord);
+            if(officeObject != null){
+                OfficeObject.ObjectRightClickMenu objectRightClickMenu = officeObject.getObjectRightClickMenu();
+                if(objectRightClickMenu != null)
+                    objectRightClickMenu.showMenu(officeObject, x_coord, y_coord);
+            } else {
+                curRoom.setParentComponent(this);
+                curRoom.showRightClickMenu(x_coord, y_coord);
+            }
         }
     }
 
     private void hideRightClickMenu() {
-        for (Room room : roomList)
+        for (Room room : roomList) {
             room.hideRightClickMenu();
+            room.hideOfficeObjectMenu();
+        }
     }
 
     private Room getFollowRoom(int x, int y) {

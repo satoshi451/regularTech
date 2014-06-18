@@ -1,7 +1,7 @@
 package ru.regulartech.GUI;
 
-import ru.regulartech.SQL.OfficeObjectModel;
 import ru.regulartech.graphical.ImageManager;
+import ru.regulartech.officeObjects.OfficeObject;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,8 +21,11 @@ public class ObjectTypeSelectorWindow extends JDialog{
     private static BufferedImage computer = ImageManager.getComputerImgSmall();
     private static BufferedImage printer = ImageManager.getPrinterImgSmall();
     private static BufferedImage laptop = ImageManager.getLaptopImgSmall();
+    private static BufferedImage router = ImageManager.getRouterImgSmall();
+    private static BufferedImage monitor = ImageManager.getMonitorImgSmall();
 
     private PipedWriter pipedWriter;
+    private int objectCount = 0;
 
     public ObjectTypeSelectorWindow(PipedReader pipedReader) {
         pipedWriter = new PipedWriter();
@@ -37,7 +40,6 @@ public class ObjectTypeSelectorWindow extends JDialog{
         setModal(true);
         setVisible(true);
         setResizable(false);
-
     }
 
     private int getCalculatedHeight() {
@@ -52,30 +54,35 @@ public class ObjectTypeSelectorWindow extends JDialog{
     protected void dialogInit() {
         super.dialogInit();
 
-        JButton computerButton = new JButton(new ImageIcon(computer));
-        computerButton.addActionListener(new ActionListener() {
+        addSelectButton(computer, OfficeObject.OFFICE_OBJECT_PC);
+        addSelectButton(printer, OfficeObject.OFFICE_OBJECT_PRINTER);
+        addSelectButton(laptop, OfficeObject.OFFICE_OBJECT_LAPTOP);
+        addSelectButton(monitor, OfficeObject.OFFICE_OBJECT_MONITOR);
+        addSelectButton(router, OfficeObject.OFFICE_OBJECT_ROUTER);
+        setSize();
+    }
+
+    private void setSize() {
+        int width = objectCount*(computer.getWidth(null) + 10);
+        int height = computer.getHeight(null) + 20;
+
+        setBounds(300, 300, width, height);
+    }
+
+    private void addSelectButton(BufferedImage computer, final int OFFICE_OBJECT_TYPE_CONST) {
+        JButton newSelectionButton = new JButton(new ImageIcon(computer));
+        newSelectionButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                writeType(OfficeObjectModel.OFFICE_OBJECT_PC);
+                writeType(OFFICE_OBJECT_TYPE_CONST);
             }
         });
-        JButton laptopButton = new JButton(new ImageIcon(laptop));
-        laptopButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                writeType(OfficeObjectModel.OFFICE_OBJECT_LAPTOP);
-            }
-        });
-        JButton printerButton = new JButton(new ImageIcon(printer));
-        printerButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                writeType(OfficeObjectModel.OFFICE_OBJECT_PRINTER);
-            }
-        });
-        add(computerButton);
-        add(laptopButton);
-        add(printerButton);
+        add(newSelectionButton);
+        incrementObjectCount();
+    }
+
+    private void incrementObjectCount() {
+        objectCount++;
     }
 
     private void writeType(int officeObjectType) {

@@ -29,8 +29,7 @@ public class ReportActionWindow extends JFrame{
         listSelectionModel.addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent listSelectionEvent) {
-                Integer curElemId = herarhArea.getCurElemId();
-                actionArea.setObjectId(curElemId);
+                actionArea.setObject(herarhArea.getCurrentOfficeObject());
             }
         });
 

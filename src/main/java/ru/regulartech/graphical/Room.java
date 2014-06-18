@@ -2,6 +2,7 @@ package ru.regulartech.graphical;
 
 
 import ru.regulartech.GUI.RightClickMenu;
+import ru.regulartech.SQL.ReportDAO;
 import ru.regulartech.officeObjects.OfficeObject;
 
 import java.awt.*;
@@ -32,6 +33,7 @@ public class Room extends GraphObject {
         rightClickMenu = new RightClickMenu(this);
     }
 
+    @Deprecated
     public Room(String name) {
         this();
         setName(name);
@@ -54,6 +56,11 @@ public class Room extends GraphObject {
     }
 
     public void addObject(OfficeObject officeObject){
+        officeObject.setOfficeObjectTypeId(officeObject.getType());
+        officeObject.setOfficeObjectStatusId(OfficeObject.ALL_IS_OK);
+        officeObject.getNameDialog();
+        officeObject.setId(ReportDAO.getUniqueId());
+        ReportDAO.createOfficeObject(officeObject);
         this.objects.add(officeObject);
     }
 
@@ -110,28 +117,37 @@ public class Room extends GraphObject {
         setY(getY() + newY);
     }
 
-    public OfficeObject getObject(int x, int y) {
-        for (OfficeObject curObject : objects){
-            if(x > curObject.getX() && x < curObject.getX() + curObject.getObjectImage().getWidth(null)
-                    && y > curObject.getY() && y  < curObject.getObjectImage().getHeight(null)){
-                System.out.println("find: " + curObject.getClass());
-            }
+    public OfficeObject getOfficeObject(int x_cord, int y_cord){
+        if(objects.size() == 0)
+            return null;
 
+        for (OfficeObject curObject : objects){
+            if(x_cord > curObject.getX() && x_cord < curObject.getX() + curObject.getObjectImage().getWidth(null)
+                    && y_cord > curObject.getY() && y_cord  < curObject.getY() + curObject.getObjectImage().getHeight(null)){
+                System.out.println("found office object: " + curObject.getClass().getSimpleName());
+                return curObject;
+            }
         }
         return null;
     }
 
     public void hideRightClickMenu() {
         rightClickMenu.setVisible(false);
-
     }
 
-    public void showRightClickMenu() {
+    public void showRightClickMenu(int x_coord, int y_coord) {
         rightClickMenu.setVisible(true);
+        rightClickMenu.setLocation(x_coord, y_coord);
     }
 
     public void setParentComponent(Component parentComponent) {
         this.parentComponent = parentComponent;
         rightClickMenu.setComponent(parentComponent);
+    }
+
+    public void hideOfficeObjectMenu() {
+        for (OfficeObject curObject : objects){
+            curObject.hideObjectRightClickMenu();
+        }
     }
 }

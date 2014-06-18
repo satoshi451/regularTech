@@ -1,14 +1,13 @@
 package ru.regulartech.GUI;
 
-import ru.regulartech.SQL.OfficeObjectModel;
 import ru.regulartech.SQL.ReportDAO;
 import ru.regulartech.graphical.ImageManager;
+import ru.regulartech.officeObjects.OfficeObject;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
 
 /**
  * Create by Votrin Andrey (votrin.andrey@caesber.ru).
@@ -16,35 +15,17 @@ import java.awt.image.BufferedImage;
  * TIME: 14:10
  */
 public class ActionArea extends JPanel{
-    private static BufferedImage printerImg;
-    private static BufferedImage tableImg;
-    private static BufferedImage computerImg;
-    private static BufferedImage commonImg;
-    private static BufferedImage monitorImg;
-    private static BufferedImage laptopImg;
-    private static BufferedImage routerImg;
-
     private JLabel imageLabel;
     private Integer objectId;
-    private OfficeObjectModel currentObject;
-    private BufferedImage pict;
+    private OfficeObject currentObject;
+    private Image pict;
     private JLabel capture;
-
-    static {
-        computerImg = ImageManager.getComputerImg();
-        tableImg    = ImageManager.getTableImg();
-        commonImg   = ImageManager.getCommonImg();
-        monitorImg  = ImageManager.getMonitorImg();
-        laptopImg   = ImageManager.getLaptopImg();
-        routerImg   = ImageManager.getRouterImg();
-        printerImg  = ImageManager.getPrinterImg();
-    }
 
     public ActionArea() {
         super();
         LayoutManager lm = new GridBagLayout();
         setLayout(lm);
-        pict = ActionArea.commonImg;
+        pict = ImageManager.getCommonImg();
         GridBagConstraints c = new GridBagConstraints();
 
         capture = new JLabel("Выберите объект");
@@ -61,7 +42,8 @@ public class ActionArea extends JPanel{
         c.gridwidth = 2;
         add(imageLabel, c);
         // TODO: add description from DB
-        JTextArea description = new JTextArea("Описание объекта. Здесь должно быть красивое, душевное описание того, что это за объект"); //"Описание объекта. Здесь должно быть красивое, душевное описание того, что это за объект. Возможно, Вы захотите добавить его характеристики и кому он приналежит.");
+        String defaultDescription = "Описание объекта. Здесь должно быть красивое, душевное описание того, что это за объект";
+        JTextArea description = new JTextArea(defaultDescription); //"Описание объекта. Здесь должно быть красивое, душевное описание того, что это за объект. Возможно, Вы захотите добавить его характеристики и кому он приналежит.");
         description.setSize(new Dimension(200, 100));
         description.setLineWrap(true);
         description.setEnabled(false);
@@ -147,7 +129,7 @@ public class ActionArea extends JPanel{
                 bottom.add(agree);
                 bottom.add(cancel);
 
-                acceptWindow.add(new JLabel("Вы хотите совершить операцию '" + operationType.getSelectedItem().toString() + "' над объектом '" + currentObject.getName() + "'"));
+                acceptWindow.add(new JLabel("Вы хотите совершить операцию '" + operationType.getSelectedItem() + "' над объектом '" + currentObject.getName() + "'"));
                 acceptWindow.add(new JLabel(costTip));
                 acceptWindow.add(bottom);
 
@@ -167,12 +149,13 @@ public class ActionArea extends JPanel{
     }
 
     private void initPanel() {
+        /*
         this.currentObject = ReportDAO.getOfficeObject(this.objectId);
         String curName = currentObject.getName();
         capture.setText(curName);
         Integer curTypeId = currentObject.getOfficeObjectTypeId();
 
-        switch (curTypeId) {
+        switch (currentObject.getOfficeObjectTypeId()) {
             case OfficeObjectModel.OFFICE_OBJECT_PC:
                 this.pict = ActionArea.computerImg;
                 break;
@@ -197,8 +180,16 @@ public class ActionArea extends JPanel{
             default:
                 break;
         }
-        imageLabel.setIcon(new ImageIcon(pict)); //= new JLabel(new ImageIcon(pict));
+        */
+        pict = currentObject.getObjectImage();
+        if(currentObject.getDescription() != null)
+            ;
+
+        imageLabel.setIcon(new ImageIcon(currentObject.getObjectImage()));
         repaint();
     }
 
+    public void setObject(OfficeObject object) {
+        this.currentObject = object;
+    }
 }
