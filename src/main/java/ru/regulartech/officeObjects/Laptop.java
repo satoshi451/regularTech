@@ -28,4 +28,16 @@ public class Laptop extends ElectronicObject {
     public void doDiagnostic() {
 
     }
+
+    @Override
+    public void setBroken() {
+        super.setBroken();
+        setObjectImage(ImageManager.getBrokenLaptopImgSmall());
+    }
+
+    @Override
+    public void setFixed() {
+        super.setFixed();
+        setObjectImage(ImageManager.getLaptopImgSmall());
+    }
 }

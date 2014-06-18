@@ -30,4 +30,15 @@ public class Printer extends ElectronicObject {
 
     }
 
+    @Override
+    public void setBroken() {
+        super.setBroken();
+        setObjectImage(ImageManager.getBrokenPrinterImgSmall());
+    }
+
+    @Override
+    public void setFixed() {
+        super.setFixed();
+        setObjectImage(ImageManager.getPrinterImgSmall());
+    }
 }

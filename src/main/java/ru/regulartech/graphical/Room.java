@@ -97,7 +97,6 @@ public class Room extends GraphObject {
                 cntX = 0;
             }
             drawObject(curObject, g, child_x, child_y);
-
         }
     }
 

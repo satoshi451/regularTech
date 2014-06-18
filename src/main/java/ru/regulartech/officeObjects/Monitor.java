@@ -7,11 +7,10 @@ import ru.regulartech.graphical.ImageManager;
  * DATE: 18.06.2014
  * TIME: 4:41
  */
-public class Monitor extends OfficeObject {
+public class Monitor extends ElectronicObject {
     public Monitor() {
         setObjectImage(ImageManager.getMonitorImg());
     }
-
 
     @Override
     public Integer getType() {
@@ -22,5 +21,22 @@ public class Monitor extends OfficeObject {
         setObjectImage(ImageManager.getMonitorImg());
         setId(id);
         setName(name);
+    }
+
+    @Override
+    public void setBroken() {
+        super.setBroken();
+        setObjectImage(ImageManager.getBrokenMonitorImgSmall());
+    }
+
+    @Override
+    public void setFixed() {
+        super.setFixed();
+        setObjectImage(ImageManager.getMonitorImgSmall());
+    }
+
+    @Override
+    public void doDiagnostic() {
+
     }
 }

@@ -12,4 +12,6 @@ public interface baseActions {
     void setOfficeObjectStatusId(Integer status);
 
     Integer getOfficeObjectStatusId();
+
+    void setFixed();
 }

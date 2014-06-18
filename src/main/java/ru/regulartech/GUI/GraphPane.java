@@ -90,6 +90,7 @@ public class GraphPane extends JPanel{
             addRoomJDialog.setClickedY(y_coord);
             addRoomJDialog.setVisible(true);
         }
+        repaint();
     }
 
     private void showRightClickMenu(Room curRoom, int x_coord, int y_coord) {

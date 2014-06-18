@@ -29,6 +29,18 @@ public class PC extends ElectronicObject implements electronicFunctions {
     }
 
     @Override
+    public void setBroken() {
+        super.setBroken();
+        setObjectImage(ImageManager.getBrokenPCImageSmall());
+    }
+
+    @Override
+    public void setFixed() {
+        super.setFixed();
+        setObjectImage(ImageManager.getComputerImgSmall());
+    }
+
+    @Override
     public Integer getType() {
         return OFFICE_OBJECT_PC;
     }

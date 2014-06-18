@@ -128,8 +128,9 @@ public abstract class OfficeObject extends GraphObject implements baseActions {
 
     }
     @Override
-    public  void changeStatus(Integer status){
+    public void changeStatus(Integer status){
         this.status = status;
+        setOfficeObjectStatusId(status);
     }
 
     public Image getObjectImage(){
@@ -142,6 +143,12 @@ public abstract class OfficeObject extends GraphObject implements baseActions {
     public void setBroken() {
         changeStatus(BROKEN);
         ReportDAO.setStatus(this, BROKEN);
+    }
+
+    @Override
+    public void setFixed() {
+        changeStatus(ALL_IS_OK);
+        ReportDAO.setStatus(this, ALL_IS_OK);
     }
 
     public ObjectRightClickMenu getObjectRightClickMenu() {
@@ -174,37 +181,56 @@ public abstract class OfficeObject extends GraphObject implements baseActions {
         return null;
     }
 
-
-
-
     public abstract static class ObjectRightClickMenu extends  JPopupMenu{
+        private JMenuItem markAsFixed;
         private JMenuItem markAsBroken;
         private OfficeObject officeObject;
 
         protected ObjectRightClickMenu() {
             markAsBroken = new JMenuItem("Уведомить о поломке");
+            markAsFixed = new JMenuItem("Уведомить о починке");
 
             markAsBroken.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent actionEvent) {
                     getOfficeObject().setBroken();
+                    remove(markAsBroken);
+                    add(markAsFixed);
+                    setVisible(false);
                 }
             });
-            add(markAsBroken);
+            markAsFixed.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent actionEvent) {
+                    getOfficeObject().setFixed();
+                    remove(markAsFixed);
+                    add(markAsBroken);
+                    setVisible(false);
+                }
+            });
         }
 
         public void showMenu(OfficeObject officeObject, int x_coord, int y_coord) {
             setOfficeObject(officeObject);
             setLocation(x_coord, y_coord);
+
+            if (getOfficeObject().getOfficeObjectStatusId().equals(ALL_IS_OK)){
+                add(markAsBroken);
+            } else if(getOfficeObject().getOfficeObjectStatusId().equals(BROKEN)){
+                add(markAsFixed);
+            }
+
             setVisible(true);
         }
 
         public void setOfficeObject(OfficeObject officeObject) {
             this.officeObject = officeObject;
+
         }
 
         public OfficeObject getOfficeObject() {
             return officeObject;
         }
     }
+
 }
