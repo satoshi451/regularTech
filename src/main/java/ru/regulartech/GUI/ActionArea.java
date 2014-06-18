@@ -143,53 +143,16 @@ public class ActionArea extends JPanel{
         inputCosts.addActionListener(actionListener);
         minBtn.addActionListener(actionListener);
     }
-    public void setObjectId(Integer objectId) {
-        this.objectId = objectId;
-        initPanel();
-    }
 
     private void initPanel() {
-        /*
-        this.currentObject = ReportDAO.getOfficeObject(this.objectId);
-        String curName = currentObject.getName();
-        capture.setText(curName);
-        Integer curTypeId = currentObject.getOfficeObjectTypeId();
-
-        switch (currentObject.getOfficeObjectTypeId()) {
-            case OfficeObjectModel.OFFICE_OBJECT_PC:
-                this.pict = ActionArea.computerImg;
-                break;
-            case OfficeObjectModel.OFFICE_OBJECT_FURNITURE:
-                this.pict = ActionArea.tableImg;
-                break;
-            case OfficeObjectModel.OFFICE_OBJECT_COMMON:
-                this.pict = ActionArea.commonImg;
-                break;
-            case OfficeObjectModel.OFFICE_OBJECT_MONITOR:
-                this.pict = ActionArea.monitorImg;
-                break;
-            case OfficeObjectModel.OFFICE_OBJECT_LAPTOP:
-                this.pict = ActionArea.laptopImg;
-                break;
-            case OfficeObjectModel.OFFICE_OBJECT_ROUTER:
-                this.pict = ActionArea.routerImg;
-                break;
-            case OfficeObjectModel.OFFICE_OBJECT_PRINTER:
-                this.pict = ActionArea.printerImg;
-                break;
-            default:
-                break;
-        }
-        */
         pict = currentObject.getObjectImage();
-        if(currentObject.getDescription() != null)
-            ;
-
+        capture.setText(currentObject.getName());
         imageLabel.setIcon(new ImageIcon(currentObject.getObjectImage()));
         repaint();
     }
 
     public void setObject(OfficeObject object) {
         this.currentObject = object;
+        initPanel();
     }
 }

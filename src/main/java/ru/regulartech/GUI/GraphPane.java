@@ -84,13 +84,12 @@ public class GraphPane extends JPanel{
             if(curRoom != null){
                 showRightClickMenu(curRoom, x_coord, y_coord);
                 System.out.println("find room " + curRoom.getName());
-                return;
+            } else {
+                addRoomJDialog.setClickedX(x_coord);
+                addRoomJDialog.setClickedY(y_coord);
+                addRoomJDialog.setVisible(true);
             }
-            addRoomJDialog.setClickedX(x_coord);
-            addRoomJDialog.setClickedY(y_coord);
-            addRoomJDialog.setVisible(true);
         }
-        repaint();
     }
 
     private void showRightClickMenu(Room curRoom, int x_coord, int y_coord) {
@@ -99,7 +98,7 @@ public class GraphPane extends JPanel{
             if(officeObject != null){
                 OfficeObject.ObjectRightClickMenu objectRightClickMenu = officeObject.getObjectRightClickMenu();
                 if(objectRightClickMenu != null)
-                    objectRightClickMenu.showMenu(officeObject, x_coord, y_coord);
+                    objectRightClickMenu.showMenu(officeObject, x_coord, y_coord, this);
             } else {
                 curRoom.setParentComponent(this);
                 curRoom.showRightClickMenu(x_coord, y_coord);

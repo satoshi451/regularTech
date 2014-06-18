@@ -40,11 +40,10 @@ public class HerarhArea extends JPanel{
         this.currentOfficeObject = currentOfficeObject;
     }
 
-    public Integer getCurElem() {
+    public void getCurElem() {
         String selectedValue = (String) officeObjectList.getSelectedValue();
         OfficeObject officeObject = officeObjectList.getByValue(selectedValue);
         setCurrentOfficeObject(officeObject);
-        return null;
     }
 
 }

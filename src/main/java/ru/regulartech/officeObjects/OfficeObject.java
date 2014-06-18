@@ -185,6 +185,7 @@ public abstract class OfficeObject extends GraphObject implements baseActions {
         private JMenuItem markAsFixed;
         private JMenuItem markAsBroken;
         private OfficeObject officeObject;
+        private Component rootPane;
 
         protected ObjectRightClickMenu() {
             markAsBroken = new JMenuItem("Уведомить о поломке");
@@ -197,6 +198,7 @@ public abstract class OfficeObject extends GraphObject implements baseActions {
                     remove(markAsBroken);
                     add(markAsFixed);
                     setVisible(false);
+                    rootPane.repaint();
                 }
             });
             markAsFixed.addActionListener(new ActionListener() {
@@ -206,13 +208,16 @@ public abstract class OfficeObject extends GraphObject implements baseActions {
                     remove(markAsFixed);
                     add(markAsBroken);
                     setVisible(false);
+                    rootPane.repaint();
+
                 }
             });
         }
 
-        public void showMenu(OfficeObject officeObject, int x_coord, int y_coord) {
+        public void showMenu(OfficeObject officeObject, int x_coord, int y_coord, Component rootPane) {
             setOfficeObject(officeObject);
             setLocation(x_coord, y_coord);
+            this.rootPane = rootPane;
 
             if (getOfficeObject().getOfficeObjectStatusId().equals(ALL_IS_OK)){
                 add(markAsBroken);

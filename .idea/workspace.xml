@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7f39c04-a8f6-4db7-8d16-5f76301b1b22" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ActionArea.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ActionArea.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/ImageManager.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/ImageManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Laptop.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Laptop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Monitor.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Monitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/HerarhArea.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/HerarhArea.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/PC.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/PC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Printer.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Printer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/Room.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/graphical/Room.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Router.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Router.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/baseActions.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/baseActions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ReportActionWindow.java" afterPath="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ReportActionWindow.java" />
     </list>
     <ignored path="regulartech.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +38,8 @@
       <file leaf-file-name="GraphPane.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="902" max-vertical-offset="2737">
-              <caret line="149" column="17" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="879" max-vertical-offset="2720">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="e#1956#2180#0" expanded="true" />
                 <element signature="e#2169#2170#0" expanded="true" />
@@ -54,101 +48,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="HerarhArea.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/HerarhArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ElectronicObject.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.093818985" vertical-offset="0" max-vertical-offset="906">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Table.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Table.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OfficeObject.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.464286" vertical-offset="0" max-vertical-offset="3468">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="850">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
-                <element signature="e#4537#4538#0" expanded="true" />
-                <element signature="e#4580#4581#0" expanded="true" />
-                <element signature="e#5958#6279#0" expanded="true" />
-                <element signature="e#6264#6265#0" expanded="true" />
-                <element signature="e#6324#6644#0" expanded="true" />
-                <element signature="e#6629#6630#0" expanded="true" />
-                <element signature="e#7286#7287#0" expanded="true" />
-                <element signature="e#7329#7330#0" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Router.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Router.java">
+      <file leaf-file-name="OfficeObjectList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="1037">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PC.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/PC.java">
+      <file leaf-file-name="OfficeObjectListModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectListModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="986">
-              <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Laptop.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Laptop.java">
+      <file leaf-file-name="ActionArea.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ActionArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="799">
-              <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1809" max-vertical-offset="2448">
+              <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+              <folding>
+                <element signature="e#2431#5221#0" expanded="true" />
+                <element signature="e#5210#5211#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Monitor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Monitor.java">
+      <file leaf-file-name="ReportActionWindow.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ReportActionWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.6761364" vertical-offset="0" max-vertical-offset="799">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#831#1158#0" expanded="true" />
+                <element signature="e#1147#1148#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,10 +146,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/SQL_scripts/build_database/createFinantialTypes.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/SQL_scripts/build_database/createOfficeObjectType.sql" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectListModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/HerarhArea.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ReportActionWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ActionArea.java" />
         <option value="$PROJECT_DIR$/src/main/resources/SQL_scripts/build_database/createOfficeObjectStatus.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/SQL_scripts/build_database/createOfficeObject.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/SQL_scripts/fill_start_data/fillOfficeObjectStatus.sql" />
@@ -214,9 +164,12 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Printer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Router.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Monitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ActionArea.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/HerarhArea.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ReportActionWindow.java" />
       </list>
     </option>
   </component>
@@ -940,12 +893,12 @@
       <workItem from="1403015857384" duration="3462000" />
       <workItem from="1403035535137" duration="2154000" />
       <workItem from="1403039180336" duration="29804000" />
-      <workItem from="1403089410091" duration="15917000" />
+      <workItem from="1403089410091" duration="23790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131223000" />
+    <option name="totallyTimeSpent" value="139096000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -979,7 +932,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.03212435" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29533678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -993,8 +946,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1119403" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21801706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24352331" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21801706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24145077" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1058,7 +1011,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java</url>
-          <line>213</line>
+          <line>217</line>
           <properties />
           <option name="timeStamp" value="101" />
         </line-breakpoint>
@@ -1100,42 +1053,60 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java</url>
-          <line>195</line>
+          <line>196</line>
           <properties />
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java</url>
-          <line>204</line>
+          <line>206</line>
           <properties />
           <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java</url>
-          <line>84</line>
-          <properties />
-          <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java</url>
-          <line>216</line>
+          <line>221</line>
           <properties />
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java</url>
-          <line>76</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ReportActionWindow.java</url>
+          <line>35</line>
           <properties />
-          <option name="timeStamp" value="132" />
+          <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java</url>
-          <line>92</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/HerarhArea.java</url>
+          <line>35</line>
           <properties />
-          <option name="timeStamp" value="133" />
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectList.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/HerarhArea.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ReportActionWindow.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ActionArea.java</url>
+          <line>147</line>
+          <properties />
+          <option name="timeStamp" value="150" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="134" />
+      <option name="time" value="151" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1143,23 +1114,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/SQL_scripts/build_database/createOfficeObjectFinantial.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/SQL_scripts/test.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06910569" vertical-offset="0" max-vertical-offset="492">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/SQL_scripts/build_database/createViewFinantialReport.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2915952" vertical-offset="0" max-vertical-offset="583">
@@ -1255,14 +1209,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectListModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="408">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Enviroment/glassfish3/jdk/jre/lib/rt.jar!/javax/swing/JList.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="2708" max-vertical-offset="6171">
@@ -1281,27 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3322884" vertical-offset="1050" max-vertical-offset="5559">
           <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ReportActionWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75062346" vertical-offset="158" max-vertical-offset="765">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-          <folding>
-            <element signature="e#997#998#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ActionArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="3026">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-          <folding>
-            <element signature="e#7005#7006#0" expanded="false" />
-            <element signature="e#7048#7049#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1346,16 +1271,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="680">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="1037">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="e#813#827#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1431,42 +1347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/SQL/ReportDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4390" max-vertical-offset="5304">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding>
-            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..finantial_report..." />
-            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="SELECT id, n..office_object..." />
-            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="SELECT id, n..office_object..." />
-            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="UPDATE OFFIC..." />
-            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="SELECT max(i..office_object..." />
-            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/SQL/ConnectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1120" max-vertical-offset="2482">
-          <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
-          <folding>
-            <marker date="1400653511959" expanded="true" signature="-1:-1" placeholder="Select isAdm..appUsers..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/HerarhArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="833">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/SQL_scripts/build_database/createAppUsers.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12518409" vertical-offset="0" max-vertical-offset="679">
@@ -1515,18 +1395,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Monitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50073636" vertical-offset="0" max-vertical-offset="748">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/SQL/ReportDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5811966" vertical-offset="0" max-vertical-offset="5304">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..finantial_report..." />
+            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="SELECT id, n..office_object..." />
+            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="SELECT id, n..office_object..." />
+            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="UPDATE OFFIC..." />
+            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="SELECT max(i..office_object..." />
+            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1403072806883" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/PC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="986">
+        <state vertical-scroll-proportion="0.5156695" vertical-offset="284" max-vertical-offset="986">
           <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21794872" vertical-offset="0" max-vertical-offset="702">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4992658" vertical-offset="0" max-vertical-offset="935">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27459618" vertical-offset="0" max-vertical-offset="681">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/JBuchTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24324325" vertical-offset="0" max-vertical-offset="629">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6855828" vertical-offset="2341" max-vertical-offset="3383">
+          <caret line="209" column="38" selection-start-line="209" selection-start-column="38" selection-end-line="209" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/SQL/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2482">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <marker date="1400653511959" expanded="true" signature="-1:-1" placeholder="Select isAdm..appUsers..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Enviroment/glassfish3/jdk/jre/lib/rt.jar!/javax/swing/ListSelectionModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1303681" vertical-offset="0" max-vertical-offset="935">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/GraphPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="902" max-vertical-offset="2737">
-          <caret line="149" column="17" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="879" max-vertical-offset="2720">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="e#1956#2180#0" expanded="true" />
             <element signature="e#2169#2170#0" expanded="true" />
@@ -1534,60 +1506,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectListModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Monitor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/OfficeObjectList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="1037">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/Table.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/HerarhArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/OfficeObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.464286" vertical-offset="0" max-vertical-offset="3468">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="850">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#4537#4538#0" expanded="true" />
-            <element signature="e#4580#4581#0" expanded="true" />
-            <element signature="e#5958#6279#0" expanded="true" />
-            <element signature="e#6264#6265#0" expanded="true" />
-            <element signature="e#6324#6644#0" expanded="true" />
-            <element signature="e#6629#6630#0" expanded="true" />
-            <element signature="e#7286#7287#0" expanded="true" />
-            <element signature="e#7329#7330#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/officeObjects/ElectronicObject.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ActionArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1809" max-vertical-offset="2448">
+          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+          <folding>
+            <element signature="e#2431#5221#0" expanded="true" />
+            <element signature="e#5210#5211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/regulartech/GUI/ReportActionWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.093818985" vertical-offset="0" max-vertical-offset="906">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.6761364" vertical-offset="0" max-vertical-offset="799">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#831#1158#0" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

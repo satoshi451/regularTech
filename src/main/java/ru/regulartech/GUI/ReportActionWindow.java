@@ -1,5 +1,7 @@
 package ru.regulartech.GUI;
 
+import ru.regulartech.officeObjects.OfficeObject;
+
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
@@ -29,7 +31,9 @@ public class ReportActionWindow extends JFrame{
         listSelectionModel.addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent listSelectionEvent) {
-                actionArea.setObject(herarhArea.getCurrentOfficeObject());
+                herarhArea.getCurElem();
+                OfficeObject officeObject = herarhArea.getCurrentOfficeObject();
+                actionArea.setObject(officeObject);
             }
         });
 
