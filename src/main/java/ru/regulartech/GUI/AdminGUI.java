@@ -10,9 +10,12 @@ import java.awt.event.WindowAdapter;
  */
 public class AdminGUI extends AbstractGUI {
 
+    private QueuePanel queuePanel;
+
     public AdminGUI(String capture, WindowAdapter windowAdapter) {
         super(capture, windowAdapter);
-        this.menubar = new AdminMenuBar();
+        menubar = new AdminMenuBar();
+        queuePanel = new QueuePanel();
 
         add(menubar, BorderLayout.NORTH);
     }

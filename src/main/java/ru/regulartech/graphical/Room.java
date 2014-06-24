@@ -48,6 +48,18 @@ public class Room extends GraphObject {
         setY(clickedY);
     }
 
+    public Room(int x, int y, String roomName, List<OfficeObject> officeObjects) {
+        this(x, y, roomName);
+        for (OfficeObject curObject : officeObjects){
+            addLoadedObject(curObject);
+        }
+    }
+
+    private void addLoadedObject(OfficeObject curObject) {
+        objects.add(curObject);
+
+    }
+
     public String getName() {
         return name;
     }

@@ -1,6 +1,6 @@
 package ru.regulartech.GUI;
 
-import ru.regulartech.graphical.ImageManager;
+import ru.regulartech.SQL.ReportDAO;
 import ru.regulartech.graphical.Room;
 import ru.regulartech.officeObjects.OfficeObject;
 
@@ -16,13 +16,6 @@ import java.util.List;
  * TIME: 15:02
  */
 public class GraphPane extends JPanel{
-    private static Image computer;
-    private static Image printer;
-    private static Image monitor;
-    private static Image router;
-    private static Image laptop;
-    private static Image common;
-
     private static final String withoutRoom;
 
     private final AddRoomJDialog addRoomJDialog;
@@ -31,16 +24,7 @@ public class GraphPane extends JPanel{
 
     static {
         withoutRoom = "Нет помещений. Чтобы добавить помещение, щелкните правой кнопкой.";
-
-        computer = ImageManager.getComputerImg();
-        printer = ImageManager.getPrinterImg();
-        monitor = ImageManager.getMonitorImg();
-        router = ImageManager.getRouterImg();
-        laptop = ImageManager.getLaptopImg();
-        common = ImageManager.getCommonImg();
     }
-
-    private JPopupMenu rightPopUpMenu;
 
     public GraphPane() {
         super();
@@ -71,6 +55,16 @@ public class GraphPane extends JPanel{
             }
         });
         addMouseMotionListener(new RoomMotionAdapter());
+        loadObjects();
+    }
+
+    private void loadObjects() {
+        List<OfficeObject> officeObjects = ReportDAO.listAll();
+        if(officeObjects != null){
+            if(officeObjects.size() != 0){
+                roomList.add(new Room(50, 50, "Saved Objects", officeObjects));
+            }
+        }
     }
 
     private void processMouseClick(MouseEvent mouseEvent) {
@@ -80,6 +74,7 @@ public class GraphPane extends JPanel{
             int y_coord = mouseEvent.getY();
 
             Room curRoom = getFollowRoom(x_coord, y_coord);
+
 
             if(curRoom != null){
                 showRightClickMenu(curRoom, x_coord, y_coord);
@@ -164,4 +159,3 @@ public class GraphPane extends JPanel{
         }
     }
 }
-//[MOUSE_CLICKED,(499,136),absolute(657,289),button=3,modifiers=Meta+Button3,extModifiers=Meta,clickCount=1]

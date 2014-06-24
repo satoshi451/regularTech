@@ -38,6 +38,7 @@ public abstract class AbstractGUI extends JFrame {
                 windowAdapter.windowClosing(windowEvent);
             }
         });
+
         setBounds(150, 100, 800, 600);
         setVisible(true);
     }
